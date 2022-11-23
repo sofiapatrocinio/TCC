@@ -3,27 +3,118 @@
 \addcontentsline{toc}{chapter}{Introdução}
 \section{Introdução}
 
-Nesse capítulo, com base nos tópicos de interesse de pesquisa e desenvolvimento desse Trabalho de Conclusão de Curso, será apresentada um breve contexto em que o trabalho
-proposto se insere. Além de apresentar seu tema foco, justificativas e objetivos e por fim, a organização do trabalho.
+Neste capítulo, com base nos tópicos de interesse de pesquisa e desenvolvimento deste Trabalho de Conclusão de Curso, será apresentado um breve contexto em que o trabalho
+proposto se insere, além de seu tema foco; bem como a Justificativa; Questão de Pesquisa, Objetivos e, por fim, a Organização do Trabalho.
 
 \subsection{Contextualização}
 
 Há uma grande dificuldade de mapeamento da quantidade de línguas indígenas existentes no Brasil. De acordo com os últimos dados censitários do IBGE, de 2010, o Brasil
-possui 274 línguas indígenas faladas por indivíduos pertencentes a 305 etnias diferentes. \cite{ibge}. Já de acordo com \cite{galucioetal2018} e
-\cite{dangelis2014}, esse número estaria entre 160 e 170 línguas indígenas vivas.
+possui 274 línguas indígenas faladas por indivíduos pertencentes a 305 etnias diferentes \cite{ibge}. Já de acordo com \cite{galucioetal2018} e \cite{dangelis2014}, esse
+número estaria entre 160 e 170 línguas indígenas vivas.
 
 De fato, não há certeza quanto ao número exato, o que se deve às dificuldades inerentes à definição técnica do que seja propriamente uma língua, agravadas pela falta de
-informações sobre as línguas e seus falantes. \cite{seki2000}.
+informações sobre as línguas e seus falantes \cite{seki2000}.
 
 Diante dessa realidade, o Grupo de Trabalho (GT) do Brasil, constituído de uma equipe composta por representantes indígenas de cada região do Brasil, lançou um plano de
 ação para a Década Internacional das Línguas Indígenas (IDL 2022-2032), decretada pela UNESCO a fim de fortalecer políticas linguísticas, processos socioculturais
 próprios e estratégias de educação e circulação de conhecimentos dos povos indígenas de todo o mundo. O Plano de Ação para a Década Internacional das Línguas Indígenas no
 Brasil aborda o lema “Nada para nós sem nós” e estabelece a participação efetiva dos povos indígenas nos processos de tomada de decisão, consulta, planejamento e
-implementação como princípios norteadores para a Década Internacional das Línguas Indígenas. \cite{gtbrasil2021}.
+implementação como princípios norteadores para a Década Internacional das Línguas Indígenas \cite{gtbrasil2021}.
 
-Em parceria com a professora Altaci Corrêa Rubim, representante brasileira do Grupo de Trabalho Mundial da Década das Línguas Indígenas e membros do GT do Brasil, foi
+Em parceria com a professora Altaci Corrêa Rubim - representante brasileira do Grupo de Trabalho Mundial da Década das Línguas Indígenas - e membros do GT do Brasil, foi
 desenvolvido o Multilind, aplicativo \textit{mobile} para mapeamento das línguas indígenas do Brasil. O aplicativo foi desenvolvido durante as disciplinas de Métodos de
 Desenvolvimento de Software (MDS) e Engenharia de Produto de Software (EPS) do Curso de Engenharia de Software da Universidade de Brasília - Campus Gama, por 9 membros,
 sob a licença MIT. Entre suas funcionalidades estão o mapeamento das línguas indígenas brasileiras, fornecendo informações a respeito de cada língua como tronco
-linguístico a que pertence; local em que é falada, palavras da língua, bem como sua tradução para o português indígena e português formal, além da visualização de imagens
-associadas.
+linguístico a que pertence; local em que é falada; palavras da língua; bem como sua tradução para o português indígena e o português formal, além da visualização de
+imagens associadas.
+
+A aplicação foi desenvolvida utilizando \textit{React Native}, \textit{framework} escrito em \textit{JavaScript}, que é utilizado para escrever aplicações reais e de
+renderização nativa tanto para iOS quanto para \textit{Android} \cite{eiseman2017}.
+
+O desenvolvimento do aplicativo foi guiado por testes de aceitação, cuja finalidade é a simulação de operações de rotina do sistema de modo a verificar se seu
+comportamento está de acordo com o solicitado \cite{neto2015}, realizado pela equipe do GT do Brasil.
+
+Além da validação das histórias de usuários, os \textit{stakeholders} pontuaram, ainda, funcionalidades da aplicação que não foram projetadas de maneira efetiva aos
+usuários, afetando a usabilidade do sistema.
+
+Usabilidade é o termo técnico usado para descrever a qualidade de uso de uma interface \cite{bevan1995}. Trata-se de uma qualidade importante, pois interfaces com
+usabilidade aumentam a produtividade dos usuários, diminuem a ocorrência de erros e, por consequência, contribuem para a satisfação dos usuários \cite{winckler2022}.
+
+A respeito da usabilidade, não se pode deixar de citar a importância das heurísticas de Nielsen, diretrizes elaboradas para garantir que o usuário tenha uma boa
+experiência de uso. São elas: Visibilidade do status do sistema; compatibilidade do sistema com o mundo real; controle do usuário e liberdade; consistência e padrões;
+ajuda os usuários a reconhecer, diagnosticar e recuperação de erros; prevenção de erros; reconhecimento em vez de memorização; flexibilidade e eficiência de uso; estética
+e design minimalista e ajuda e documentação \cite{nielsen1994}.
+
+Ademais, é importante entender que a usabilidade pode variar em função de alguns critérios e está relacionada ao tipo de aplicação em questão, perfil dos usuários,
+contextos de utilização, etc., que são variáveis \cite{winckler2022}. Considerando o perfil dos usuários, focado principalmente em pessoas indígenas, é importante também
+compreender a importância de projetar interfaces acessíveis. De acordo com \cite{takashi2000}:
+
+\begin{quote}
+    Outro fator de dificuldade para o usuário inexperiente é o desenho das telas de apresentação e a estruturação das páginas, muitas vezes pressupondo uma certa
+    familiaridade com ambientes computacionais mais sofisticados.
+
+\end{quote}
+
+\subsection{Justificativa}
+
+O acesso às Tecnologias de Informação e Comunicação pelos povos indígenas é um marco do período recente e a inclusão social e digital de minorías étnicas, especificamente
+indígenas, por muito tempo estiveram à margem do acesso/uso da informação \cite{pinto2010}. Além disso, com o passar do tempo, muitas culturas indígenas estão esquecendo
+seus conhecimentos, e sendo absorvidas pela cultura dominante nacional, resultando em um fenômeno social conhecido como hibridismo ou miscigenação, que pode ir contra seu
+conhecimento autóctone \cite{pinto2010}.
+
+Por isso, é de extrema importância a documentação, reprodução e divulgação das informações a respeito de línguas indígenas que, de acordo com \cite{moore2008}, pelo menos
+25\% delas estariam ameaçadas de extinção em um futuro próximo por conta do baixo número de falantes e falta de transmissão. O desaparecimento dessas línguas seria uma
+grande perda para as comunidades nativas, dado que são os meios de transmissão da cultura e pensamento tradicionais e parte importante da identidade étnica.
+\cite{moore2008}.
+
+Visando à preservação e à revitalização das diversas línguas indígenas existentes no Brasil, este projeto de pesquisa visa à aplicação de boas práticas de usabilidade,
+atendendo as necessidades do usuário e garantindo uma boa experiência de uso.
+
+
+\subsection{Questões de pesquisa}
+
+A partir dos problemas apresentados, o presente trabalho tem a pretensão de responder à seguinte questão de pesquisa:
+
+Como proporcionar uma aplicação com boas práticas de usabilidade, a fim de auxiliar na revitalização e preservação das línguas indígenas, voltadas às pessoas indígenas?
+
+\subsection{Objetivos}
+
+\subsubsection{Objetivo Geral}
+
+O objetivo principal deste trabalho é realizar melhorias centradas na experiência de usuário no aplicativo Multilind.
+
+\subsubsection{Objetivos Específicos}
+
+\begin{description}
+    \item A partir do Objetivo Geral, pôde-se definir os Objetivos Específicos, sendo:
+          \begin{itemize}
+              \item Identificar as tecnologias de design, prototipação e teste que permitam atender às finalidades do trabalho;
+
+              \item Aplicar conceitos de boas práticas de usabilidade no produto de software;
+
+              \item Planejar a avaliação empírica sob a perspectiva da experiência de usuário;
+
+              \item Realizar testes de usabilidade no processo avaliativo, procurando coletar e manter os rastros dos resultados obtidos e
+
+              \item Documentar os resultados do estudo exploratório, bem como prover uma primeira análise dos resultados obtidos.
+          \end{itemize}
+\end{description}
+
+\subsection{Organização do Trabalho}
+
+\begin{description}
+    \item Esta monografia está disposta em capítulos, conforme apresentado a seguir:
+          \begin{itemize}
+              \item Capítulo 2 - Referencial Teórico: apresenta os fundamentos teóricos do trabalho e conceitos relacionados à experiência de usuário e usabilidade.
+
+              \item Capítulo 3 - Suporte Tecnológico: define as tecnologias e ferramentas utilizadas no trabalho, no que diz respeito a prototipação, desenvolvimento,
+                    avaliação e validação do software e de pesquisa e escrita;
+
+              \item Capítulo 4 - Metodologia: especifica os aspectos metodológicos sobre o levantamento bibliográfico, o desenvolvimento do software e a análise de
+              resultados, além de apresentar o cronograma de atividades;
+
+              \item Capítulo 5 - Proposta: detalha a proposta deste trabalho e descreve a estrutura e a aplicabilidade da solução apresentada e
+
+              \item Capítulo 6 - Considerações Finais: apresenta os resultados alcançados no TCC 01.
+          \end{itemize}
+\end{description}
