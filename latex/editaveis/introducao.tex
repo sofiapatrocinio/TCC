@@ -3,8 +3,8 @@
 Neste capítulo, com base nos tópicos de interesse de pesquisa e desenvolvimento deste Trabalho de Conclusão de Curso, serão apresentados: uma breve
 \hyperref[sec:Contextualização]{Contextualização}, conferindo informações sobre o domínio cognitivo Línguas Indígenas, e os conceitos Experiência de Usuário e
 Usabilidade; a \hyperref[sec:Justificativa]{Justificativa} para realização desse trabalho, que consiste em refatorar um aplicativo já existente orientando-se por
-Experiência de Usuário e Usabilidade; a \hyperref[sec:QuestaodePesquisa]{Questão de pesquisa/Desenvolvimento}, e os \hyperref[sec:Objetivos]{Objetivos}, \hyperref[sec:ObjetivoGeral]{Geral} e
-\hyperref[sec:ObjetivosEspecificos]{Específicos}. Por fim, tem-se a \hyperref[sec:OrganizacaodoTrabalho]{Organização do Trabalho}.
+Experiência de Usuário e Usabilidade; a \hyperref[sec:QuestaodePesquisa]{Questão de pesquisa/Desenvolvimento}, e os \hyperref[sec:Objetivos]{Objetivos},
+\hyperref[sec:ObjetivoGeral]{Geral} e \hyperref[sec:ObjetivosEspecificos]{Específicos}. Por fim, tem-se a \hyperref[sec:OrganizacaodoTrabalho]{Organização do Trabalho}.
 
 \section{Contextualização}
 \label{sec:Contextualização}
@@ -16,30 +16,32 @@ número estaria entre 160 e 170 línguas indígenas vivas.
 De fato, não há certeza quanto ao número exato, o que se deve às dificuldades inerentes à definição técnica do que seja propriamente uma língua, agravadas pela falta de
 informações sobre as línguas e seus falantes \cite{seki2000}.
 
-Diante dessa realidade, o Grupo de Trabalho (GT) do Brasil, constituído de uma equipe composta por representantes indígenas de cada região do Brasil, lançou um plano de
-ação para a Década Internacional das Línguas Indígenas (IDL 2022-2032), decretada pela UNESCO a fim de fortalecer políticas linguísticas, processos socioculturais
-próprios e estratégias de educação e circulação de conhecimentos dos povos indígenas de todo o mundo. O Plano de Ação para a Década Internacional das Línguas Indígenas no
-Brasil aborda o lema “Nada para nós sem nós” e estabelece a participação efetiva dos povos indígenas nos processos de tomada de decisão, consulta, planejamento e
-implementação como princípios norteadores para a Década Internacional das Línguas Indígenas \cite{gtbrasil2021}.
+Diante dessa realidade, o Grupo de Trabalho (GT) do Brasil \cite{gtbrasil2021}, constituído de uma equipe composta por representantes indígenas de cada região do Brasil,
+lançou um plano de ação para a Década Internacional das Línguas Indígenas (IDL 2022-2032), decretada pela UNESCO, a fim de fortalecer políticas linguísticas, processos
+socioculturais próprios, estratégias de educação, e circulação de conhecimentos dos povos indígenas de todo o mundo. O Plano de Ação para a Década Internacional das
+Línguas Indígenas no Brasil aborda o lema “Nada para nós sem nós”, e estabelece a participação efetiva dos povos indígenas nos processos de tomada de decisão, consulta,
+planejamento e implementação como princípios norteadores para a Década Internacional das Línguas Indígenas \cite{gtbrasil2021}.
 
-Em parceria com a professora Altaci Corrêa Rubim - representante brasileira do Grupo de Trabalho Mundial da Década das Línguas Indígenas - e membros do GT do Brasil, foi
-desenvolvido o Multilind, aplicativo \textit{mobile} para mapeamento das línguas indígenas do Brasil. O aplicativo foi desenvolvido durante as disciplinas de Métodos de
-Desenvolvimento de Software (MDS) e Engenharia de Produto de Software (EPS) do Curso de Engenharia de Software da Universidade de Brasília - Campus Gama, por 9 membros,
-sob a licença MIT. Entre suas funcionalidades estão o mapeamento das línguas indígenas brasileiras, fornecendo informações a respeito de cada língua como tronco
-linguístico a que pertence; local em que é falada; palavras da língua; bem como sua tradução para o português indígena e o português formal, além da visualização de
-imagens associadas.
+Em parceria com a professora Altaci Corrêa Rubim\footnote{\url{https://amazoniareal.com.br/personagem/altaci-correa-rubim/}(último acesso: Novembro 2022)} - representante
+brasileira do Grupo de Trabalho Mundial da Década das Línguas Indígenas - e membros do GT do Brasil, foi desenvolvido o
+Multilind\footnote{\url{https://github.com/fga-eps-mds/2021.1-Multilind-Docs}}, aplicativo \textit{mobile} para mapeamento das línguas indígenas do Brasil. O aplicativo
+foi desenvolvido durante as disciplinas de Métodos de Desenvolvimento de Software (MDS) e Engenharia de Produto de Software (EPS) do Curso de Engenharia de Software da
+Universidade de Brasília - Campus Gama, por nove membros, sob a licença MIT. Entre suas funcionalidades, estão o mapeamento das línguas indígenas brasileiras, fornecendo
+informações a respeito de cada língua como tronco linguístico a que pertence; local em que é falada; palavras da língua; bem como sua tradução para o português indígena e
+o português formal, além da visualização de imagens associadas.
 
 A aplicação foi desenvolvida utilizando \textit{React Native}, \textit{framework} escrito em \textit{JavaScript}, que é utilizado para escrever aplicações reais e de
-renderização nativa tanto para iOS quanto para \textit{Android} \cite{eiseman2017}.
+renderização nativa, tanto para iOS quanto para \textit{Android} \cite{eiseman2017}.
 
-O desenvolvimento do aplicativo foi guiado por testes de aceitação, cuja finalidade é a simulação de operações de rotina do sistema de modo a verificar se seu
-comportamento está de acordo com o solicitado \cite{neto2015}, realizado pela equipe do GT do Brasil.
+O desenvolvimento do aplicativo foi guiado por testes de aceitação, cuja finalidade, segundo \citeonline{neto2015}, é a simulação de operações de rotina do sistema de
+modo a verificar se seu comportamento está de acordo com o solicitado e foi realizado pela equipe do GT do Brasil.
 
-Além da validação das histórias de usuários, os \textit{stakeholders} pontuaram, ainda, funcionalidades da aplicação que não foram projetadas de maneira efetiva aos
+Além da validação das histórias de usuários, os \textit{stakeholders} pontuaram sobre funcionalidades da aplicação que não foram projetadas de maneira efetiva aos
 usuários, afetando a usabilidade do sistema.
 
-Usabilidade é o termo técnico usado para descrever a qualidade de uso de uma interface \cite{bevan1995}. Trata-se de uma qualidade importante, pois interfaces com
-usabilidade aumentam a produtividade dos usuários, diminuem a ocorrência de erros e, por consequência, contribuem para a satisfação dos usuários \cite{winckler2022}.
+Usabilidade é o termo técnico usado para descrever a qualidade de uso de uma interface \cite{bevan1995}. Trata-se de uma qualidade importante, pois interfaces com um
+cuidado maior em termos de usabilidade aumentam a produtividade dos usuários, diminuem a ocorrência de erros e, por consequência, contribuem para a satisfação dos
+usuários \cite{winckler2022}.
 
 A respeito da usabilidade, não se pode deixar de citar a importância das heurísticas de Nielsen, diretrizes elaboradas para garantir que o usuário tenha uma boa
 experiência de uso. São elas: Visibilidade do status do sistema; compatibilidade do sistema com o mundo real; controle do usuário e liberdade; consistência e padrões;
