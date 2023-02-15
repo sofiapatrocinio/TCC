@@ -1,9 +1,8 @@
 # Fdb version 3
-["bibtex tcc"] 1680698704 "tcc.aux" "tcc.bbl" "tcc" 1680698704
-  "abntex2-alf.bst" 0 -1 0 ""
+["bibtex tcc"] 1680789110 "tcc.aux" "tcc.bbl" "tcc" 1680789110
   "abntex2-options.bib" 0 -1 0 ""
-  "bibliografia.bib" 1680350155 4930 6902db78816a78cff6f55ed18f0ceed3 ""
-  "tcc.aux" 1680357215 17126 48ea40c75d67499ff527a34519d398d7 "pdflatex"
+  "bibliografia.bib" 1680789110 5950 3f7fc85b86722a15c6c1d3798bb635a0 ""
+  "tcc.aux" 1680789083 14375 da4d99031ca0a936cbb1a15c41db1af1 "pdflatex"
   (generated)
   "tcc.bbl"
   "tcc.blg"
@@ -11,14 +10,15 @@
   "/home/sofia/TCC/latex/tcc.dvi" 1680350449 169884 4e3a1d074493a60026e603c0879db331 "pdflatex"
   (generated)
   "/home/sofia/TCC/latex/tcc.pdf"
-["makeindex tcc.idx"] 1670190536 "tcc.idx" "tcc.ind" "tcc" 1680698704
-  "tcc.idx" 1680357214 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex tcc.idx"] 1670190536 "tcc.idx" "tcc.ind" "tcc" 1680789110
+  "tcc.idx" 1680789083 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "tcc.ilg"
   "tcc.ind"
-["pdflatex"] 1680698704 "/home/sofia/TCC/latex/tcc.tex" "/home/sofia/TCC/latex/tcc.dvi" "tcc" 1680698704
+["pdflatex"] 1680789110 "/home/sofia/TCC/latex/tcc.tex" "/home/sofia/TCC/latex/tcc.dvi" "tcc" 1680789110
   "/etc/texmf/web2c/texmf.cnf" 1680351388 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/sofia/TCC/latex/tcc.aux" 1680357215 17126 48ea40c75d67499ff527a34519d398d7 ""
+  "/home/sofia/TCC/latex/tcc.aux" 1680789083 14375 da4d99031ca0a936cbb1a15c41db1af1 ""
+  "/home/sofia/TCC/latex/tcc.brf" 0 -1 0 ""
   "/home/sofia/TCC/latex/tcc.tex" 1680351836 943 39d82d4ba4a79abb6587cf3254dc6da1 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf" 1496785618 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
   "/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def" 1581719732 87344 ec128793fb5196bbcc1741e5366ddac1 ""
@@ -69,8 +69,6 @@
   "editaveis/abreviaturas.tex" 1680350155 411 663e98857939dbc12cc58dd8149b3a1e ""
   "editaveis/abstract.tex" 1680350155 224 da4fcd23320e73c64e091e00b4c22d38 ""
   "editaveis/agradecimentos.tex" 1680350155 429 8df1463f55c2f849ccf519e81e6c42f2 ""
-  "editaveis/anexos.tex" 1680350155 151 4e45b4c61efda6c3047133a48b77f685 ""
-  "editaveis/apendices.tex" 1680350155 175 dafcb7f060ebe7e2efc68311aa694cbb ""
   "editaveis/consideracoes.tex" 1680350155 3243 ba5f4311c5679669a8054238ab21cf39 ""
   "editaveis/dedicatoria.tex" 1680350155 319 b9773138c56cec83c2330f7c1094bec8 ""
   "editaveis/elementosdopostexto.tex" 1680350155 3085 0d7f50c9f41cdc05ee02e8ec7d7f6ee1 ""
@@ -79,7 +77,7 @@
   "editaveis/errata.tex" 1680350155 805 6026bdd93ef4b44ac8b27a5a7ce69d22 ""
   "editaveis/informacoes.tex" 1680350155 716 613708832fac8d1561157a6f13481bbc ""
   "editaveis/introducao.tex" 1680352415 11712 f6a0c19f7fcb30b691394dacab69d47f ""
-  "editaveis/referencial.tex" 1680697195 489 3ccd179551ee214d0daf3071366d3794 ""
+  "editaveis/referencial.tex" 1680789067 1522 d921cb3f6cad9638ff14463a558e2a9c ""
   "editaveis/resumo.tex" 1680350155 834 509a9ee5198999277833c736a7df29cf ""
   "editaveis/simbolos.tex" 1680350155 170 04d69b66c41be80da8dba8fa94a74c0e ""
   "editaveis/textoepostexto.tex" 1680350155 26 1b9a417edd750db227d1cae55ec25304 ""
@@ -94,19 +92,16 @@
   "fixos/listasAutomaticas.tex" 1680350155 140 3d9123a8ba3eeb3da4258aa67285a406 ""
   "fixos/pacotes.tex" 1680357208 495 dfe53fd4c58eb380d49547f3d483071a ""
   "fixos/setup.tex" 1680350155 641 ad68ffb8f767383eb90edeeb2a1db271 ""
-  "tcc.aux" 1680357215 17126 48ea40c75d67499ff527a34519d398d7 "pdflatex"
-  "tcc.bbl" 1680357213 3574 23f4c2832522bf3d8bdc03ce8162075a "bibtex tcc"
-  "tcc.brf" 1680357215 848 9f14b0dd1d89d9c0d1487ec5b3316141 "pdflatex"
+  "tcc.aux" 1680789083 14375 da4d99031ca0a936cbb1a15c41db1af1 "pdflatex"
+  "tcc.bbl" 1680789082 4486 0d915b2831eb68c381cd94bae4648a04 "bibtex tcc"
+  "tcc.brf" 1680789083 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "tcc.ind" 1680350155 0 d41d8cd98f00b204e9800998ecf8427e "makeindex tcc.idx"
-  "tcc.lof" 1680357215 129 159fb3b6fa45dc06becd0cfd376d23be "pdflatex"
-  "tcc.lot" 1680357215 144 0a182cc953668f8c97e1dc07e0bccf5a "pdflatex"
+  "tcc.lof" 1680789082 129 47399df86f7a90212390cfed52d7f263 "pdflatex"
+  "tcc.lot" 1680789082 144 c74bdca32abb01163ca4e9c5488c2d7a "pdflatex"
   "tcc.tex" 1680351836 943 39d82d4ba4a79abb6587cf3254dc6da1 ""
-  "tcc.toc" 1680357215 5225 8f707d4fd4c19a599c64751f61806a30 "pdflatex"
+  "tcc.toc" 1680789082 5194 14c30e3b7dccfa43d561a970283701c7 "pdflatex"
   (generated)
-  "tcc.toc"
-  "tcc.aux"
-  "/home/sofia/TCC/latex/tcc.log"
   "tcc.brf"
-  "tcc.lof"
-  "tcc.lot"
+  "/home/sofia/TCC/latex/tcc.log"
   "/home/sofia/TCC/latex/tcc.dvi"
+  "tcc.aux"
