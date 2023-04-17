@@ -24,6 +24,12 @@ orçamento. É essencial que informações baseadas em pesquisas com usuários s
 usadas para criar personas precisas em sua concepção, a fim de evitar que falhem 
 pelo não uso com rigor de dados e metodologias \cite{pruitt2006}.
 
+As personas são resultado de uma investigação que analisa as características dos 
+usuários e descreve seus perfis, sendo que apenas seus nomes e detalhes pessoais 
+são fictícios. Quanto mais específicas forem as personas, mais eficazes elas serão 
+como ferramentas de design e comunicação e fornecerão uma compreensão mais profunda 
+dos usuários e suas necessidades. \cite{barbosa2010}
+
 \section{Usabilidade}
 \label{sec:Usabilidade}
 
@@ -109,6 +115,42 @@ A avaliação dessas métricas é importante para garantir que o sistema seja ef
 com menor número de erros e com menor uso de recursos, pois caso exija muito tempo e esforço dos usuários para realizar simples tarefas pode 
 ser considerado ineficiente e afetar negativamente a experiência do usuário.
 
+\subsection{Medição}
+\label{sec:Medição1}
+
+O teste de usabilidade visa a avaliar a usabilidade de um sistema interativo a partir de experiências de uso dos seus usuários-alvo \cite{rubin2011}. 
+Para realizar as medições desejadas, um grupo de usuários é convidado a realizar um conjunto de tarefas usando o sistema em um ambiente controlado. Durante a experiência de 
+uso são registrados dados sobre o desempenho dos participantes na realização das tarefas, podendo medir, por exemplo, o grau de sucesso da execução de tarefas, o total de 
+erros cometidos, tempo de execução para executá-las e número de ajudas necessárias \cite{barbosa2010}.
+
+O objetivo do teste de usabilidade é fornecer informações por meio da coleta de dados para detectar e corrigir falhas de usabilidade e assegurar que os sistema seja valorizado 
+e útil para o público-alvo, fácil de aprender, ajude a pessoas a serem eficazes e eficientes nas tarefas que desejam executar e é satisfatório de usar \cite{rubin2011}. 
+
+Algumas atividades devem ser seguidas para realizar o teste de usabilidade, como pode ser visto na tabela \ref{tab01}.
+
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[h]
+    \centering
+    \caption{Teste de Usabilidade \protect\cite{barbosa2010}}
+    \label{tab01}
+    \begin{tabular}{|l|l|}
+    \hline
+    Atividade                   & Tarefa                                                                                       \\ \hline
+    \multirow{4}{*}{Preparação} &
+      \begin{tabular}[c]{@{}l@{}}Definir tarefas para os participantes executarem\end{tabular} \\ \cline{2-2} 
+                                & \begin{tabular}[c]{@{}l@{}}Definir o perfil dos participantes e recrutá-los\end{tabular}    \\ \cline{2-2} 
+                                & \begin{tabular}[c]{@{}l@{}}Preparar material para observar e registrar o uso\end{tabular} \\ \cline{2-2} 
+                                & Executar um teste-piloto                                                                     \\ \hline
+    Coleta de Dados &
+      \begin{tabular}[c]{@{}l@{}}Observar e registrar a performance e a opinião \\ dos participantes durante sessões de uso \\controladas\end{tabular} \\ \hline
+    Interpretação &
+      \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Reunir, contabilizar e sumarizar os dados \\coletados dos participantes\end{tabular}} \\ \cline{1-1}
+    Consolidação dos Resultados &                                                                                              \\ \hline
+    Relato dos Resultados       & Relatar a performance e a opinião dos participantes                                          \\ \hline
+    \end{tabular}
+\end{table}
+
 \section{Experiência de Usuário}
 \label{sec:Experiência de Usuário}
 
@@ -125,7 +167,7 @@ Os autores \citeonline{hassenzahl2006} propõem ainda que a experiência de usu�
 e do contexto em que a interação ocorre. 
 
 \subsection{Medição}
-\label{sec:Medição}
+\label{sec:Medição2}
 
 A fim de assegurar uma experiência de usuário satisfatória em um produto final ou de aprimorá-la ao longo do ciclo de desenvolvimento, é fundamental realizar avaliações confiáveis e válidas. 
 O AttrakDiff é uma das ferramentas de avaliação disponíveis, projetada para avaliar a opinião do usuário em relação às suas experiências, à qualidade e à usabilidade de sistemas, levando em 
@@ -148,7 +190,7 @@ conta a perspectiva do usuário e de potenciais usuários.
 \end{description}
 
 As avaliações são realizadas baseadas em uma escala com sete pontos, que contém adjetivos opostos, para indicar qual desses 
-termos melhor representa a sua experiência e em que nível. \cite{natashatayana2015} \cite{hassenzahl2003}
+termos melhor representa a sua experiência e em que nível \cite{natashatayana2015} \cite{hassenzahl2003}.
 
 \begin{description}
     \item A análise desses resultados se dá por meio de três formas: 
@@ -158,18 +200,18 @@ termos melhor representa a sua experiência e em que nível. \cite{natashatayana
               \item Portfólio dos resultados: Composto por quadrantes e utiliza a análise da Qualidade Pragmática e da Qualidade 
               Hedônica sob a perspectiva de média;
     
-              \item Diagrama de valores médios: Apresenta a média das quatro dimensões do produto sob as quatro dimensões. \cite{providencia2021}
+              \item Diagrama de valores médios: Apresenta a média das quatro dimensões do produto sob as quatro dimensões \cite{providencia2021}.
           \end{itemize}
 \end{description}
 
 \citeonline{providencia2021} pontuam que em uma aplicação do Attrakdiff foi detectada uma insatisfação por parte dos respondentes por conta do tamanho 
 do questionário. Perante isto, desenvolveram uma adaptação da ferramenta, o Attrakdiff Reduzido (Attrakdiff-R) utilizando 18 pares de palavras e a mesma 
-escala de sete pontos Likert, como pode ser visto na Tabela \ref{tab01}.
+escala de sete pontos Likert, como pode ser visto na Tabela \ref{tab02}.
 
 \begin{table}[h]
     \centering
     \caption{Pares de palavras do Attrakdiff-R}
-    \label{tab01}
+    \label{tab02}
     \begin{tabular}{|c|ll|}
     \hline
     Dimensão             & \multicolumn{2}{c|}{Par de Palavras}                                 \\ \hline
@@ -193,3 +235,7 @@ escala de sete pontos Likert, como pode ser visto na Tabela \ref{tab01}.
                          & \multicolumn{1}{l|}{Desencorajador}          & Motivador             \\ \hline
     \end{tabular}
 \end{table}
+
+O tipo de avaliação a ser empregado utilizando a ferramenta pode variar de acordo com o contexto, sendo eles Avaliação Única, aplicado uma única vez para avaliar 
+a experiência do usuário, Teste A/B, para avaliar duas versões diferentes do mesmo sistema e a Comparação Antes e Depois, em que é aplicado o AttrakDiff antes e 
+depois de uma mudança ou melhoria no sistema, para avaliar a eficácia da mudança \cite{nzongo2018}.
