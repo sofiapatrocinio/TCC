@@ -3,9 +3,7 @@
 Este capítulo tem como propósito descrever o referencial tecnológico utilizado no 
 desenvolvimento deste trabalho, abordando as ferramentas e tecnologias empregadas 
 tanto na parte escrita quanto na parte prática, que engloba a prototipação, 
-desenvolvimento e gerenciamento de versões. Ao longo deste capítulo, serão apresentadas 
-as diversas categorias de ferramentas utilizadas, incluindo pesquisa e escrita, 
-prototipação, avaliação e validação, e desenvolvimento.
+desenvolvimento e gerenciamento de versões.
 
 \section{LaTeX}
 \label{sec:Latex}
@@ -50,10 +48,10 @@ dos diferentes serviços da aplicação.
 \label{sec:Git e GiHub}
 Git é um sistema de controle de versão, que foi projetado para rastrear alterações em arquivos e diretórios. Através dele é 
 possível manter um histórico de todas as alterações feitas em um repositório de código, permitindo acessar versões anteriores, 
-comparar mudanças e trabalhar em paralelo em diferentes ramos (\textit{branches}).
+comparar mudanças e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
 
 Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
-versão. Permite a hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software}.
+versão. Permite a hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
 
 Cada edição deste documento e do código-fonte da aplicação Multilind foi versionada por meio do Git e armazenados pelo GitHub. 
 
@@ -62,7 +60,7 @@ Cada edição deste documento e do código-fonte da aplicação Multilind foi ve
 React Native é um framework baseado no React que permite o desenvolvimento de aplicativos móveis usando JavaScript. Uma das 
 principais vantagens do React Native em relação a outros frameworks é a capacidade de converter o código desenvolvido para a 
 linguagem nativa do sistema operacional, resultando em um desempenho mais fluido e eficiente. Com o React Native, é possível 
-criar aplicativos tanto para Android quanto para iOS, aproveitando o mesmo código JavaScript.
+criar aplicativos tanto para Android quanto para iOS, aproveitando o mesmo código JavaScript \cite{reactnative}.
 
 Foi utilizado o React Native durante o desenvolvimento \textit{front-end} desta aplicação em conjunto com o Expo, que facilita 
 o processo de desenvolvimento de aplicativos React Native e elimina a necessidade de configurações complexas, fornecendo ferramentas 
@@ -71,7 +69,7 @@ e serviços que facilitam a criação, teste e publicação de aplicativos multi
 \section{Expo}
 \label{sec:Expo}
 Expo é uma plataforma de código aberto que facilita a criação de aplicativos React Native. Possui ferramentas que  
-possibilitam ter uma abordagem simplificada para criação e teste de aplicativos.
+possibilitam ter uma abordagem simplificada para criação e teste de aplicativos \cite{expo}.
 
 \begin{description}
     \item Entre as ferramentas que compõem o Expo:
@@ -90,7 +88,7 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
 \section{Node.js}
 \label{sec:Node.js}
 Node.js é um ambiente de execução JavaScript de código aberto que permite executar JavaScript do lado do servidor. Possui como características 
-a flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona.
+a flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
 
 No contexto do projeto, está sendo utilizado para fazer o tratamento da base dos bancos de dados, e para criar 
 APIs (Interfaces de Programação de Aplicativos) que são consumidas pelo aplicativo \textit{front-end}.
@@ -100,7 +98,7 @@ Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o pr
 \section{Express.js}
 \label{sec:Express.js}
 Express.js é uma biblioteca para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Fornece uma estrutura leve e flexível para 
-lidar com roteamento, gerenciamento de solicitações e respostas HTTP, middlewares etc.
+lidar com roteamento, gerenciamento de solicitações e respostas HTTP, middlewares etc \cite{expressjs}.
 
 Na aplicação Multilind, está sendo utilizada para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados e respostas 
 no formato e código de status adequados. Além disso, o uso de middlewares para autenticação e validação de parâmetros das requisições também está presente.
@@ -109,10 +107,17 @@ no formato e código de status adequados. Além disso, o uso de middlewares para
 \label{sec:Figma}
 O Figma é uma ferramenta de design de interface de usuário (UI) utilizada para criar protótipos interativos e designs de alta fidelidade, de forma  
 colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compartilhamento de links de visualização interativos, simulando a experiência 
-do usuário ao utilizar a aplicação de fato.
+do usuário ao utilizar a aplicação de fato \cite{figma}.
 
 Toda a prototipação do aplicativo Multilind foi desenvolvida de forma colaborativa no Figma pelos membros da equipe de desenvolvimento, conforme pode ser visto 
-na Figura X.
+na Figura \ref{fig03}.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/prototype.eps}}
+	\caption{Protótipo de Alta Fidelidade}
+	\label{fig03}
+\end{figure}
 
 \section{Maze}
 \label{sec:Maze}
@@ -121,12 +126,35 @@ os designs e garantir melhorias.
 
 Além disso, o Maze oferece integração com o Figma, permitindo que o protótipo desenhado no Figma seja testado e validado no Maze. Dessa forma, permite que os usuários 
 testem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação da usabilidade 
-e experiência de usuário de uma determinada aplicação.
+e experiência de usuário de uma determinada aplicação \cite{maze}.
 
 \section{Google Forms}
 \label{sec:Google Forms}
-O Google Forms é uma ferramenta online fornecida pelo Google que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
+O Google Forms \cite{googleforms} é uma ferramenta online fornecida pelo Google que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
 utilizado para coletar dados das stakeholders a respeito da experiência de usuário na aplicação.
 
 De forma mais metodológica, será utilizado para realizar o questionário AttrakDiff e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionadas 
 os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação à usabilidade e funcionalidade do produto.
+
+\section{Resumo do Capítulo}
+\label{sec:Resumo do Capítulo}
+Ao longo deste capítulo foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração desta monografia, desde a pesquisa e escrita até o desenvolvimento. 
+O Quadro \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
+
+\begin{table}[h]
+    \centering
+    \caption{Principais ferramentas do Referencial Tecnológico}
+    \label{tab03}
+    \resizebox{\columnwidth}{!}{\begin{tabular}{|l|l|l|}
+        \hline
+        \textbf{Nome}               & \textbf{Descrição}                                                     & \textbf{Link}                           \\ \hline
+        LaTeX              & Ferramenta para escrita do documento                          & \href{https://www.latex-project.org/}{https://www.latex-project.org/} \\ \hline
+        Docker             & Plataforma de virtualização de ambiente                       & \href{https://www.docker.com/}{https://www.docker.com/}       \\ \hline
+        Visual Studio Code & Editor de código-fonte e de escrita do documento              & \href{https://code.visualstudio.com/}{https://code.visualstudio.com/} \\ \hline
+        Git                & Versionamento de código-fonte e texto da monografia           & \href{https://git-scm.com/}{https://git-scm.com/}           \\ \hline
+        GitHub             & Hospedagm dos repositórios da aplicação e monografia          & \href{https://github.com/}{https://github.com/}            \\ \hline
+        React Native       & Framework que permite o desenvolvimento de aplicativos móveis & \href{https://reactnative.dev/}{https://reactnative.dev/}       \\ \hline
+        Node.js            & Ambiente de execução do desenvolvimento back-end da aplicação & \href{https://nodejs.org/}{https://nodejs.org/}            \\ \hline
+        Figma              & Ferramenta de design de interface de usuário                  & \href{https://www.figma.com/}{https://www.figma.com/}         \\ \hline
+    \end{tabular}}
+\end{table}
