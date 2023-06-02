@@ -1,11 +1,13 @@
 \chapter[Referencial Tecnológico]{Referencial Tecnológico}
+Este capítulo tem como propósito descrever o referencial tecnológico utilizado no desenvolvimento
+deste trabalho, abordando as ferramentas e tecnologias empregadas, com ênfase em: (i) \hyperref[sec:Apoio à Escrita]{Apoio à Escrita}; 
+(ii) \hyperref[sec:Apoio à Prática]{Apoio à Prática}, que engloba a Prototipação, Desenvolvimento, Gerenciamento de Versões, e Análise 
+de Resultados, e (iii) Apoio Complementar. Por fim, tem-se o \hyperref[sec:Resumo do Capítulo]{Resumo do Capítulo}.
 
-Este capítulo tem como propósito descrever o referencial tecnológico utilizado no 
-desenvolvimento deste trabalho, abordando as ferramentas e tecnologias empregadas 
-tanto na parte escrita quanto na parte prática, que engloba a prototipação, 
-desenvolvimento e gerenciamento de versões.
+\section{Apoio à Escrita}
+\label{sec:Apoio à Escrita}
 
-\section{LaTeX}
+\subsection{LaTeX}
 \label{sec:Latex}
 LaTeX \cite{latex} é uma ferramenta para escrita de documentos acadêmicos e científicos que oferece 
 recursos de formatação e organização de texto. É baseada no sistema de composição tipográfica 
@@ -19,7 +21,7 @@ A fim de garantir uma experiência consistente e facilitar o processo de compila
 adotado o uso do Docker em conjunto com o Template TCC FGA-UnB, desenvolvido pelo professor 
 Edson Alves. 
 
-\section{Docker}
+\subsection{Docker}
 \label{sec:Docker}
 Docker é uma plataforma \textit{open source} de virtualização que permite empacotar um ambiente completo em 
 uma imagem, incluindo todas as dependências necessárias, garantindo que o projeto seja 
@@ -30,13 +32,45 @@ O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiênc
 processo de compilação de documentos e também no desenvolvimento \textit{backend} da aplicação a fim de evitar problemas 
 de compatibilidade.
 
-\section{LaTeX Workshop}
+\subsection{LaTeX Workshop}
 \label{sec:LaTeX Workshop}
 LaTeX Workshop é uma extensão para o Visual Studio Code útil para edição, compilação e visualização de 
 documentos LaTeX diretamente no editor de texto Visual Studio Code. A ferramenta fornece compilação 
 automática sempre que há alteração no documento, facilitando a visualização rápida das informações \cite{latexworkshop}.
 
-\section{Visual Studio Code}
+\section{Apoio à Prática}
+\label{sec:Apoio à Prática}
+Seguem as principais ferramentas de apoio às atividades de Prototipação, Desenvolvimento, Gerenciamento de Versões, 
+e Análise de Resultados.
+
+\subsection{Prototipação}
+\label{sec:Prototipação}
+Será necessário prototipar novas telas, orientadas às melhorias no aplicativo, e visando planejamento e validações 
+junto ao público alvo, antes mesmo do desenvolvimento dessas melhorias no aplicativo em si. Nesse contexto, deve-se 
+usar o Figma.
+
+\subsubsection{Figma}
+\label{sec:Figma}
+O Figma é uma ferramenta de design de interface de usuário (UI) utilizada para criar protótipos interativos e designs de alta fidelidade, de forma  
+colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compartilhamento de links de visualização interativos, simulando a experiência 
+do usuário ao utilizar a aplicação de fato \cite{figma}.
+
+Toda a prototipação do aplicativo Multilind foi desenvolvida de forma colaborativa no Figma pelos membros da equipe de desenvolvimento, conforme pode ser visto 
+na Figura \ref{fig03}.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/prototype.eps}}
+	\caption{Protótipo de Alta Fidelidade}
+	\label{fig03}
+\end{figure}
+
+\subsection{Desenvolvimento}
+\label{sec:Desenvolvimento}
+O desenvolvimento das melhorias no aplicativo será orientado ao arcabouço tecnológico já utilizado na primeira versão do Multilind. Nesse sentido, seguem as 
+principais tecnologias identificadas. Havendo a necessidade de alterações nessas escolhas, as mesmas serão devidamente justificadas.
+
+\subsubsection{Visual Studio Code}
 \label{sec:Visual Studio Code}
 Visual Studio Code é um editor de código-fonte gratuito de código aberto. Trata-se de um ambiente de desenvolvimento 
 integrado (IDE) que oferece suporte a diversas linguagens de programação e tecnologias \cite{vscode}.
@@ -44,18 +78,7 @@ integrado (IDE) que oferece suporte a diversas linguagens de programação e tec
 No contexto da monografia, é utilizado para escrita do próprio documento LaTeX, bem como para o desenvolvimento do código-fonte 
 dos diferentes serviços da aplicação.
 
-\section{Git e GiHub}
-\label{sec:Git e GiHub}
-Git é um sistema de controle de versão, que foi projetado para rastrear alterações em arquivos e diretórios. Através dele é 
-possível manter um histórico de todas as alterações feitas em um repositório de código, permitindo acessar versões anteriores, 
-comparar mudanças e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
-
-Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
-versão. Permite a hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
-
-Cada edição deste documento e do código-fonte da aplicação Multilind foi versionada por meio do Git e armazenados pelo GitHub. 
-
-\section{React Native}
+\subsubsection{React Native}
 \label{sec:React Native}
 React Native é um framework baseado no React que permite o desenvolvimento de aplicativos móveis usando JavaScript. Uma das 
 principais vantagens do React Native em relação a outros frameworks é a capacidade de converter o código desenvolvido para a 
@@ -66,7 +89,7 @@ Foi utilizado o React Native durante o desenvolvimento \textit{front-end} desta 
 o processo de desenvolvimento de aplicativos React Native e elimina a necessidade de configurações complexas, fornecendo ferramentas 
 e serviços que facilitam a criação, teste e publicação de aplicativos multiplataforma.
 
-\section{Expo}
+\subsubsection{Expo}
 \label{sec:Expo}
 Expo é uma plataforma de código aberto que facilita a criação de aplicativos React Native. Possui ferramentas que  
 possibilitam ter uma abordagem simplificada para criação e teste de aplicativos \cite{expo}.
@@ -85,7 +108,7 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
           \end{itemize}
 \end{description}
 
-\section{Node.js}
+\subsubsection{Node.js}
 \label{sec:Node.js}
 Node.js é um ambiente de execução JavaScript de código aberto que permite executar JavaScript do lado do servidor. Possui como características 
 a flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
@@ -95,7 +118,7 @@ APIs (Interfaces de Programação de Aplicativos) que são consumidas pelo aplic
 
 Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o processo de desenvolvimento e tratamento de solicitações e respostas HTTP.
 
-\section{Express.js}
+\subsubsection{Express.js}
 \label{sec:Express.js}
 Express.js é uma biblioteca para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Fornece uma estrutura leve e flexível para 
 lidar com roteamento, gerenciamento de solicitações e respostas HTTP, middlewares etc \cite{expressjs}.
@@ -103,23 +126,28 @@ lidar com roteamento, gerenciamento de solicitações e respostas HTTP, middlewa
 Na aplicação Multilind, está sendo utilizada para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados e respostas 
 no formato e código de status adequados. Além disso, o uso de middlewares para autenticação e validação de parâmetros das requisições também está presente.
 
-\section{Figma}
-\label{sec:Figma}
-O Figma é uma ferramenta de design de interface de usuário (UI) utilizada para criar protótipos interativos e designs de alta fidelidade, de forma  
-colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compartilhamento de links de visualização interativos, simulando a experiência 
-do usuário ao utilizar a aplicação de fato \cite{figma}.
+\subsection{Gerenciamento de Versões}
+\label{sec:Gerenciamento de Versões}
+Ao longo do processo de melhorias, o versionamento torna-se necessário, visando obter um processo rastreável e de fácil apresentação sobre todas as evoluções 
+proporcionadas. Além disso, há necessidade de manter o novo aplicativo hospedado em um repositório. Nesse contexto, faz-se uso do Git e GitHub.
 
-Toda a prototipação do aplicativo Multilind foi desenvolvida de forma colaborativa no Figma pelos membros da equipe de desenvolvimento, conforme pode ser visto 
-na Figura \ref{fig03}.
+\subsubsection{Git e GiHub}
+\label{sec:Git e GiHub}
+Git é um sistema de controle de versão, que foi projetado para rastrear alterações em arquivos e diretórios. Através dele é 
+possível manter um histórico de todas as alterações feitas em um repositório de código, permitindo acessar versões anteriores, 
+comparar mudanças e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
 
-\begin{figure}[h!]
-	\centering
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/prototype.eps}}
-	\caption{Protótipo de Alta Fidelidade}
-	\label{fig03}
-\end{figure}
+Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
+versão. Permite a hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
 
-\section{Maze}
+Cada edição deste documento e do código-fonte da aplicação Multilind foi versionada por meio do Git e armazenados pelo GitHub. 
+
+\subsection{Análise de Resultados}
+\label{sec:Análise de Resultados}
+Seja para validar os protótipos; ou as versões intermediárias obtidas; ou ainda a versão com as melhorias incorporadas, há necessidade de ferramentas específicas, 
+tais como: Maze e Google Forms.
+
+\subsubsection{Maze}
 \label{sec:Maze}
 Maze é uma ferramenta de teste de usabilidade que permite testar site, aplicativo ou protótipo com usuários reais. Por meio dela é possível coletar feedback sobre 
 os designs e garantir melhorias.
@@ -128,7 +156,7 @@ Além disso, o Maze oferece integração com o Figma, permitindo que o protótip
 testem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação da usabilidade 
 e experiência de usuário de uma determinada aplicação \cite{maze}.
 
-\section{Google Forms}
+\subsubsection{Google Forms}
 \label{sec:Google Forms}
 O Google Forms \cite{googleforms} é uma ferramenta online fornecida pelo Google que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
 utilizado para coletar dados das stakeholders a respeito da experiência de usuário na aplicação.
@@ -136,8 +164,30 @@ utilizado para coletar dados das stakeholders a respeito da experiência de usu�
 De forma mais metodológica, será utilizado para realizar o questionário AttrakDiff e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionadas 
 os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação à usabilidade e funcionalidade do produto.
 
+\section{Apoio Complementar}
+\label{sec:Apoio Complementar}
+Seguem outros recursos que estão sendo consumidos para plena viabilização trabalho.
+
+\subsection{Ferramenta de Comunicação}
+\label{sec:Ferramenta de Comunicação}
+\begin{description}
+    \item Visando conferir facilidades na comunicação entre autora e orientadora, estão sendo utilizadas as seguintes ferramentas:
+          \begin{itemize}
+              \item Telegram - para mensagens rápidas;
+
+              \item Slack - para manter os rastros das orientações, e
+
+              \item Teams - para reuniões semanais.
+          \end{itemize}
+\end{description}
+
+\subsection{Ferramenta de Modelagem}
+\label{sec:Ferramenta de Modelagem}
+Como há necessidade de modelar determinados aspectos, visando uma adequada apresentação de artefatos na monografia, faz-se uso da LucidChart, com base em notações como: UML e BPMN. Um exemplo de 
+uso dessa ferramenta pode ser conferido no Capítulo 4 - Metodologia, nas especificações dos processos inerentes às atividades a serem realizadas ao longo desse trabalho.
+
 \section{Resumo do Capítulo}
-\label{sec:Resumo do Capítulo}
+\label{sec:Resumo do Capítulo 2}
 Ao longo deste capítulo foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração desta monografia, desde a pesquisa e escrita até o desenvolvimento. 
 O Quadro \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
 
