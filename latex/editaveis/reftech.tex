@@ -8,6 +8,7 @@ e \hyperref[sec:Análise de Resultados]{Análise de Resultados}, e (iii) \hyperr
 
 \section{Apoio à Escrita}
 \label{sec:Apoio à Escrita}
+Seguem as principais ferramentas utililizadas na elaboração dessa monografia, incluindo formatação do texto e compilação da documentação.
 
 \subsection{LaTeX}
 \label{sec:Latex}
@@ -15,13 +16,14 @@ LaTeX \cite{latex} é uma ferramenta para escrita de documentos acadêmicos e ci
 recursos de formatação e organização de texto. É baseada no sistema de composição tipográfica 
 TeX, desenvolvido por Donald Knuth na década de 1970.
 
-Esta monografia utiliza o LaTeX para a composição textual, além disso a referência bibliográfica 
-é realizada de acordo com o padrão BibTeX, que facilita a formatação e organização das citações e 
+Esta monografia utiliza o LaTeX para a composição textual. Além disso, a referência bibliográfica 
+é realizada de acordo com o padrão BibTeX, que facilita a formatação e a organização das citações e 
 referências bibliográficas em documentos escritos em LaTeX.
 
 A fim de garantir uma experiência consistente e facilitar o processo de compilação do documento LaTeX, foi 
 adotado o uso do Docker em conjunto com o Template TCC FGA-UnB, desenvolvido pelo professor 
-Edson Alves. 
+Edson Alves\footnote{Template TCC FGA-UnB. Disponível
+em: \url{https://github.com/fga-unb/template-latex-tcc} (último acesso: Julho 2023)}.
 
 \subsection{Docker}
 \label{sec:Docker}
@@ -30,8 +32,8 @@ uma imagem, incluindo todas as dependências necessárias, garantindo que o proj
 compilado de maneira consistente, independentemente do sistema operacional ou das configurações do computador   
 utilizado \cite{docker}.
 
-O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiência consistente e facilitar o 
-processo de compilação de documentos e também no desenvolvimento \textit{backend} da aplicação a fim de evitar problemas 
+O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiência consistente, facilitar o 
+processo de compilação de documentos, e também no desenvolvimento \textit{backend} da aplicação. O intuito é evitar problemas 
 de compatibilidade.
 
 \subsection{LaTeX Workshop}
@@ -53,12 +55,12 @@ usar o Figma.
 
 \subsubsection{Figma}
 \label{sec:Figma}
-O Figma é uma ferramenta de design de interface de usuário (UI) utilizada para criar protótipos interativos e designs de alta fidelidade, de forma  
-colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compartilhamento de links de visualização interativos, simulando a experiência 
+O Figma é uma ferramenta de \textit{design} de interface de usuário (UI) utilizada para criar protótipos interativos e \textit{designs} de alta fidelidade, de forma  
+colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compartilhamento de \textit{links} de visualização interativos, simulando a experiência 
 do usuário ao utilizar a aplicação de fato \cite{figma}.
 
 Toda a prototipação do aplicativo Multilind foi desenvolvida de forma colaborativa no Figma pelos membros da equipe de desenvolvimento, conforme pode ser visto 
-na Figura \ref{fig03}.
+na Figura \ref{fig03}. Nesse sentido, serão incorporadas melhorias nos protótipos, visando novas validações junto ao público alvo.  
 
 \begin{figure}[h!]
 	\centering
@@ -74,7 +76,7 @@ principais tecnologias identificadas. Havendo a necessidade de alterações ness
 
 \subsubsection{Visual Studio Code}
 \label{sec:Visual Studio Code}
-Visual Studio Code é um editor de código-fonte gratuito de código aberto. Trata-se de um ambiente de desenvolvimento 
+Visual Studio Code é um editor gratuito de código aberto. Trata-se de um ambiente de desenvolvimento 
 integrado (IDE) que oferece suporte a diversas linguagens de programação e tecnologias \cite{vscode}.
 
 No contexto da monografia, é utilizado para escrita do próprio documento LaTeX, bem como para o desenvolvimento do código-fonte 
@@ -82,14 +84,14 @@ dos diferentes serviços da aplicação.
 
 \subsubsection{React Native}
 \label{sec:React Native}
-React Native é um framework baseado no React que permite o desenvolvimento de aplicativos móveis usando JavaScript. Uma das 
-principais vantagens do React Native em relação a outros frameworks é a capacidade de converter o código desenvolvido para a 
+React Native é um \textit{framework} baseado no React que permite o desenvolvimento de aplicativos móveis usando JavaScript. Uma das 
+principais vantagens do React Native em relação a outros \textit{frameworks} é a capacidade de converter o código desenvolvido para a 
 linguagem nativa do sistema operacional, resultando em um desempenho mais fluido e eficiente. Com o React Native, é possível 
 criar aplicativos tanto para Android quanto para iOS, aproveitando o mesmo código JavaScript \cite{reactnative}.
 
 Foi utilizado o React Native durante o desenvolvimento \textit{front-end} desta aplicação em conjunto com o Expo, que facilita 
-o processo de desenvolvimento de aplicativos React Native e elimina a necessidade de configurações complexas, fornecendo ferramentas 
-e serviços que facilitam a criação, teste e publicação de aplicativos multiplataforma.
+o processo de desenvolvimento de aplicativos React Native, e elimina a necessidade de configurações complexas, fornecendo ferramentas 
+e serviços que facilitam a criação, teste e a publicação de aplicativos multiplataforma.
 
 \subsubsection{Expo}
 \label{sec:Expo}
@@ -99,21 +101,21 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
 \begin{description}
     \item Entre as ferramentas que compõem o Expo:
           \begin{itemize}
-              \item Expo SDK - conjunto de bibliotecas, APIs e recursos para o desenvolvimento de aplicativos móveis que permite acesso 
-              à câmera, geolocalização, notificações push, armazenamento local etc;
+              \item Expo SDK - conjunto de bibliotecas, APIs e recursos para o desenvolvimento de aplicativos móveis que permite acesso aos 
+              recursos de câmera, geolocalização, notificações \textit{push}, armazenamento local, dentre outros;
 
               \item Expo Go - aplicativo disponível para iOS e Android que permite a visualização da aplicação em tempo real durante seu 
-              desenvolvimento;
+              desenvolvimento, e
 
-              \item Expo CLI - ferramenta de linha de comando que facilita a criação e configuração de projetos Expo, além de ferramentas para 
-              testar, executar em ambiente de desenvolvimento e publicá-lo nas lojas de aplicativos.
+              \item Expo CLI - ferramenta de linha de comando que facilita criação e configuração de projetos Expo, além de ferramentas para 
+              testar; executar em ambiente de desenvolvimento, e publicá-lo nas lojas de aplicativos.
           \end{itemize}
 \end{description}
 
 \subsubsection{Node.js}
 \label{sec:Node.js}
 Node.js é um ambiente de execução JavaScript de código aberto que permite executar JavaScript do lado do servidor. Possui como características 
-a flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
+flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
 
 No contexto do projeto, está sendo utilizado para fazer o tratamento da base dos bancos de dados, e para criar 
 APIs (Interfaces de Programação de Aplicativos) que são consumidas pelo aplicativo \textit{front-end}.
@@ -123,10 +125,10 @@ Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o pr
 \subsubsection{Express.js}
 \label{sec:Express.js}
 Express.js é uma biblioteca para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Fornece uma estrutura leve e flexível para 
-lidar com roteamento, gerenciamento de solicitações e respostas HTTP, middlewares etc \cite{expressjs}.
+lidar com roteamento, gerenciamento de solicitações e respostas HTTP, \textit{middlewares}, dentre outros \cite{expressjs}.
 
-Na aplicação Multilind, está sendo utilizada para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados e respostas 
-no formato e código de status adequados. Além disso, o uso de middlewares para autenticação e validação de parâmetros das requisições também está presente.
+Na aplicação Multilind, está sendo utilizada para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados, e respostas 
+no formato e código de status adequados. Além disso, o uso de \textit{middlewares} para autenticação e validação de parâmetros das requisições também está presente.
 
 \subsection{Gerenciamento de Versões}
 \label{sec:Gerenciamento de Versões}
@@ -135,14 +137,14 @@ proporcionadas. Além disso, há necessidade de manter o novo aplicativo hospeda
 
 \subsubsection{Git e GiHub}
 \label{sec:Git e GiHub}
-Git é um sistema de controle de versão, que foi projetado para rastrear alterações em arquivos e diretórios. Através dele é 
-possível manter um histórico de todas as alterações feitas em um repositório de código, permitindo acessar versões anteriores, 
-comparar mudanças e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
+Git é um sistema de controle de versão, que foi projetado para rastrear alterações em arquivos e diretórios. Através dele, é 
+possível manter um histórico de todas as alterações feitas em um repositório de código, permitindo acessar versões anteriores; 
+comparar mudanças, e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
 
 Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
-versão. Permite a hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
+versão. Permite hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
 
-Cada edição deste documento e do código-fonte da aplicação Multilind foi versionada por meio do Git e armazenados pelo GitHub. 
+Cada edição deste documento e do código-fonte da aplicação Multilind está sendo versionada por meio do Git e armazenados pelo GitHub. 
 
 \subsection{Análise de Resultados}
 \label{sec:Análise de Resultados}
@@ -151,20 +153,20 @@ tais como: Maze e Google Forms.
 
 \subsubsection{Maze}
 \label{sec:Maze}
-Maze é uma ferramenta de teste de usabilidade que permite testar site, aplicativo ou protótipo com usuários reais. Por meio dela é possível coletar feedback sobre 
-os designs e garantir melhorias.
+Maze é uma ferramenta de teste de usabilidade que permite testar site, aplicativo ou protótipo com usuários reais. Por meio dela, é possível coletar \textit{feedback} sobre 
+os \textit{designs} e garantir melhorias.
 
 Além disso, o Maze oferece integração com o Figma, permitindo que o protótipo desenhado no Figma seja testado e validado no Maze. Dessa forma, permite que os usuários 
-testem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação da usabilidade 
+testem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação de usabilidade 
 e experiência de usuário de uma determinada aplicação \cite{maze}.
 
 \subsubsection{Google Forms}
 \label{sec:Google Forms}
-O Google Forms \cite{googleforms} é uma ferramenta online fornecida pelo Google que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
-utilizado para coletar dados das stakeholders a respeito da experiência de usuário na aplicação.
+O Google Forms \cite{googleforms} é uma ferramenta \textit{online} fornecida pelo Google, que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
+utilizado para coletar dados dos \textit{stakeholders} a respeito da experiência de usuário na aplicação existente, sem a incorporação de melhorias.
 
-De forma mais metodológica, será utilizado para realizar o questionário AttrakDiff e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionadas 
-os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação à usabilidade e funcionalidade do produto.
+De forma mais metodológica, será utilizado para realizar o questionário AttrakDiff e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionados 
+os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação às usabilidade e funcionalidade do produto.
 
 \section{Apoio Complementar}
 \label{sec:Apoio Complementar}
@@ -187,11 +189,11 @@ Seguem outros recursos que estão sendo consumidos para plena viabilização tra
 \subsection{Ferramenta de Modelagem}
 \label{sec:Ferramenta de Modelagem}
 Como há necessidade de modelar determinados aspectos, visando uma adequada apresentação de artefatos na monografia, faz-se uso da LucidChart, com base em notações como: UML e BPMN. Um exemplo de 
-uso dessa ferramenta pode ser conferido no Capítulo 4 - Metodologia, nas especificações dos processos inerentes às atividades a serem realizadas ao longo desse trabalho.
+uso dessa ferramenta pode ser conferido no \hyperref[chap:Metodologia]{Capítulo 4 - Metodologia}, nas especificações dos processos inerentes às atividades a serem realizadas ao longo desse trabalho.
 
 \subsubsection{LucidChart}
 \label{sec:LucidChart}
-O Lucidchart \cite{lucidchart} é uma plataforma de criação de diagramas online que permite a criação, colaboração e compartilhamento de diagramas e suporta várias notações, incluindo UML (\textit{Unified Modeling Language}) 
+O Lucidchart \cite{lucidchart} é uma plataforma de criação de diagramas \textit{online} que permite criação, colaboração e compartilhamento de diagramas e atende várias notações, incluindo UML (\textit{Unified Modeling Language}) 
 e BPMN (\textit{Business Process Model and Notation}).
 
 \subsection{Gerenciamento do Fluxo de Trabalho}
@@ -206,7 +208,7 @@ dos projetos de forma visual e colaborativa.
 
 \section{Resumo do Capítulo}
 \label{sec:Resumo do Capítulo 2}
-Ao longo deste capítulo foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração desta monografia, desde a pesquisa e escrita até o desenvolvimento. 
+Ao longo deste capítulo foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração deste trabalho, desde a pesquisa e escrita até o desenvolvimento. 
 O Quadro \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
 
 \begin{table}[h]
@@ -215,12 +217,12 @@ O Quadro \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao l
     \label{tab03}
     \resizebox{\columnwidth}{!}{\begin{tabular}{|l|l|l|l|}
         \hline
-        \textbf{Nome}      & \textbf{Descrição}                                            & \textbf{Versão}                                                     & \textbf{Link}                           \\ \hline
+        \textbf{Nome}      & \textbf{Descrição}                                            & \textbf{Versão}                                                     & \textbf{\textit{Link}}                           \\ \hline
         LaTeX              & Ferramenta para escrita do documento                          & LaTeX2e                                                             & \href{https://www.latex-project.org/}{https://www.latex-project.org/} \\ \hline
         Docker             & Plataforma de virtualização de ambiente                       & 23.0.4                                                              & \href{https://www.docker.com/}{https://www.docker.com/}       \\ \hline
-        Figma              & Ferramenta de design de interface de usuário                  & 116.4.2                                                             & \href{https://www.figma.com/}{https://www.figma.com/}         \\ \hline
+        Figma              & Ferramenta de \textit{design} de interface de usuário                  & 116.4.2                                                             & \href{https://www.figma.com/}{https://www.figma.com/}         \\ \hline
         Visual Studio Code & Editor de código-fonte e de escrita do documento              & 1.79.0                                                              & \href{https://code.visualstudio.com/}{https://code.visualstudio.com/} \\ \hline
-        React Native       & Framework que permite o desenvolvimento de aplicativos móveis & 0.63                                                                & \href{https://reactnative.dev/}{https://reactnative.dev/}       \\ \hline
+        React Native       & \textit{Framework} que permite o desenvolvimento de aplicativos móveis & 0.63                                                                & \href{https://reactnative.dev/}{https://reactnative.dev/}       \\ \hline
         Node.js            & Ambiente de execução do desenvolvimento back-end da aplicação & v16                                                                 & \href{https://nodejs.org/}{https://nodejs.org/}            \\ \hline
         Git                & Versionamento de código-fonte e texto da monografia           & 2.25.1                                                              & \href{https://git-scm.com/}{https://git-scm.com/}           \\ \hline
         GitHub             & Hospedagem dos repositórios da aplicação e monografia         & -                                                                   & \href{https://github.com/}{https://github.com/}            \\ \hline
