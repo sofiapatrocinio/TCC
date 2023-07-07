@@ -28,6 +28,32 @@ de testes mais aprofundados, a fim de garantir que a interface final do aplicati
 \label{sec:Detalhamento da Aplicacao}
 Com propósito de explorar com detalhes o aplicativo Multilind, em sua versão v.1.4.0, noções detalhadas sobre sua arquitetura, público-alvo e funcionalidades serão apresentadas nesta seção. 	
 
+\subsection{Arquitetura}
+\label{Arquitetura}
+O projeto do aplicativo Multilind contém três repositórios principais: o respositório de \textit{Frontend}, que armazena a camada que lida com as interfaces do usuário, desenvolvido em React Native; o repositório \textit{Content Server}, que armazena os conteúdos do sistema 
+utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por armazenar e administrar os arquivos de mídia do aplicativo. Os diagramas de pacotes podem ser conferidos nas Figuras \ref{fig08}, \ref{fig09} e \ref{fig10}.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/content.eps}}
+	\caption{Diagrama de Pacotes \textit{Content Server}}
+	\label{fig09}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/frontend.eps}}
+	\caption{Diagrama de Pacotes \textit{Frontend}}
+	\label{fig08}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/assets.eps}}
+	\caption{Diagrama de Pacotes \textit{Files Server}}
+	\label{fig10}
+\end{figure}
+
 \section{Prova de Conceito}
 \label{sec:Prova de Conceito}
 Com o objetivo de avaliar as melhorias propostas no aplicativo Multilind em relação a usabilidade e experiência de usuário, provas de conceito foram 
