@@ -26,7 +26,7 @@ de testes mais aprofundados, a fim de garantir que a interface final do aplicati
 
 \section{Detalhamento da Aplicação}
 \label{sec:Detalhamento da Aplicacao}
-Com propósito de explorar com detalhes o aplicativo Multilind, em sua versão v.1.4.0, noções detalhadas sobre sua arquitetura, público-alvo e funcionalidades serão apresentadas nesta seção. 	
+Com propósito de explorar com detalhes o aplicativo Multilind, em sua versão v.1.4.0, noções detalhadas sobre sua arquitetura, público-alvo, guia de estilo e funcionalidades serão apresentadas nesta seção. 	
 
 \subsection{Arquitetura}
 \label{Arquitetura}
@@ -37,13 +37,13 @@ utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por 
 	\centering
 	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/content.eps}}
 	\caption{Diagrama de Pacotes \textit{Content Server}}
-	\label{fig09}
+	\label{fig08}
 \end{figure}
 \begin{figure}[h!]
 	\centering
 	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/frontend.eps}}
 	\caption{Diagrama de Pacotes \textit{Frontend}}
-	\label{fig08}
+	\label{fig09}
 \end{figure}
 
 
@@ -52,6 +52,49 @@ utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por 
 	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/assets.eps}}
 	\caption{Diagrama de Pacotes \textit{Files Server}}
 	\label{fig10}
+\end{figure}
+
+\subsection{Público-Alvo}
+\label{Publico-Alvo}
+A Lean Inception foi utilizada como forma de alinhar os desenvolvedores e \textit{stakeholders} em relação ao aplicativo antes de sua execução e confirmar sua viabilidade e necessidade. O processo aborda a visão do produto, a compreensão de personas, suas jornadas de usuário e 
+o desenvolvimento de funcionalidades de alto nível \cite{lean}. No estágio de definição da visão do produto, a equipe e \textit{stakeholders} do projeto responderam questões relativas ao público alvo da aplicação, o objetivo e principais características, como pode ser visto nas 
+Figuras \ref{fig11} e \ref{fig12}. 
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/visao_produto.eps}}
+	\caption{Visão de Produto}
+	\label{fig11}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.7\textwidth}{!}{\includegraphics{figuras/produto_e_nao_e.eps}}
+	\caption{Produto É/Não É}
+	\label{fig12}
+\end{figure}
+
+Além disso, na fase de descrição de personas, foram criadas três personas que representam diferentes tipos de usuários do aplicativo, como pode ser visto nas Figuras \ref{fig13}, \ref{fig14} e \ref{fig15}.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/persona1.eps}}
+	\caption{Persona 1}
+	\label{fig13}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/persona2.eps}}
+	\caption{Persona 2}
+	\label{fig14}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/persona3.eps}}
+	\caption{Persona 3}
+	\label{fig15}
 \end{figure}
 
 \section{Prova de Conceito}
