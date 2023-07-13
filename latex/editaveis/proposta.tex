@@ -2,7 +2,9 @@
 \label{chap:Proposta}
 Neste capítulo, é retomado o contexto em que o trabalho pretende contribuir, apresentando a proposta do Trabalho de Conclusão de Curso. Inicialmente na seção de \hyperref[sec:Contextualização]{Contextualização} é 
 apresentado o domínio em que o estudo está inserido. Adicionalmente, com intuito de apresentar adequadamente a aplicação, a seção \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é exposta. A \hyperref[sec:Prova de Conceito]{Prova de Conceito}, 
-com os ciclos de testes de usabilidade, na versão atual do aplicativo e na versão com melhorias. Por fim, são acordadas as Considerações Finais.
+que detalha como os testes de usabilidade serão feitos. O \hyperref[sec:Primeiro Ciclo]{Primeiro Ciclo de Teste}, detalha como e o que foi testado, além dos resultados. Com base nisso, a seção de \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} elucida 
+os aspectos trabalhados na versão com melhorias. E o \hyperref[sec:Segundo Ciclo]{Segundo Ciclo de Teste}, que detalha e mostra os resultados finais dos testes na versão com melhorias. Ademais, a seção de \hyperref[sec:Backlog]{Backlog de Melhorias} mostra o \textit{backlog}
+das funcionalidades que serão implementadas de forma priorizada. Por fim, tem-se o \hyperref[sec:Resumo Proposta]{Resumo do Capítulo}
 
 \section{Contextualização}
 \label{sec:Contextualizacao}
@@ -150,22 +152,22 @@ Além disso, a aplicação também oferece recursos de tradução para o portugu
 \section{Prova de Conceito}
 \label{sec:Prova de Conceito}
 Com o objetivo de avaliar as melhorias propostas no aplicativo Multilind em relação a usabilidade e experiência de usuário, provas de conceito foram 
-realizadas para avaliar tanto a última versão do aplicativo (v1.4.0), quanto a versão com melhorias propostas. O primeiro ciclo de testes foi realizado 
-com objetivo de coletar métricas e informações de usabilidade e experiência do usuário. Já o segundo ciclo de testes visa validar as melhorias propostas e avaliar seus resultados.
+realizadas para avaliar tanto a última versão do aplicativo (v1.4.0), quanto a versão com melhorias propostas, com cinco usuários diferentes.
 
-Todos os testadores participaram voluntariamente, de acordo com os termos estabelecidos no Termo de Consentimento, que foi adaptado do 
-modelo da Universidade de Araraquara (Universidade de Araraquara, 2023), disponível no Apêndice C para consulta.
+A escolha de cinco usuários é uma abordagem amplamente adotada, \citeonline{usabilitytest} argumenta que realizar testes com cinco usuários é suficiente para identificar a maioria dos problemas de 
+usabilidade. Ele baseia essa conclusão em estudos empíricos e observações, sugerindo que a descoberta de problemas de usabilidade tende a estagnar após o quinto participante, com poucos benefícios 
+adicionais sendo obtidos com participantes adicionais.
+
+O primeiro ciclo de testes foi realizado com objetivo de coletar métricas e informações de usabilidade e experiência do usuário. Já o segundo ciclo de testes visa validar as melhorias propostas e 
+avaliar seus resultados. Todos os testadores participaram voluntariamente, de acordo com os termos estabelecidos no Termo de Consentimento, que foi adaptado do 
+modelo da Universidade de Araraquara (Universidade de Araraquara, 2023), disponível no Apêndice B para consulta.
  
 \section{Primeiro Ciclo de Testes}
 \label{sec:Primeiro Ciclo}
 O primeiro ciclo de testes de usabilidade foi realizado com cinco testadores, que fazem parte do público alvo da aplicação. Foi realizado um teste abrangendo as sete funcionalidades 
 principais do aplicativo, com o objetivo de identificar seus aspectos-chave. Durante o teste, os usuários forneceram \textit{feedback} instantâneo sobre sua percepção de cada funcionalidade testada. 
 
-A escolha de cinco usuários é uma abordagem amplamente adotada, \citeonline{usabilitytest} argumenta que realizar testes com cinco usuários é suficiente para identificar a maioria dos problemas de 
-usabilidade. Ele baseia essa conclusão em estudos empíricos e observações, sugerindo que a descoberta de problemas de usabilidade tende a estagnar após o quinto participante, com poucos benefícios 
-adicionais sendo obtidos com participantes adicionais.
-
-Como uma ferramenta de teste de usabilidade, o Maze foi utilizado para avaliar a navegação e a facilidade de uso do aplicativo. Os testadores foram solicitados a realizar  
+Além disso, como uma ferramenta de teste de usabilidade, o Maze foi utilizado para avaliar a navegação e a facilidade de uso do aplicativo. Os testadores foram solicitados a realizar  
 tarefas no protótipo\footnote{Protótipo Versão 1.4.0. Disponível em: \url{https://shorturl.at/DGHKU}(último acesso: Julho 2023)} 
 e o tempo necessário para concluir o percurso foi registrado. Essa abordagem permitiu identificar eventuais dificuldades de navegação e fornecer informações para aprimorar a usabilidade do aplicativo. Após a conclusão dos 
 testes, foi aplicado um questionário baseado no Formulário de \textit{Attrakdiff} para avaliar a experiência do usuário no aplicativo Multilind.
@@ -258,7 +260,7 @@ objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}.
 A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema", pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
 o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real", utilizando termos e elementos que os usuáŕios 
 possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário", opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
-padrões foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. E por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
+padrões" foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. E por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
 a probabilidade de cometerem erros.
 
 \subsection{Línguas por Família Linguística}
@@ -273,14 +275,17 @@ o ícone de filtro foi substituído por texto descritivo, a fim de deixar a func
 	\label{fig23}
 \end{figure}
 
-A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema", pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
-o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real", utilizando termos e elementos que os usuáŕios 
-possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário", opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
-padrões foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. E por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
-a probabilidade de cometerem erros.
+A implementação dessa mudança aborda, principalmente, a heurística de "Visibilidade do status do sistema", pois ao substituir o ícone por um texto descritivo, os usuários terão uma compreensão mais clara e explícita da 
+funcionalidade disponível, além de poderem visualizar exatamente onde estão através do componente de abas. Em relação a "Correspondência entre o sistema e o mundo real", pode-se pontuar que a funcionalidade se torna mais 
+alinhada com a expectativa do usuário, pois através do texto descritivo, podem associar mais facilmente a ação. Além disso, foi adotado o princípio de "Consistência e Padrões", seguindo a utilização de componentes 
+reutilizáveis e garantindo a coerência em todo o sistema. 
 
 \subsection{Disposição de Informações}
-\label{sec:Disposição de Informações}
+\label{sec:Disposicao de Informacoes}
+
+Entre as melhorias implementadas no aplicativo, tem-se a reorganização e disposição das informações. A utilização de abas em diferentes telas, como as de línguas, palavras específicas e dicionário. Essas abas foram 
+visualmente destacadas quando selecionadas, com o uso de cores distintas para indicar ao usuário em qual seção ele está navegando. Essa mudança proporciona maior visibilidade ao status atual do sistema, tornando mais 
+claro para os usuários onde eles estão e qual ação estão realizando.
 
 \begin{figure}[h!]
 	\centering
@@ -289,14 +294,8 @@ a probabilidade de cometerem erros.
 	\label{fig24}
 \end{figure}
 
-Para atender à heurística de visibilidade do status do sistema, algumas melhorias foram implementadas, como o uso de abas nas telas de línguas, de palavra específica e na tela de dicionário.
-As abas presentes na interface são destacadas visualmente quando selecionadas, usando cor distinta para indicar ao usuário em qual seção ele está navegando. Essa mudança traz maior visibilidade 
-ao status atual do sistema, tornando mais claro para os usuários onde eles estão e qual ação estão realizando.
-
-A correspondência entre o sistema e o mundo real foi considerada na versão atual do aplicativo. Diversos elementos que facilitam a compreensão e a familiaridade dos usuários com a interface são apresentados, 
-como o ícone de mapa, línguas e informações. Além dos ícones de dicionário e imagem que facilitam a compreensão e a navegação para os usuários. 
-
-Em relação as consistências e padrões da aplicação, componentes foram criados a fim de garantir a padronização dos itens, como botões, abas e barra de busca.
+Além disso, para tornar o aplicativo mais atrativo, foram adicionadas novas cores seguindo uma paleta de cores coerente e visualmente agradável. Essas cores foram aplicadas de forma consistente em todo o aplicativo, 
+contribuindo para uma experiência visual atraente e harmoniosa. A "Estética e Design Minimalista" foi seguida, buscando evitar sobrecarregar os usuários com informações desnecessárias, focando apenas no essencial.
 
 \begin{figure}[h!]
 	\centering
@@ -304,6 +303,14 @@ Em relação as consistências e padrões da aplicação, componentes foram cria
 	\caption{Componentes da Aplicação}
 	\label{fig25}
 \end{figure}
+
+Outra melhoria importante foi a adição de informações sobre como contribuir com o aplicativo. Essa inclusão permite que os usuários tenham conhecimento sobre como podem participar ativamente do desenvolvimento do aplicativo, 
+fornecendo \textit{feedback}, relatando erros e contribuindo com sugestões. Tal melhoria permite maior "Liberdade e Controle do Usuário" na aplicação, permitindo que eles participem ativamente no desenvolvimento e aprimoramento 
+das informações presentes.
+
+Por fim, também foi definido de forma mais clara e explícita o que é o português indígena, fornecendo uma definição compreensível aos usuários. Essa informação fornece uma forma de "Ajuda e Documentação" aos usuários, promovendo uma melhor 
+compreensão e orientação durante o uso do aplicativo.
+
 
 \section{Segundo Ciclo de Testes}
 \label{sec:Segundo Ciclo}
@@ -396,3 +403,10 @@ os requisitos são categorizados como \textit{Must Have}, \textit{Should Have}, 
 	US10 & Eu, como usuário, desejo ter a opção de ouvir a pronúncia correta das palavras no aplicativo, a fim de melhorar minha compreensão e pronúncia adequada.                                                               & \textit{Should}      \\ \hline
 	\end{tabularx}
 \end{table}
+
+\section{Resumo do Capítulo}
+\label{sec:Resumo Proposta}
+No capítulo em questão, o contexto no qual o trabalho se propõe a contribuir é revisado e a proposta do Trabalho de Conclusão de Curso é apresentada. A seção de \hyperref[sec:Contextualização]{Contextualização} fornece informações sobre o domínio no qual o estudo está inserido. Além disso, 
+a seção de \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é apresentada para garantir uma adequada compreensão da aplicação Multilind. A \hyperref[sec:Prova de Conceito]{Prova de Conceito} descreve em detalhes como os testes de usabilidade serão conduzidos. O \hyperref[sec:Primeiro Ciclo]{Primeiro Ciclo de Teste} 
+detalha os métodos e resultados dos testes realizados, enquanto a seção de \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} aborda os aspectos trabalhados na versão com melhorias. O \hyperref[sec:Segundo Ciclo]{Segundo Ciclo de Teste} apresenta os resultados finais dos testes realizados na versão aprimorada. 
+Além disso, a seção de \hyperref[sec:Backlog]{Backlog de Melhorias} apresenta uma lista priorizada das funcionalidades que serão implementadas. 
