@@ -161,7 +161,11 @@ modelo da Universidade de Araraquara (Universidade de Araraquara, 2023), dispon�
 O primeiro ciclo de testes de usabilidade foi realizado com cinco testadores, que fazem parte do público alvo da aplicação. Foi realizado um teste abrangendo as sete funcionalidades 
 principais do aplicativo, com o objetivo de identificar seus aspectos-chave. Durante o teste, os usuários forneceram \textit{feedback} instantâneo sobre sua percepção de cada funcionalidade testada. 
 
-Além disso, como uma ferramenta adicional de teste de usabilidade, foi utilizado o Maze para avaliar a navegação e a facilidade de uso do aplicativo. Os testadores foram solicitados a realizar  
+A escolha de cinco usuários é uma abordagem amplamente adotada, \citeonline{usabilitytest} argumenta que realizar testes com cinco usuários é suficiente para identificar a maioria dos problemas de 
+usabilidade. Ele baseia essa conclusão em estudos empíricos e observações, sugerindo que a descoberta de problemas de usabilidade tende a estagnar após o quinto participante, com poucos benefícios 
+adicionais sendo obtidos com participantes adicionais.
+
+Como uma ferramenta de teste de usabilidade, o Maze foi utilizado para avaliar a navegação e a facilidade de uso do aplicativo. Os testadores foram solicitados a realizar  
 tarefas e o tempo necessário para concluir o percurso foi registrado. Essa abordagem permitiu identificar eventuais dificuldades de navegação e fornecer informações para aprimorar a usabilidade do aplicativo.
 Após a conclusão dos testes, foi aplicado um questionário baseado no Formulário de \textit{Attrakdiff} para avaliar a experiência do usuário no aplicativo Multilind.
 
@@ -186,8 +190,8 @@ Após finalizar o primeiro ciclo de testes, utilizando a versão mais recente da
 	\item Falta de orientação no primeiro uso: foi observado pelos testadores uma falta de instruções claras e orientações sobre como navegar e utilizar as funcionalidades no primeiro acesso ao aplicativo.
 	\item Maior clareza na opção de visualizar línguas por família linguística: alguns testadores relataram dificuldades em localizar a opção para visualizar as línguas agrupadas por família linguística.
 	\item Ausência de cores: usuários relataram sentir que a aplicação carecia de uma paleta de cores mais vibrantes para torná-la visivelmente atraente.
-	\item Carência de informações a respeito de contribuição: houve interesse manifestado por alguns testadores em contribuir com a base de dados do aplicativo, porém, sentiram falta de informações claras sobre 
-	como realizar tal contribuição. 
+	\item Carência de informações a respeito de contribuição: houve interesse manifestado por alguns testadores em contribuir com a base de dados do aplicativo, porém, sentiram falta de informações a respeito 
+	de como contribuir no aplicativo.
 \end{itemize}
 
 A Tabela \ref{tab04} apresenta o tempo gasto por cada testador durante o teste de usabilidade separado por funcionalidade.
@@ -197,14 +201,15 @@ A Tabela \ref{tab04} apresenta o tempo gasto por cada testador durante o teste d
 	\caption{Tempo Gasto por Testador}
 	\label{tab04}
 	\begin{tabular}{l|l|l|l|l|l}
-	Fucionalidade & Testador 1 & Testador 2 & Testador 3 & Testador 4 & Testador 5 \\
+	\hline
+	Fucionalidade & Testador 1 & Testador 2 & Testador 3 & Testador 4 & Testador 5 \\ 	\hline
 	F01                   & 25.7s     & 109.3s     & 3.36s      & 232s       & 6.4s      \\
 	F02                   & 21.2s        & 18.9s      & 6.45s      & 181.7s    & 17.2s     \\
 	F03                   & 26.1s        & 25.7s      & 26.5s      & 36.9s     & 23.6s     \\
 	F04                   & 69.6s        & 309.3s     & 283.2s     & 136.2s     & 193.9s     \\
 	F05                   & 32.1s      & 31.4s      & 21.7s     & 72.6s     & 16.4s     \\
 	F06                   & 30.7s     & 8.4s      & 24s     & 45.7s     & 75.5s     \\
-	F07                   & 43.2s     & 23.8s      & 43.5s     & 181.2s    & 35s       
+	F07                   & 43.2s     & 23.8s      & 43.5s     & 181.2s    & 35s      \\ 	\hline
 	\end{tabular}
 \end{table}
 
@@ -301,3 +306,66 @@ Em relação as consistências e padrões da aplicação, componentes foram cria
 
 \section{Segundo Ciclo de Testes}
 \label{sec:Segundo Ciclo}
+O processo de \textit{design} segue uma abordagem iterativa, ou seja, é uma atividade contínua envolvendo \textit{feedback} constante dos usuários e melhorias incrementais ao longo do tempo. \citeonline{usabilitytest} 
+reconhece que nem sempre é possível envolver usuários novos a cada iteração e que é possível, com os mesmos usuários, descobrir problemas persistentes e validar melhorias implementadas. 
+
+Após o primeiro estudo, com cinco participantes, ter encontrado alguns problemas de usabilidade, o \textit{design} foi redesenhado. A segunda rodada de testes com cinco usuários visa mapear os demais problemas de usabilidade 
+que não foram encontrados na primeira rodada de testes. O segundo estudo poderá aprofundar a usabilidade da estrutura fundamental do site, avaliando questões como arquitetura da informação, fluxo de tarefas e correspondência 
+com as necessidades do usuário \cite{usabilitytest}.
+
+\subsubsection{Resultado do Segundo Ciclo de Testes}
+\label{sec:Resultado do Segundo Ciclo de Testes}
+A Tabela \ref{tab05} apresenta o tempo gasto por cada testador durante o teste de usabilidade separado por funcionalidade.
+
+\begin{table}[h!]
+	\centering
+	\caption{Tempo Gasto por Testador}
+	\label{tab05}
+	\begin{tabular}{l|l|l|l|l|l}
+	\hline
+	Fucionalidade & Testador 1 & Testador 2 & Testador 3 & Testador 4 & Testador 5 \\ 	\hline
+	F01                   & 8.8s     & 12s     & 5,1s      & 9.4s       & 20.1s      \\
+	F02                   & 8.4s        & 11.8s      & 8.8s      & 13.9s    & 14.2s     \\
+	F03                   & 20.7s        & 4.5s      & 32.9s      & 100s     & 44.4s     \\
+	F04                   & 16.1s        & 21.1s     & 89.9s     & 48.1s     & 13.8s     \\
+	F05                   & 14.8s      & 18.8s      & 10.8s     & 33s     & 62.7s     \\
+	F06                   & 18.4s     & 11.1s      & 14.6s     & 14.4s     & 18.2s     \\
+	F07                   & 18.9s     & 20.8s      & 25s     & 21s    & 52.9s       \\ 	\hline
+	\end{tabular}
+\end{table}
+
+A tabela presente no Google Sheets apresenta as avaliações obtidas por meio do formulário \textit{Attrakdiff} aplicado aos testadores do aplicativo. Além disso, as Figuras \ref{fig26} e \ref{fig27} ilustram a média de respostas geral e a média 
+de respostas separadas pelas quatro dimensões principais, respectivamente.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-geral1.eps}}
+	\caption{Média Geral \textit{Attrakdiff}}
+	\label{fig26}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-separada1.eps}}
+	\caption{Média \textit{Attrakdiff} por dimensões}
+	\label{fig27}
+\end{figure}
+
+Os usuário relataram melhor entendimento da aplicação devido ao passo a passo inicial, além da validação da mudança dos fluxos no aplicativo, que se demonstraramm mais intuitivos. Os dados revelam melhoria nas quatro dimensões principais do \textit{AttrakDiff}, 
+que avalia a experiência do usuário. A Qualidade Pragmática Percebida, que mede o grau de sucesso e esforço que os usuários têm ao utilizar o aplicativo para atingir seus objetivos, teve uma melhora significativa, anteriormente de 5,48 para 6,6. Em relação a 
+Qualidade Hedônica-Identidade, pode-se notar uma melhoria considerável, atingindo 6,36. Essa dimensão representa o grau de identificação da aplicação com o usuário. Já a Qualidade Hedônica-Estímulo, indica a quantidade de suporte que o produto oferece ao usuário 
+para desenvolver, estimular e aumentar a motivação. Uma pequena melhora pode ser notada, de 5,2 para 5,44. E por fim, foi medida a Atratividade da aplicação, que representa uma classificação global e melhorou em 0,4 pontos, chegando a 6,55.
+
+O aumento mais significativo em relação as estatísticas foi na Qualidade Pragmática Percebida e refere-se à percepção do usuário em relação à funcionalidade, eficiência e facilidade de uso. O que indica facilidade dos usuários em atender às suas necessidades e 
+objetivos.
+
+Possíveis melhorias também foram pontuadas durante o segundo ciclo de testes:
+
+\begin{itemize}
+	\item Português Indígena: Alguns usuários expressaram preocupação em relação a tradução para o português indígena, visto que não se trata de uma língua única, mas sim uma variação do português brasileiro que depende de alguns fatores, como contato linguístico com outros 
+	povos, região do Brasil, identidade cultural e grau de preservação da língua nativa.
+	\item Participação Coletiva: Com objetivo de maior participação de falantes das línguas, a opção de reportar em caso de erro de tradução ou inconsistência foi sugerida. Tal funcionalidade visa aumentar a confiabilidade dos dados presentes no aplicativo e incentivar a 
+	participação dos povos indígenas na documentação das línguas.
+	\item Pronúncia de Palavras: A língua oral é a principal forma de comunicação e expressão cultural para muitos povos indígenas, por isso a adição de uma funcionalidade de pronúncia pode ser uma ótima maneira de ajudar os usuários a compreender palavras de maneira mais clara 
+	e precisa.
+\end{itemize}
