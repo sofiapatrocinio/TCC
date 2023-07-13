@@ -155,59 +155,8 @@ com objetivo de coletar métricas e informações de usabilidade e experiência 
 
 Todos os testadores participaram voluntariamente, de acordo com os termos estabelecidos no Termo de Consentimento, que foi adaptado do 
 modelo da Universidade de Araraquara (Universidade de Araraquara, 2023), disponível no Apêndice C para consulta.
-
-\section{Melhorias Propostas}
-\label{sec:Melhorias Propostas}
-Ao buscar realizar melhorias na aplicação e reconhecendo a importância de envolver usuários reais nas tomadas de decisões, testes de usabilidade foram feitos e \textit{feedbacks} coletados, 
-o que orientou o processo de melhoria de usabilidade e experiência de usuário. Bem como a aplicação das heurísticas de Nielsen que resultaram nas melhorias que serão apresentadas nesta seção.
-
-\subsection{\textit{Onboarding}}
-\label{sec:Onboarding}
-De acordo com \citeonline{cooper2007}, o objetivo do \textit{design} depende do contexto - quem são os usuários, o que estão fazendo e seus objetivos. E que não é possível criar um bom design 
-seguindo regras desconectadas dos objetivos e necessidades dos usuários do seu produto. 
-
-Com base nisso, e baseado na falta de introdução de contexto, apontada por alguns usuários como ponto de 
-melhoria, foi introduzido um processo de familiarização. Tal processo, conhecido como \textit{onboarding}, pode ser entendido como a combinação de métodos e elementos que auxiliam um novo usuário 
-a se familiarizar com um produto digital, seja ele um baseado na web ou aplicativo móvel. Pode incluir tutoriais interativos, orientações passo a passo, dicas contextuais e outras abordagens que 
-visam orientar os usuários durante a primeira interação com o produto. Seu objetivo é permitir que os usuários compreendam como utilizar as funcionalidades do produto e alcancem seus 
-objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}.
-
-\begin{figure}[h!]
-	\centering
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/onboarding.eps}}
-	\caption{\textit{Onboarding}}
-	\label{fig20}
-\end{figure}
-
-
-
-Para atender à heurística de visibilidade do status do sistema, algumas melhorias foram implementadas, como o uso de abas nas telas de línguas; de palavra específica e na tela de dicionário.
-As abas presentes na interface são destacadas visualmente quando selecionadas, usando cor distinta para indicar ao usuário em qual seção ele está navegando. Essa mudança traz maior visibilidade 
-ao status atual do sistema, tornando mais claro para os usuários onde eles estão e qual ação estão realizando.
-
-\begin{figure}[h!]
-	\centering
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/abas.eps}}
-	\caption{Telas da Aplicação}
-	\label{fig20}
-\end{figure}
-
-A correspondência entre o sistema e o mundo real foi considerada na versão atual do aplicativo. Diversos elementos que facilitam a compreensão e a familiaridade dos usuários com a interface são apresentados, 
-como o ícone de mapa, línguas e informações. Além dos ícones de dicionário e imagem que facilitam a compreensão e a navegação para os usuários. 
-
-Durante os testes de usabilidade, foi notado a dificuldade de identificação da filtragem por família linguística, e visto que representa uma informação importante a respeito das línguas indígenas, o ícone foi 
-substituído por texto descritivo, a fim de deixar a funcionalidade mais clara e explícita.
-
-Em relação as consistências e padrões da aplicação, componentes foram criados a fim de garantir a padronização dos itens, como botões, abas e barra de busca.
-
-\begin{figure}[h!]
-	\centering
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/componentes.eps}}
-	\caption{Telas da Aplicação}
-	\label{fig20}
-\end{figure}
  
-\subsection{Primeiro Ciclo de Testes}
+\section{Primeiro Ciclo de Testes}
 \label{sec:Primeiro Ciclo}
 O primeiro ciclo de testes de usabilidade foi realizado com cinco testadores, que fazem parte do público alvo da aplicação. Foi realizado um teste abrangendo as sete funcionalidades 
 principais do aplicativo, com o objetivo de identificar seus aspectos-chave. Durante o teste, os usuários forneceram \textit{feedback} instantâneo sobre sua percepção de cada funcionalidade testada. 
@@ -234,9 +183,9 @@ Após a conclusão dos testes, foi aplicado um questionário baseado no Formulá
 Após finalizar o primeiro ciclo de testes, utilizando a versão mais recente da aplicação, alguns \textit{feedbacks} foram realizados pelos testadores, que incluem:
 
 \begin{itemize}
-	\item Ausência de cores: usuários relataram sentir que a aplicação carecia de uma paleta de cores mais vibrantes para torná-la visivelmente atraente.
 	\item Falta de orientação no primeiro uso: foi observado pelos testadores uma falta de instruções claras e orientações sobre como navegar e utilizar as funcionalidades no primeiro acesso ao aplicativo.
 	\item Maior clareza na opção de visualizar línguas por família linguística: alguns testadores relataram dificuldades em localizar a opção para visualizar as línguas agrupadas por família linguística.
+	\item Ausência de cores: usuários relataram sentir que a aplicação carecia de uma paleta de cores mais vibrantes para torná-la visivelmente atraente.
 	\item Carência de informações a respeito de contribuição: houve interesse manifestado por alguns testadores em contribuir com a base de dados do aplicativo, porém, sentiram falta de informações claras sobre 
 	como realizar tal contribuição. 
 \end{itemize}
@@ -267,15 +216,88 @@ de respostas separadas pelas quatro dimensões principais, respectivamente.
 	\centering
 	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-geral.eps}}
 	\caption{Média Geral \textit{Attrakdiff}}
-	\label{fig21}
+	\label{fig20}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-separada.eps}}
 	\caption{Média \textit{Attrakdiff} por dimensões}
+	\label{fig21}
+\end{figure}
+
+\section{Melhorias Propostas}
+\label{sec:Melhorias Propostas}
+Ao buscar realizar melhorias na aplicação e reconhecendo a importância de envolver usuários reais nas tomadas de decisões, testes de usabilidade foram feitos e \textit{feedbacks} coletados, 
+o que orientou o processo de melhoria de usabilidade e experiência de usuário. Bem como a aplicação das heurísticas de Nielsen que resultaram nas melhorias que serão apresentadas nesta seção.
+
+\subsection{\textit{Onboarding}}
+\label{sec:Onboarding}
+De acordo com \citeonline{cooper2007}, o objetivo do \textit{design} depende do contexto - quem são os usuários, o que estão fazendo e seus objetivos. E que não é possível criar um bom design 
+seguindo regras desconectadas dos objetivos e necessidades dos usuários do seu produto. 
+
+Com base nisso, e baseado na falta de introdução de contexto, apontada por alguns usuários como ponto de 
+melhoria, foi introduzido um processo de familiarização. Tal processo, conhecido como \textit{onboarding}, pode ser entendido como a combinação de métodos e elementos que auxiliam um novo usuário 
+a se familiarizar com um produto digital, seja ele um baseado na web ou aplicativo móvel. Pode incluir tutoriais interativos, orientações passo a passo, dicas contextuais e outras abordagens que 
+visam orientar os usuários durante a primeira interação com o produto. Seu objetivo é permitir que os usuários compreendam como utilizar as funcionalidades do produto e alcancem seus 
+objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/onboarding.eps}}
+	\caption{\textit{Onboarding}}
 	\label{fig22}
 \end{figure}
 
-\subsection{Segundo Ciclo de Testes}
+A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema", pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
+o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real", utilizando termos e elementos que os usuáŕios 
+possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário", opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
+padrões foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. E por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
+a probabilidade de cometerem erros.
+
+\subsection{Línguas por Família Linguística}
+\label{sec:Familia Linguistica}
+Outro problema de usabilidade identificado foi a dificuldade dos usuários de encontrar a opção de listar por família linguística. Visto que representa uma informação importante a respeito das línguas indígenas, 
+o ícone de filtro foi substituído por texto descritivo, a fim de deixar a funcionalidade mais clara e explícita.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/linguas.eps}}
+	\caption{Línguas por Família Linguística}
+	\label{fig23}
+\end{figure}
+
+A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema", pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
+o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real", utilizando termos e elementos que os usuáŕios 
+possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário", opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
+padrões foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. E por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
+a probabilidade de cometerem erros.
+
+\subsection{Disposição de Informações}
+\label{sec:Disposição de Informações}
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/abas.eps}}
+	\caption{Telas da Aplicação}
+	\label{fig24}
+\end{figure}
+
+Para atender à heurística de visibilidade do status do sistema, algumas melhorias foram implementadas, como o uso de abas nas telas de línguas, de palavra específica e na tela de dicionário.
+As abas presentes na interface são destacadas visualmente quando selecionadas, usando cor distinta para indicar ao usuário em qual seção ele está navegando. Essa mudança traz maior visibilidade 
+ao status atual do sistema, tornando mais claro para os usuários onde eles estão e qual ação estão realizando.
+
+A correspondência entre o sistema e o mundo real foi considerada na versão atual do aplicativo. Diversos elementos que facilitam a compreensão e a familiaridade dos usuários com a interface são apresentados, 
+como o ícone de mapa, línguas e informações. Além dos ícones de dicionário e imagem que facilitam a compreensão e a navegação para os usuários. 
+
+Em relação as consistências e padrões da aplicação, componentes foram criados a fim de garantir a padronização dos itens, como botões, abas e barra de busca.
+
+\begin{figure}[h!]
+	\centering
+	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/componentes.eps}}
+	\caption{Componentes da Aplicação}
+	\label{fig25}
+\end{figure}
+
+\section{Segundo Ciclo de Testes}
 \label{sec:Segundo Ciclo}
