@@ -166,8 +166,9 @@ usabilidade. Ele baseia essa conclusão em estudos empíricos e observações, s
 adicionais sendo obtidos com participantes adicionais.
 
 Como uma ferramenta de teste de usabilidade, o Maze foi utilizado para avaliar a navegação e a facilidade de uso do aplicativo. Os testadores foram solicitados a realizar  
-tarefas e o tempo necessário para concluir o percurso foi registrado. Essa abordagem permitiu identificar eventuais dificuldades de navegação e fornecer informações para aprimorar a usabilidade do aplicativo.
-Após a conclusão dos testes, foi aplicado um questionário baseado no Formulário de \textit{Attrakdiff} para avaliar a experiência do usuário no aplicativo Multilind.
+tarefas no protótipo\footnote{Protótipo Versão 1.4.0. Disponível em: \url{https://shorturl.at/DGHKU}(último acesso: Julho 2023)} 
+e o tempo necessário para concluir o percurso foi registrado. Essa abordagem permitiu identificar eventuais dificuldades de navegação e fornecer informações para aprimorar a usabilidade do aplicativo. Após a conclusão dos 
+testes, foi aplicado um questionário baseado no Formulário de \textit{Attrakdiff} para avaliar a experiência do usuário no aplicativo Multilind.
 
 \begin{description}
     \item As funcionalidades testadas foram:
@@ -309,8 +310,8 @@ Em relação as consistências e padrões da aplicação, componentes foram cria
 O processo de \textit{design} segue uma abordagem iterativa, ou seja, é uma atividade contínua envolvendo \textit{feedback} constante dos usuários e melhorias incrementais ao longo do tempo. \citeonline{usabilitytest} 
 reconhece que nem sempre é possível envolver usuários novos a cada iteração e que é possível, com os mesmos usuários, descobrir problemas persistentes e validar melhorias implementadas. 
 
-Após o primeiro estudo, com cinco participantes, ter encontrado alguns problemas de usabilidade, o \textit{design} foi redesenhado. A segunda rodada de testes com cinco usuários visa mapear os demais problemas de usabilidade 
-que não foram encontrados na primeira rodada de testes. O segundo estudo poderá aprofundar a usabilidade da estrutura fundamental do site, avaliando questões como arquitetura da informação, fluxo de tarefas e correspondência 
+Após o primeiro estudo, com cinco participantes, ter encontrado alguns problemas de usabilidade, o \textit{design} foi redesenhado\footnote{Protótipo com melhorias. Disponível em: \url{https://shorturl.at/ryEOR}(último acesso: Julho 2023)}. 
+A segunda rodada de testes com cinco usuários visa mapear os demais problemas de usabilidade que não foram encontrados na primeira rodada de testes. O segundo estudo poderá aprofundar a usabilidade da estrutura fundamental do site, avaliando questões como arquitetura da informação, fluxo de tarefas e correspondência 
 com as necessidades do usuário \cite{usabilitytest}.
 
 \subsubsection{Resultado do Segundo Ciclo de Testes}
@@ -369,3 +370,29 @@ Possíveis melhorias também foram pontuadas durante o segundo ciclo de testes:
 	\item Pronúncia de Palavras: A língua oral é a principal forma de comunicação e expressão cultural para muitos povos indígenas, por isso a adição de uma funcionalidade de pronúncia pode ser uma ótima maneira de ajudar os usuários a compreender palavras de maneira mais clara 
 	e precisa.
 \end{itemize}
+
+\section{Backlog de Melhorias}
+\label{sec:Backlog de Melhorias}
+Foi elaborado um \textit{Product Backlog}, contendo histórias de usuário, a partir da concepção do protótipo e das melhorias pontuadas, para orientar o desenvolvimento deste projeto. Além disso, a técnica MoSCoW foi utilizada para realizar a priorização. Seguindo essa classificação, 
+os requisitos são categorizados como \textit{Must Have}, \textit{Should Have}, \textit{Could Have} e \textit{Won't Have} \cite{miranda2021}. 
+
+
+\begin{table}[h!]
+	\centering
+	\caption{\textit{Backlog}}
+	\label{tab06}
+	\begin{tabularx}{\textwidth}{p{1cm}|p{12cm}|p{1cm}}
+	\hline
+	ID   & História de Usuário                                                                                                                                                                                                   & Priorização \\ \hline
+	US01 & Eu, como usuário, desejo ter um processo de \textit{onboarding} no aplicativo que me guie de forma clara e intuitiva pelas funcionalidades e navegação disponíveis.                                                            & \textit{Must}        \\
+	US02 & Eu, como usuário, desejo visualizar línguas por família linguística por meio de abas na tela de Línguas                                                                                                               & \textit{Must}        \\
+	US03 & Eu, como usuário, desejo ter a opção de trocar de abas em vez de mudar de página para visualizar imagens e traduções relativas a uma palavra específica, facilitando o acesso.                                        & \textit{Must}        \\
+	US04 & Eu, como usuário, desejo ter uma forma fácil e acessível de obter informações sobre como posso contribuir para a base de dados do aplicativo.                                                                         & \textit{Must}        \\
+	US05 & Eu, como usuário, desejo ter acesso direto à lista de palavras no dicionário, para facilitar a navegação e pesquisa.																									 & \textit{Must}        \\
+	US06 & Eu, como usuário, desejo obter uma explicação clara sobre o que é o português indígena, a fim de compreender melhor sua definição e significado.                                                                      & \textit{Must}        \\
+	US07 & Eu, como usuário, desejo que o design da aplicação seja mais atraente e visualmente agradável, através da adição de mais cores que complementem a interface.                                                          & \textit{Should}      \\
+	US08 & Eu, como usuário, desejo obter informações precisas sobre o nome da língua do português indígena que está relacionada a uma língua específica, a fim de compreender melhor sua classificação linguística. 			 & \textit{Should}      \\
+	US09 & Eu, como usuário, desejo ter a opção de relatar erros ou inconsistências nas traduções e imagens das palavras, a fim de contribuir para a consistência das informações apresentadas.                                  & \textit{Should}      \\
+	US10 & Eu, como usuário, desejo ter a opção de ouvir a pronúncia correta das palavras no aplicativo, a fim de melhorar minha compreensão e pronúncia adequada.                                                               & \textit{Should}      \\ \hline
+	\end{tabularx}
+\end{table}
