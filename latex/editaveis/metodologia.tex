@@ -58,7 +58,8 @@ Do ponto de vista dos procedimentos técnicos, \citeonline{gil2002} caracteriza 
 	\item Pesquisa Experimental: determina um objeto de estudo; seleciona variáveis que podem influenciá-lo, e estabelece formas de controle e observação dos efeitos produzidos pelas variáveis no objeto;
 	\item Levantamento: envolve a coleta direta de informações por meio de questionários ou entrevistas, com o objetivo de conhecer o comportamento das pessoas;
 	\item Estudo de caso: realiza uma análise detalhada e aprofundada de um ou poucos objetos, permitindo um amplo conhecimento deles;
-	\item Pesquisa Expost-Facto: ocorre após os eventos acontecerem, realizando um "experimento" posterior aos fatos;
+	\item Pesquisa Expost-Facto: ocorre após os eventos acontecerem, realizando um "experimento" \newline	
+	posterior aos fatos;
 	\item Pesquisa-Ação: concebida e realizada em associação direta com uma ação ou resolução de um problema coletivo, com a participação colaborativa dos pesquisadores e dos participantes envolvidos na situação ou problema, e
 	\item Pesquisa Participante: desenvolve-se por meio da interação entre pesquisadores e membros das situações investigadas.
 \end{itemize}
@@ -199,18 +200,23 @@ serem seguidas são:
 
 \begin{itemize}
 	\item Captura de dados: condução de um levantamento de informações, realizado de forma \textit{online}, sendo assim assistido por recursos disponiveis na \textit{Web}, com uso de Questionários e ferramentas de testes de usabilidade. Trata-se de uma coleta classificada como ocasonal, uma vez que não ocorre de forma periódica (ou seja, com ocorrência estabelecida em periodicidade específica: de dois em dois meses), nem mesmo é realizada de forma contínua (ou seja, já faz parte de um processo estabelecido, sistemático e recorrente);
-	\item Avaliação do plano de intervenção: os dados coletados serão analisados nesta etapa. A abordagem da pesquisa envolve tanto aspectos qualitativos quanto quantitativos. Os dados quantitativos serão analisados por meio de métricas concretas, como o número de cliques em um elemento 
-	da interface gráfica. Já os dados qualitativos serão avaliados de forma mais criteriosa, utilizando-se questionários e mapas de calor, por exemplo.
-	\item Desenvolvimento de um plano de ação: a partir da análise dos dados coletados nos formulários, será elaborado um plano de ação para resolver ou mitigar as insatisfações identificadas.
-	\item Comunicação dos resultados: nesta etapa, os resultados e os levantamentos de cada ciclo de iteração da pesquisa-ação serão documentados de forma apropriada.
+	\item Análise de dados: os dados levantados na etapa anterior, serão analisados nesta etapa. Tem-se, portanto, a necessidade de recursos que permitam a medição de aspectos qualitavos, ou seja, subjetivos, sendo usabilidade e experiência de usuário. Em usabilidade, será utilizado o teste de usabilidade, que permite, dentre outras análises, avaliar o grau de sucesso da execução de tarefas e o total de erros, perpassando por atividades específicas (Preparação, Coleta de Dados, Interpretação, Consolidação e Relato), conforme 
+	descrito na seção \hyperref[sec:Medição1]{2.2.1}. Em experiência de usuário, pretende-se usar o \textit{AttrakDiff}, sendo esse um questionário que permite obter a opinião do usuário, considerando suas próprias percepções sobre o objeto em análise (ex. motivação, identificação, dentre outras), conforme consta na seção \hyperref[sec:Experiencia de Usuario]{2.3.1};
+	\item Elaboração de um plano de ação de melhorias: uma vez identificadas as reais percepçoes dos usuários, ocorre a possibilidade de classificá-las com base na Matriz de Swot (seção \hyperref[sec:Teste de Comparação]{2.4}), organizando-as em Forças e Fraquezas. Com base nas Fraquezas, pretende-se planejar um plano de ação capaz de mitigar - dentro do possível - essas fragilidades, com a intenção de melhorar a usabilidade, a experiência de usuário, bem como critérios qualitativos associados, e
+	\item Revelação dos resultados: uma vez implantado o plano da ação de melhoria, elaborado na etapa anterior, será possível coletar os resultados obtidos, conferindo uma análise qualitativa/quantitativa, novamente, usando recursos como Testes de Comparação (seção \hyperref[sec:Teste de Comparação]{2.4}), sendo esses orientados por testes de usabilidade e questionário \textit{AttrakDiff}, visando comparar os resultados obtidos na etapa de Análise de Dados (ou seja, antes do plano de ação de melhorias) e nessa etapa (ou seja, depois do plano 
+	de ação de melhorias). A documentação desses resultados será organizada usando a Matriz de Swot. Entretanto, nesse momento, serão reportadas Forças e Fraquezas com a intenção de identificar, respectivamente, Oportunidades e Ameaças. Forças/Oportunidades serão tratadas como aspectos do Aplicativo Multilind que estão em condições suficientemente satisfatórias na perspectiva dos usuários. Já Fraquezas/Ameaças serão tratados como aspectos do Aplicativo Multilind que não satisfazem os usuários e, portanto, são candidatos a refinamentos 
+	em novo ciclo de pesquisa ação, retomando o processo a partir da etapa anterior, Elaboração de um plano de ações de melhorias. Haverá priorização desses aspectos, no intuito de concentrar os esforços em pontos que agregam maior valor aos usuários.
 \end{itemize}
 
-No primeiro ciclo da pesquisa-ação, o objetivo principal é avaliar a usabilidade e a experiência do usuário nos principais fluxos do aplicativo, utilizando um questionário baseado no \textit{AttrakDiff}. Com base na análise desses dados, será elaborada a primeira versão de melhoria no aplicativo Multilind.
+Na primeira etapa da pesquisa-ação, o objetivo principal é avaliar a usabilidade e a experiência do usuário nos principais fluxos do aplicativo. Para isso, serão conduzidos testes de usabilidade com pessoas que fazem parte do público-alvo e serão coletadas informações por meio do questionário \textit{AttrakDiff}. Com base nos dados coletados, será realizada uma análise que servirá como base para a implementação de melhorias no aplicativo Multilind. Essa etapa visa identificar pontos de melhoria e aprimorar a usabilidade e a experiência do 
+usuário no aplicativo.
 
-No segundo ciclo, em que as melhorias já estarão projetadas, o objetivo é realizar medições utilizando o protótipo desenvolvido, a fim de verificar se os problemas identificados anteriormente foram mitigados ou solucionados. Os dados serão 
-coletados de usuários que fazem parte do público-alvo.
+Após a implementação das melhorias no aplicativo Multilind, os resultados obtidos na segunda etapa serão analisados. Através dessa análise, será possível documentar de forma sistemática os pontos fortes e fracos do aplicativo. Os pontos fortes representam as áreas em que as melhorias tiveram maior impacto positivo, proporcionando uma experiência de usuário aprimorada e maior usabilidade. Os pontos fracos indicam as áreas que ainda necessitam de atenção e ajustes adicionais. Além disso, serão identificadas as oportunidades que surgem com as 
+melhorias implementadas. Bem como as ameaças que podem impactar a usabilidade e a experiência do usuário.
 
-Por fim, no terceiro ciclo, o objetivo é desenvolver de fato as melhorias, o que permitirá uma análise mais abrangente e possibilitará o registro dos resultados finais deste trabalho.
+A matriz SWOT fornecerá uma visão abrangente da situação atual do aplicativo, destacando os aspectos positivos a serem mantidos e fortalecidos, as áreas que necessitam de melhorias, as oportunidades a serem exploradas e as ameaças a serem enfrentadas. Essa documentação será valiosa para orientar futuras ações de desenvolvimento e aprimoramento do aplicativo Multilind.
+
+Por fim, na terceira etapa, o objetivo é efetivamente desenvolver as melhorias no aplicativo Multilind. Esse ciclo é crucial para realizar uma análise mais abrangente e registrar os resultados finais deste trabalho. Durante esse processo, as melhorias identificadas serão implementadas de acordo com o plano de ação estabelecido, levando em consideração as necessidades e expectativas dos usuários.
 
 \section{Cronograma}
 \label{sec:Cronograma}
