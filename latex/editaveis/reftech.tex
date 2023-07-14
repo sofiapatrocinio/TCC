@@ -2,8 +2,8 @@
 \label{chap:ReferencialTech}
 
 Este capítulo tem como propósito descrever o referencial tecnológico utilizado no desenvolvimento
-deste trabalho, abordando as ferramentas e tecnologias empregadas, com ênfase em: (i) \hyperref[sec:Apoio à Escrita]{Apoio à Escrita}; 
-(ii) \hyperref[sec:Apoio à Prática]{Apoio à Prática}, que engloba a \hyperref[sec:Prototipação]{Prototipação}, \hyperref[sec:Desenvolvimento]{Desenvolvimento}, \hyperref[sec:Gerenciamento de Versões]{Gerenciamento de Versões}, 
+deste trabalho, abordando as ferramentas e tecnologias empregadas, com ênfase em: (i) \hyperref[sec:Apoio a Escrita]{Apoio à Escrita}; 
+(ii) \hyperref[sec:Apoio à Prática]{Apoio à Prática}, que engloba \hyperref[sec:Prototipação]{Prototipação}, \hyperref[sec:Desenvolvimento]{Desenvolvimento}, \hyperref[sec:Gerenciamento de Versões]{Gerenciamento de Versões}, 
 e \hyperref[sec:Análise de Resultados]{Análise de Resultados}, e (iii) \hyperref[sec:Apoio Complementar]{Apoio Complementar}. Por fim, tem-se o \hyperref[sec:Resumo do Capítulo]{Resumo do Capítulo}.
 
 \section{Apoio à Escrita}
@@ -32,13 +32,13 @@ uma imagem, incluindo todas as dependências necessárias, garantindo que o proj
 compilado de maneira consistente, independentemente do sistema operacional ou das configurações do computador   
 utilizado \cite{docker}.
 
-O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiência consistente, facilitar o 
+O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiência consistente; facilitar o 
 processo de compilação de documentos, e também no desenvolvimento \textit{backend} da aplicação. O intuito é evitar problemas 
 de compatibilidade.
 
 \subsection{LaTeX Workshop}
 \label{sec:LaTeX Workshop}
-LaTeX Workshop é uma extensão para o Visual Studio Code útil para edição, compilação e visualização de 
+LaTeX Workshop é uma extensão para o Visual Studio Code útil para edição, compilação, e visualização de 
 documentos LaTeX diretamente no editor de texto Visual Studio Code. A ferramenta fornece compilação 
 automática sempre que há alteração no documento, facilitando a visualização rápida das informações \cite{latexworkshop}.
 
@@ -64,8 +64,12 @@ na Figura \ref{fig03}. Nesse sentido, serão incorporadas melhorias nos protóti
 
 \begin{figure}[h!]
 	\centering
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/prototype.eps}}
 	\caption{Protótipo de Alta Fidelidade}
+	\resizebox{1\textwidth}{!}{\includegraphics{figuras/prototype.eps}}
+    \begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
 	\label{fig03}
 \end{figure}
 
@@ -91,7 +95,7 @@ criar aplicativos tanto para Android quanto para iOS, aproveitando o mesmo códi
 
 Foi utilizado o React Native durante o desenvolvimento \textit{front-end} desta aplicação em conjunto com o Expo, que facilita 
 o processo de desenvolvimento de aplicativos React Native, e elimina a necessidade de configurações complexas, fornecendo ferramentas 
-e serviços que facilitam a criação, teste e a publicação de aplicativos multiplataforma.
+e serviços que facilitam a criação, o teste e a publicação de aplicativos multiplataforma.
 
 \subsubsection{Expo}
 \label{sec:Expo}
@@ -99,7 +103,7 @@ Expo é uma plataforma de código aberto que facilita a criação de aplicativos
 possibilitam ter uma abordagem simplificada para criação e teste de aplicativos \cite{expo}.
 
 \begin{description}
-    \item Entre as ferramentas que compõem o Expo:
+    \item Entre as ferramentas que compõem o Expo, merecem atenção:
           \begin{itemize}
               \item Expo SDK - conjunto de bibliotecas, APIs e recursos para o desenvolvimento de aplicativos móveis que permite acesso aos 
               recursos de câmera, geolocalização, notificações \textit{push}, armazenamento local, dentre outros;
@@ -108,7 +112,7 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
               desenvolvimento, e
 
               \item Expo CLI - ferramenta de linha de comando que facilita criação e configuração de projetos Expo, além de ferramentas para 
-              testar; executar em ambiente de desenvolvimento, e publicá-lo nas lojas de aplicativos.
+              testar; executar em ambiente de desenvolvimento, e publicar nas lojas de aplicativos.
           \end{itemize}
 \end{description}
 
@@ -117,7 +121,7 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
 Node.js é um ambiente de execução JavaScript de código aberto que permite executar JavaScript do lado do servidor. Possui como características 
 flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
 
-No contexto do projeto, está sendo utilizado para fazer o tratamento da base dos bancos de dados, e para criar 
+No contexto do projeto, está sendo utilizado para fazer o tratamento do banco dos bancos de dados, e para criar 
 APIs (Interfaces de Programação de Aplicativos) que são consumidas pelo aplicativo \textit{front-end}.
 
 Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o processo de desenvolvimento e tratamento de solicitações e respostas HTTP.
@@ -127,7 +131,7 @@ Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o pr
 Express.js é uma biblioteca para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Fornece uma estrutura leve e flexível para 
 lidar com roteamento, gerenciamento de solicitações e respostas HTTP, \textit{middlewares}, dentre outros \cite{expressjs}.
 
-Na aplicação Multilind, está sendo utilizada para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados, e respostas 
+Na aplicação Multilind, está sendo útil para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados, e respostas 
 no formato e código de status adequados. Além disso, o uso de \textit{middlewares} para autenticação e validação de parâmetros das requisições também está presente.
 
 \subsection{Gerenciamento de Versões}
@@ -144,7 +148,7 @@ comparar mudanças, e trabalhar em paralelo em diferentes ramos (\textit{branche
 Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
 versão. Permite hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
 
-Cada edição deste documento e do código-fonte da aplicação Multilind está sendo versionada por meio do Git e armazenados pelo GitHub. 
+Cada edição deste documento e do código-fonte da aplicação Multilind está sendo versionada por meio do Git e armazenada pelo GitHub. 
 
 \subsection{Análise de Resultados}
 \label{sec:Análise de Resultados}
@@ -193,7 +197,7 @@ uso dessa ferramenta pode ser conferido no \hyperref[chap:Metodologia]{Capítulo
 
 \subsubsection{LucidChart}
 \label{sec:LucidChart}
-O Lucidchart \cite{lucidchart} é uma plataforma de criação de diagramas \textit{online} que permite criação, colaboração e compartilhamento de diagramas e atende várias notações, incluindo UML (\textit{Unified Modeling Language}) 
+O Lucidchart \cite{lucidchart} é uma plataforma focada em diagramas \textit{online} que permite criação, colaboração e compartilhamento de diagramas, além de atender várias notações, incluindo UML (\textit{Unified Modeling Language}) 
 e BPMN (\textit{Business Process Model and Notation}).
 
 \subsection{Gerenciamento do Fluxo de Trabalho}
@@ -208,7 +212,7 @@ dos projetos de forma visual e colaborativa.
 
 \section{Resumo do Capítulo}
 \label{sec:Resumo do Capítulo 2}
-Ao longo deste capítulo foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração deste trabalho, desde a pesquisa e escrita até o desenvolvimento. 
+Ao longo deste capítulo, foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração deste trabalho, desde a pesquisa e escrita até o desenvolvimento. 
 O Quadro \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
 
 \begin{table}[h]
