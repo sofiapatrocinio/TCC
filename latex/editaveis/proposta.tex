@@ -2,7 +2,7 @@
 \label{chap:Proposta}
 Neste capítulo, é retomado o contexto em que o trabalho pretende contribuir, apresentando a proposta do Trabalho de Conclusão de Curso. Inicialmente, na seção de \hyperref[sec:Contextualização]{Contextualização}, é 
 apresentado o domínio em que o estudo está inserido. Adicionalmente, com intuito de apresentar adequadamente a aplicação, a seção \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é exposta. A \hyperref[sec:Prova de Conceito]{Prova de Conceito}, 
-que detalha como os testes de usabilidade serão  feitos, também é coberta no capítulo. O \hyperref[sec:Primeiro Ciclo]{Primeiro Ciclo de Teste} esclarece sobre "como"  e "o que"  foi testado, além dos resultados. Com base nos insumos obtidos no primeiro ciclo de teste, 
+que detalha como os testes de usabilidade serão  feitos, também é coberta no capítulo. O \hyperref[sec:Primeiro Ciclo]{Primeiro Ciclo de Teste} esclarece sobre "como'' e "o que'' foi testado, além dos resultados. Com base nos insumos obtidos no primeiro ciclo de teste, 
 a seção de \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} elucida sobre a incorporação das melhorias elicitadas junto ao público alvo no aplicativo em estudo, o que demandou refinamentos no protótipo de alta fidelidade, em especial no fluxo de \hyperref[sec:Onboarding]{\textit{Onboarding}}, 
 e na disposição de informações em geral. O \hyperref[sec:Segundo Ciclo]{Segundo Ciclo de Teste} também é abordado, procurando mostrar os resultados obtidos com a análise da versão do aplicativo evoluída, ou seja, que teve as melhorias do primeiro ciclo incorporadas. 
 Ademais, encontra-se o \hyperref[sec:Backlog]{\textit{Backlog} de Melhorias} (priorizado), no qual constam as principais funcionalidades que serão implementadas de fato no aplicativo, com base no protótipo de alta fidelidade validado em dois ciclos de teste. 
@@ -39,7 +39,25 @@ tratados na sequência. O compromisso da autora é não violar o entorno do apli
 \subsection{Arquitetura}
 \label{Arquitetura}
 O projeto do aplicativo Multilind contém três repositórios principais: o respositório de \textit{Frontend}, que armazena a camada que lida com as interfaces do usuário, desenvolvido em React Native; o repositório \textit{Content Server}, que armazena os conteúdos do sistema 
-utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por armazenar e administrar os arquivos de mídia do aplicativo. Os diagramas de  pacotes, correspondentes a cada repositório, podem ser conferidos nas Figuras \ref{fig08}, \ref{fig09} e \ref{fig10}.
+utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por armazenar e administrar os arquivos de mídia do aplicativo. Os diagramas de  pacotes, correspondentes a cada repositório, podem ser conferidos nas Figuras \ref{fig08}, \ref{fig09} e \ref{fig10}. Na Figura \ref{fig08}, sobre 
+o Frontend, há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes de maior nível de abstração, ou seja, os pacotes de atuam na camada de interface com o usuário. Por isso, há destaque aos pacotes das bibliotecas, representados de forma generalista, 
+como \textit{Library1} a \textit{Library N}, por não haver necessidade de revelar cada biblioteca em si; aos pacotes que representam as telas, seus contextos e serviços, e aos pacotes que compreendem os componentes, Components, sendo esses estruturados em obediência ao conceito de Atomic Design \cite{atomic}. 
+Atomic Design, em linhas bem gerais, é uma abordagem que permite estruturar os elementos de \textit{design} usando uma analogia com átomos, moléculas, organismos e \textit{templates}, conforme descrito:
+
+\begin{itemize}
+	\item Átomos - componentes arquiteturais de menor nível de granularidade. Ex. Elementos Básicos: fontes, imagens, formas, ícones e cores;
+	\item Moléculas - componentes arquiteturais de segundo menor nível de granularidade. Ex. Forma (átomo) e Texto (átomo) juntos para formar um Botão (molécula);
+	\item Organismos - componentes arquiteturais de terceiro menor nível de granularidade. Ex. Estruturas como menu, \textit{header}, e \textit{footers};
+	\item Templates - componentes arquiteturais de quarto menor nível de granularidade (penúltimo). Ex. Agrupando organismos, têm-se templates, que são utilizados em protótipos e \textit{wireframes}, e
+	\item Páginas - componentes arquiteturais de maior nível de granularidade. Ex. Instâncias específicas de template.
+\end{itemize}
+
+Na Figura \ref{fig09}, sobre o Content Server, também há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes inerentes ao lado do servidor, considerando uma arquitetura Cliente-Servidor. Por isso, há menção aos pacotes das \textit{Controllers}, sendo essas responsáveis, em um padrão 
+arquitetural MVC (Model-View-Controller) \cite{designpattern}, por intermediar as comunicações entre a camada de Visão (no Multilind, a grosso modo, representado por \textit{Frontend}) e a camada de Modelo (no Multilind, a grosso modo, representado por \textit{Functions}). Cabe destacar ainda o pacote \textit{Services}, o qual corresponde ao banco 
+de dados (no caso do Multilind, o banco de dados PostgreSQL) \cite{larman2004}.
+
+Na Figura \ref{fig10}, sobre o \textit{Files Server}, também há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas. Similarmete, ao caso do servidor anterior, há destaque aos pacotes inerentes ao lado do servidor, com \textit{Controllers} e \textit{Services}. Cabe enfatizar que o aplicativo Multilind, portanto, compartilha de 
+uma arquitetura híbrida, que combina vários estilos e padrões arquiteturais, tais como: N-Camadas, Cliente-Servidor e MVC.
 
 \begin{figure}[h!]
 	\centering
@@ -87,24 +105,15 @@ utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por 
 A Lean Inception, criada por \citeonline{lean}, foi utilizada como forma de alinhar os desenvolvedores e \textit{stakeholders} em relação ao aplicativo, antes de sua execução, e confirmar sua viabilidade e sua necessidade. O processo aborda a visão do produto; a compreensão de personas; suas jornadas de usuário, e 
 o desenvolvimento de funcionalidades de alto nível \cite{lean}. No estágio de definição da visão do produto, a equipe e os \textit{stakeholders} do projeto responderam questões relativas ao público alvo da aplicação; o objetivo, e as principais características, como pode ser visto nas 
 Figuras \ref{fig11} e \ref{fig12}. Ambas as imagens são autoexplicativas. Entretanto, é pertinente mencionar, com base na Figura \ref{fig11}, sobre o foco do produto em povos indígenas e todos que possuem interesse sobre linguas indígenas; bem como em aspectos qualitativos, tais como: praticidade, acessibilidade, atualidade 
-e disponibilidade. Na Figura \ref{fig12}, estrutura-se a definição do produto considerando: "É", com destaque em é interativo, prático, mobile, gratuíto, dentre outros; "NÃO É", mencionando que não é jogo, rede social, chat, site, blog ou fórum, tampouco complexo; "FAZ", com menção a fazer mapeamento de línguas, 
-pesquisa por palavras, dentre outros; "NÃO FAZ", destancando que não faz restrição ao acesso à informação, nem expõe dados pessoais, dentre outros.
-
-\begin{figure}[h!]
-	\centering
-	\caption{Visão de Produto}
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/visao_produto.eps}}
-	\begin{tablenotes}[flushleft]
-		\centering
-		\item \textit{Fonte:} Multilind.
-	\end{tablenotes}
-	\label{fig11}
-\end{figure}
+e disponibilidade. Na Figura \ref{fig12}, estrutura-se a definição do produto considerando: "É'', com destaque em é interativo, prático, mobile, gratuíto, dentre outros; "NÃO É'', mencionando que não é jogo, rede social, chat, site, blog ou fórum, tampouco complexo; "FAZ'', com menção a fazer mapeamento de línguas, 
+pesquisa por palavras, dentre outros; "NÃO FAZ'', destancando que não faz restrição ao acesso à informação, nem expõe dados pessoais, dentre outros.
 
 \begin{figure}[h!]
 	\centering
 	\caption{Definição do Produto}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/produto_e_nao_e.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/produto_e_nao_e.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Multilind.
@@ -112,17 +121,33 @@ pesquisa por palavras, dentre outros; "NÃO FAZ", destancando que não faz restr
 	\label{fig12}
 \end{figure}
 
+\begin{figure}[h!]
+	\centering
+	\caption{Visão de Produto}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1\textwidth]{figuras/visao_produto.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Multilind.
+	\end{tablenotes}
+	\label{fig11}
+\end{figure}
+
 Como definidas no Capítulo de \hyperref[chap:Referencial]{Referencial Teórico}, as personas são representações detalhadas de perfis semifictícios, sendo desenvolvidas para ajudar a equipe na melhor compreensão sobre os usuários, bem 
 como sobre suas necessidades e expectativas. 
 
 Ainda durante a Lean Inception, na fase de descrição de personas, foram criadas três personas que representam diferentes tipos de usuários do aplicativo. Essas personas foram essenciais para realizar as jornadas das personas, e levantar as 
-funcionalidades necessárias para atender às necessidades e expectativas dos envolvidos. As Figuras \ref{fig13}, \ref{fig14} e \ref{fig15} mostram os três principais perfis levantados.
+funcionalidades necessárias para atender às necessidades e expectativas dos envolvidos. As Figuras \ref{fig13}, \ref{fig14} e \ref{fig15} mostram os três principais perfis levantados.  Na Figura \ref{fig13}, tem-se a persona Helena, de 24 anos, pós 
+graduanda em psicologia, com interesses como Cultura Indígena; comportamentes como gostar de viajar o Brasil, e necessidades, como localizar povos indígenas por regiões. Na figura \ref{fig14}, encontra-se a persona Kauã, de 40 anos, indígena do povo 
+Guarani, professor, que tem interesse em mostrar novas línguas indígenas a seus alunos. Por último, na Figura \ref{fig15} tem-se a persona Flávia, 45 anos, linguista, professora e pesquisadora; possui bastante conhecimento acerca de línguas indígenas e 
+tem interesse em contribuir com o projeto.
 
 \begin{figure}[h!]
 	\centering
 	\caption{Persona 1}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1.1\textwidth]{figuras/persona1.eps}
+		\includegraphics[width=1.8\textwidth]{figuras/persona1.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -135,7 +160,7 @@ funcionalidades necessárias para atender às necessidades e expectativas dos en
 	\centering
 	\caption{Persona 2}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1.1\textwidth]{figuras/persona2.eps}
+		\includegraphics[width=2.5\textwidth]{figuras/persona2.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -144,11 +169,13 @@ funcionalidades necessárias para atender às necessidades e expectativas dos en
 	\label{fig14}
 \end{figure}
 
+\pagebreak
+
 \begin{figure}[h!]
 	\centering
 	\caption{Persona 3}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1.5\textwidth]{figuras/persona3.eps}
+		\includegraphics[width=2.5\textwidth]{figuras/persona3.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -162,14 +189,16 @@ funcionalidades necessárias para atender às necessidades e expectativas dos en
 O guia de estilo do produto foi desenvolvido a partir da criação de um Manual de Identidade Visual\footnote{Manual de Identidade Visual Multilind, 2021. Disponível
 em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/img/manualIdentidade/Manual_Id.pdf} (último acesso: Julho 2023)}. Esse manual definiu os elementos fundamentais da marca, incluindo cores, tipografia, aplicação da marca, símbolo e conceitos base.
 
-O símbolo do Multilind é representado pelo beija-flor, que simboliza a pajé e a espiritualidade da língua. As principais cores presentes na logomarca são representadas pelos hexadecimais "\#04B47F" e "\#338BAE".
+O símbolo do Multilind é representado pelo beija-flor, que simboliza a pajé e a espiritualidade da língua. As principais cores presentes na logomarca são representadas pelos hexadecimais "\#04B47F'' e "\#338BAE''.
 
 Além disso, outras cores foram selecionadas como base para o desenvolvimento do \textit{design} de interface da aplicação, que podem ser vistas nas Figuras \ref{fig16} e \ref{fig17}.
 
 \begin{figure}[h!]
 	\centering
 	\caption{Paleta de Cores - Verde}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/cor1.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.9\textwidth]{figuras/cor1.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -180,7 +209,9 @@ Além disso, outras cores foram selecionadas como base para o desenvolvimento do
 \begin{figure}[h!]
 	\centering
 	\caption{Paleta de Cores - Azul}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/cor2.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.9\textwidth]{figuras/cor2.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -271,12 +302,15 @@ Após finalizar o primeiro ciclo de testes, utilizando a versão mais recente da
 	de como contribuir no aplicativo.
 \end{itemize}
 
-A Tabela \ref{tab06} apresenta o tempo gasto por cada testador durante o teste de usabilidade separado por funcionalidade.
+A Tabela \ref{tab06} apresenta o tempo gasto por cada testador durante o teste de usabilidade separado por funcionalidade. Observa-se, com base nos dados expostos, que a F04 - Visualizar línguas por família linguística, 
+demandou mais tempo, independentemente de quem estava testando. Por outro lado, as funcionalidades F01 - Visualizar línguas através do mapa, e F02 - Ver detalhes de uma língua ao clicar em um ponto no mapa, tiveram tempos 
+de resposta mais baixos, o que indica que essas funcionalidades foram realizadas de forma mais eficiente pelos testadores.
 
 \begin{table}[h!]
 	\centering
 	\caption{Tempo gasto por testador - Primeiro ciclo de testes}
 	\label{tab06}
+	\begin{adjustbox}{center}
 	\begin{tabular}{l|l|l|l|l|l}
 	\hline
 	Fucionalidade & Testador 1 & Testador 2 & Testador 3 & Testador 4 & Testador 5 \\ 	\hline
@@ -288,6 +322,7 @@ A Tabela \ref{tab06} apresenta o tempo gasto por cada testador durante o teste d
 	F06                   & 30.7s     & 8.4s      & 24s     & 45.7s     & 75.5s     \\
 	F07                   & 43.2s     & 23.8s      & 43.5s     & 181.2s    & 35s      \\ 	\hline
 	\end{tabular}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Maze. Disponível em: \url{https://app.maze.co/report/Multilind/3nsxpiljsgn073/intro}.
@@ -295,13 +330,27 @@ A Tabela \ref{tab06} apresenta o tempo gasto por cada testador durante o teste d
 \end{table}
 
 
-A tabela presente no Google Sheets apresenta as avaliações obtidas por meio do formulário \textit{Attrakdiff} aplicado aos testadores do aplicativo. Além disso, as Figuras \ref{fig21} e \ref{fig22} ilustram a média de respostas geral e a média 
-de respostas separadas pelas quatro dimensões principais, respectivamente.
+Dada a maior abrangência de informações conferidas pelo Questionário \textit{Attrakdiff}, optou-se por representar esses dados em uma tabela disponível no Google Sheets, que pode ser acessada via o link: 
+\url{https://docs.google.com/spreadsheets/d/1zVGAgqTqRUIRba0kFmWySBV_MLnNHqAVeRMLFGzIHLE/edit?usp=sharing} último acesso: Julho 2023. Analisando os dados obtidos, percebe-se que os pares de palavra-chave 
+mais bem conceituados foram: "Incontrolável - Gerenciável''; "Sem imaginação - Criativo'', e "De baixa qualidade - De alta qualidade''. Tais pares de palavras pertencem as dimensões Qualidade Pragmática Percebida;
+Qualidade da Experiência Hedônica Estímulo, e Qualidade Hedônica-Identidade, respectivamente. A explicação acerca das dimensões pode ser conferida na seção \hyperref[sec:Medicao2]{2.3.1}. 
+
+Já os pares de palavra-chave que revelaram menor satisfação foram: "Cauteloso - Ousado'' e "Confuso - Bem Estruturado''. Isso indica que os participantes perceberam o sistema como mais cauteloso do que ousado, e 
+sentiram-se confusos na interação com o sistema. Em suma, e considerando esses \textit{feedbacks}, foi identificado que é necessário focar nas seguintes melhorias: fornecer mais orientações, aprimorar a 
+organização e garantir clareza nas informações apresentadas. As Figuras \ref{fig21} e \ref{fig22} ilustram, respectivamente, a média de respostas geral e a média de respostas separadas pelas quatro dimensões principais. 
+
+Ressalta-se que, na média (Figura \ref{fig21}), há aspectos que chamam atenção por seus extremos. "Cauteloso - Ousado'' foi avaliado pelos participantes, obtendo 4,4 como média. Já "Desencorajador - Motivador'' foi avaliado pelos 
+participantes com média 6,4. Ao que indica, o aplicativo Multilind pode ser melhorado em "Cauteloso - Ousado''. Já "Desencorajador - Motivador'', em um primeiro momento, não é uma prioridade nas melhorias. Para maior conforto 
+quanto à análise dos dados, ressalta-se que valores mais altos, em um intervalo de 0 a 7, representam maior concordância por parte dos participantes no tópico questionado na pergunta, e o inverso é verdadeiro. Na Figura \ref{fig22}, 
+reporta-se sobre a maior satisfação dos usuários na dimensão Atratividade, com média na dimensão em 6,15. Em oposição, têm-se as dimensões: Qualidade de Estimulação (Henônica), com média na dimensão em 5,2 (a menor dentre 
+as quatro dimensões), e Qualidade Pragmática Percebida, com média na dimensão em 5,48 (segunda menor dentre as quatro dimensões).
 
 \begin{figure}[h!]
 	\centering
 	\caption{Média Geral \textit{Attrakdiff} - Primeiro Ciclo de Testes}
-	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-geral.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-geral.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -312,7 +361,9 @@ de respostas separadas pelas quatro dimensões principais, respectivamente.
 \begin{figure}[h!]
 	\centering
 	\caption{Média \textit{Attrakdiff} por dimensões - Primeiro Ciclo de Testes}
-	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-separada.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-separada.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -339,8 +390,10 @@ objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. A F
 
 \begin{figure}[h!]
 	\centering
-	\caption{\textit{Onboarding}}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/onboarding.eps}}
+	\caption{\textit{Onboarding} - Passos 1 e 2}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1\textwidth]{figuras/onboarding.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -348,21 +401,12 @@ objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. A F
 	\label{fig22}
 \end{figure}
 
-A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema", pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
-o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real", utilizando termos e elementos que os usuáŕios 
-possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário", opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
-padrões" foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. Por fim, a "Prevenção de erros", por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
-a probabilidade de cometerem erros.
-
-\subsection{Línguas por Família Linguística}
-\label{sec:Familia Linguistica}
-Outro problema de usabilidade identificado foi a dificuldade dos usuários em encontrar a opção de listar por família linguística. Visto que representa uma informação importante a respeito das línguas indígenas, 
-o ícone de filtro foi substituído por texto descritivo, a fim de deixar a funcionalidade mais clara e  explícita. A Figura \ref{fig23} evidencia o uso de textos nos ícones de filtro.
-
 \begin{figure}[h!]
 	\centering
-	\caption{Línguas por Família Linguística}
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/linguas.eps}}
+	\caption{\textit{Onboarding} - Passos 3 e 4}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1\textwidth]{figuras/onboarding1.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -370,36 +414,48 @@ o ícone de filtro foi substituído por texto descritivo, a fim de deixar a func
 	\label{fig23}
 \end{figure}
 
-A implementação dessa mudança aborda, principalmente, a heurística de "Visibilidade do status do sistema", pois ao substituir o ícone por um texto descritivo, os usuários terão uma compreensão mais clara e explícita da 
-funcionalidade disponível, além de poderem visualizar exatamente onde estão através do componente de abas. Em relação à "Correspondência entre o sistema e o mundo real", pode-se pontuar que a funcionalidade se torna mais 
-alinhada com a expectativa do usuário. Isso ocorre, pois através do texto descritivo, os usuários podem associar mais facilmente à ação. Além disso, foi adotado o princípio de "Consistência e Padrões", seguindo a utilização de componentes 
-reutilizáveis e garantindo a coerência em todo o sistema. 
+A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema'', pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
+o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real'', utilizando termos e elementos que os usuáŕios 
+possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário'', opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
+padrões'' foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. Por fim, a "Prevenção de erros'', por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
+a probabilidade de cometerem erros.
 
-\subsection{Disposição de Informações}
-\label{sec:Disposicao de Informacoes}
-
-Entre as melhorias implementadas no aplicativo, tem-se a reorganização e a disposição das informações. A utilização de abas em diferentes telas, como as de línguas, palavras específicas e dicionário. Essas abas foram 
-visualmente destacadas quando selecionadas, com o uso de cores distintas para indicar ao usuário em qual seção ele está navegando, conforme apresentado na Figura \ref*{fig24}. Essa mudança proporciona maior visibilidade ao status atual do sistema, tornando mais 
-claro para os usuários onde eles estão e qual ação estão realizando.
+\subsection{Línguas por Família Linguística}
+\label{sec:Familia Linguistica}
+Outro problema de usabilidade identificado foi a dificuldade dos usuários em encontrar a opção de listar por família linguística. Visto que representa uma informação importante a respeito das línguas indígenas, 
+o ícone de filtro foi substituído por texto descritivo, a fim de deixar a funcionalidade mais clara e  explícita. A Figura \ref{fig24} evidencia o uso de textos nos ícones de filtro.
 
 \begin{figure}[h!]
 	\centering
-	\caption{Telas da Aplicação - Abas}
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/abas.eps}}
-	\begin{tablenotes}[flushleft]
+	\caption{Línguas por Família Linguística}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1\textwidth]{figuras/linguas.eps}
+	\end{adjustbox}
+		\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
 	\end{tablenotes}
 	\label{fig24}
 \end{figure}
 
-Além disso, para tornar o aplicativo mais atrativo, foram adicionadas novas cores seguindo uma paleta de cores coerente e visualmente  agradável, conforme ilustrado na Figura \ref{fig25}. Essas cores foram aplicadas de forma consistente em todo o aplicativo, 
-contribuindo para uma experiência visual atraente e harmoniosa. A "Estética e Design Minimalista" foi seguida, buscando evitar sobrecarregar os usuários com informações desnecessárias, focando apenas no essencial.
+A implementação dessa mudança aborda, principalmente, a heurística de "Visibilidade do status do sistema'', pois ao substituir o ícone por um texto descritivo, os usuários terão uma compreensão mais clara e explícita da 
+funcionalidade disponível, além de poderem visualizar exatamente onde estão através do componente de abas. Em relação à "Correspondência entre o sistema e o mundo real'', pode-se pontuar que a funcionalidade se torna mais 
+alinhada com a expectativa do usuário. Isso ocorre, pois através do texto descritivo, os usuários podem associar mais facilmente à ação. Além disso, foi adotado o princípio de "Consistência e Padrões'', seguindo a utilização de componentes 
+reutilizáveis e garantindo a coerência em todo o sistema. 
+
+\subsection{Disposição de Informações}
+\label{sec:Disposicao de Informacoes}
+
+Entre as melhorias implementadas no aplicativo, tem-se a reorganização e a disposição das informações. A utilização de abas em diferentes telas, como as de línguas, palavras específicas e dicionário. Essas abas foram 
+visualmente destacadas quando selecionadas, com o uso de cores distintas para indicar ao usuário em qual seção ele está navegando, conforme apresentado na Figura \ref{fig25}. Essa mudança proporciona maior visibilidade ao status atual do sistema, tornando mais 
+claro para os usuários onde eles estão e qual ação estão realizando.
 
 \begin{figure}[h!]
 	\centering
-	\caption{Componentes da Aplicação}
-	\resizebox{0.85\textwidth}{!}{\includegraphics{figuras/componentes.eps}}
+	\caption{Telas da Aplicação - Abas}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1.2\textwidth]{figuras/abas.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -407,12 +463,41 @@ contribuindo para uma experiência visual atraente e harmoniosa. A "Estética e 
 	\label{fig25}
 \end{figure}
 
-Outra melhoria importante foi a adição de informações sobre como contribuir com o aplicativo. Essa inclusão permite que os usuários tenham conhecimento sobre como podem participar ativamente do desenvolvimento do aplicativo, 
-fornecendo \textit{feedback}, relatando erros e contribuindo com sugestões. Tal melhoria permite maior "Liberdade e Controle do Usuário" na aplicação, permitindo que eles participem ativamente no desenvolvimento e aprimoramento 
+Além disso, para tornar o aplicativo mais atrativo, foram adicionadas novas cores seguindo uma paleta de cores coerente e visualmente  agradável, conforme ilustrado na Figura \ref{fig26}. Essas cores foram aplicadas de forma consistente em todo o aplicativo, 
+contribuindo para uma experiência visual atraente e harmoniosa. A "Estética e Design Minimalista'' foi seguida, buscando evitar sobrecarregar os usuários com informações desnecessárias, focando apenas no essencial.
+
+\begin{figure}[h!]
+	\centering
+	\caption{Componentes da Aplicação}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1\textwidth]{figuras/componentes.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
+	\label{fig26}
+\end{figure}
+
+Outra melhoria importante foi a adição da opção de contribuir com o aplicativo na tela de "Sobre". Essa inclusão permite que os usuários tenham conhecimento sobre como podem participar ativamente do desenvolvimento do aplicativo, 
+fornecendo \textit{feedback}, relatando erros e contribuindo com sugestões. Tal melhoria permite maior "Liberdade e Controle do Usuário'' na aplicação, permitindo que eles participem ativamente no desenvolvimento e aprimoramento 
 das informações presentes.
 
-Por fim, também foi definido de forma mais clara e explícita o que é o português indígena, fornecendo uma definição compreensível aos usuários. Essa informação provê uma forma de "Ajuda e Documentação" aos usuários, promovendo uma melhor 
+Por fim, também foi definido de forma mais clara e explícita o que é o português indígena, fornecendo uma definição compreensível aos usuários. Essa informação provê uma forma de "Ajuda e Documentação'' aos usuários, promovendo uma melhor 
 compreensão e orientação durante o uso do aplicativo.
+
+\begin{figure}[h!]
+	\centering
+	\caption{Melhorias na disposição de informações}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.7\textwidth]{figuras/melhorias.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
+	\label{fig27}
+\end{figure}
 
 
 \section{Segundo Ciclo de Testes}
@@ -426,12 +511,15 @@ usabilidade da estrutura fundamental do site, avaliando questões como arquitetu
 
 \subsubsection{Resultado do Segundo Ciclo de Testes}
 \label{sec:Resultado do Segundo Ciclo de Testes}
-A Tabela \ref{tab07} apresenta o tempo gasto, considerando cada testador, durante o teste de usabilidade separado por funcionalidade.
+A Tabela \ref{tab07} apresenta o tempo gasto, considerando cada testador, durante o teste de usabilidade separado por funcionalidade. Considerando os dados, percebem-se melhorias significativas para o caso, por exemplo, da Funcionalidade 04 - Visualizar línguas 
+por família linguística, que teve uma redução média de 42,54 segundos. Em seguida, a funcionalidade F01 - Visualizar línguas através do mapa, demonstrou uma redução média de 16,29 segundos. Todas as demais funcionalidades apresentaram considerável redução de 
+tempo. 
 
 \begin{table}[h!]
 	\centering
 	\caption{Tempo gasto por testador - Segundo ciclo de testes}
 	\label{tab07}
+	\begin{adjustbox}{center}
 	\begin{tabular}{l|l|l|l|l|l}
 	\hline
 	Fucionalidade & Testador 1 & Testador 2 & Testador 3 & Testador 4 & Testador 5 \\ 	\hline
@@ -443,35 +531,41 @@ A Tabela \ref{tab07} apresenta o tempo gasto, considerando cada testador, durant
 	F06                   & 18.4s     & 11.1s      & 14.6s     & 14.4s     & 18.2s     \\
 	F07                   & 18.9s     & 20.8s      & 25s     & 21s    & 52.9s       \\ 	\hline
 	\end{tabular}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Maze. Disponível em: \url{https://app.maze.co/report/Novo-Multilind/hsf4hljyldyqs/intro}.
 	  \end{tablenotes}
 \end{table}
 
-Uma nova tabela presente no Google Sheets apresenta as avaliações obtidas por meio do Questionário \textit{Attrakdiff} aplicado aos testadores do aplicativo, para o caso dessa versão evoluída do protótipo. 
-Além disso, as Figuras \ref{fig26} e \ref{fig27} ilustram a média de respostas geral e a média de respostas separadas pelas quatro dimensões principais, respectivamente.
+Uma nova tabela presente no Google Sheets, que pode ser acessada via o link: 
+\url{https://docs.google.com/spreadsheets/d/1H1Rh7tegYa_Ql--i-Xj0oNvzAhHVz_6Xt1jmX3sJEk4/edit?usp=sharing} último acesso: Julho 2023, apresenta as avaliações obtidas por meio do Questionário \textit{Attrakdiff} aplicado aos testadores do aplicativo, para o caso 
+dessa versão evoluída do protótipo. Além disso, as Figuras \ref{fig28} e \ref{fig29} ilustram a média de respostas geral e a média de respostas separadas pelas quatro dimensões principais, respectivamente.
 
 \begin{figure}[h!]
 	\centering
 	\caption{Média Geral \textit{Attrakdiff} - Segundo Ciclo de Testes}
-	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-geral1.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-geral1.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
 	\end{tablenotes}
-	\label{fig26}
+	\label{fig28}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\caption{Média \textit{Attrakdiff} por dimensões- Segundo Ciclo de Testes}
-	\resizebox{0.8\textwidth}{!}{\includegraphics{figuras/media-separada1.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-separada1.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
 	\end{tablenotes}
-	\label{fig27}
+	\label{fig29}
 \end{figure}
 
 Os usuários relataram melhor entendimento da aplicação devido ao passo a passo inicial, além da validação da mudança dos fluxos no aplicativo, que se demonstraramm mais intuitivos. Os dados revelam melhoria nas quatro dimensões principais do \textit{AttrakDiff}, 
