@@ -48,12 +48,12 @@ Atomic Design, em linhas bem gerais, é uma abordagem que permite estruturar os 
 	\item Átomos - componentes arquiteturais de menor nível de granularidade. Ex. Elementos Básicos: fontes, imagens, formas, ícones e cores;
 	\item Moléculas - componentes arquiteturais de segundo menor nível de granularidade. Ex. Forma (átomo) e Texto (átomo) juntos para formar um Botão (molécula);
 	\item Organismos - componentes arquiteturais de terceiro menor nível de granularidade. Ex. Estruturas como menu, \textit{header}, e \textit{footers};
-	\item Templates - componentes arquiteturais de quarto menor nível de granularidade (penúltimo). Ex. Agrupando organismos, têm-se templates, que são utilizados em protótipos e \textit{wireframes}, e
-	\item Páginas - componentes arquiteturais de maior nível de granularidade. Ex. Instâncias específicas de template.
+	\item \textit{Templates} - componentes arquiteturais de quarto menor nível de granularidade (penúltimo). Ex. Agrupando organismos, têm-se \textit{templates}, que são utilizados em protótipos e \textit{wireframes}, 
+	\item Páginas - componentes arquiteturais de maior nível de granularidade. Ex. Instâncias específicas de \textit{template}.
 \end{itemize}
 
-Na Figura \ref{fig09}, sobre o Content Server, também há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes inerentes ao lado do servidor, considerando uma arquitetura Cliente-Servidor. Por isso, há menção aos pacotes das \textit{Controllers}, sendo essas responsáveis, em um padrão 
-arquitetural MVC (Model-View-Controller) \cite{designpattern}, por intermediar as comunicações entre a camada de Visão (no Multilind, a grosso modo, representado por \textit{Frontend}) e a camada de Modelo (no Multilind, a grosso modo, representado por \textit{Functions}). Cabe destacar ainda o pacote \textit{Services}, o qual corresponde ao banco 
+Na Figura \ref{fig09}, sobre o \textit{Content Server}, também há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes inerentes ao lado do servidor, considerando uma arquitetura Cliente-Servidor. Por isso, há menção aos pacotes das \textit{Controllers}, sendo essas responsáveis, em um padrão 
+arquitetural MVC \textit{(Model-View-Controller)} \cite{designpattern}, por intermediar as comunicações entre a camada de Visão (no Multilind, a grosso modo, representado por \textit{Frontend}) e a camada de Modelo (no Multilind, a grosso modo, representado por \textit{Functions}). Cabe destacar ainda o pacote \textit{Services}, o qual corresponde ao banco 
 de dados (no caso do Multilind, o banco de dados PostgreSQL) \cite{larman2004}.
 
 Na Figura \ref{fig10}, sobre o \textit{Files Server}, também há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas. Similarmete, ao caso do servidor anterior, há destaque aos pacotes inerentes ao lado do servidor, com \textit{Controllers} e \textit{Services}. Cabe enfatizar que o aplicativo Multilind, portanto, compartilha de 
@@ -104,7 +104,7 @@ uma arquitetura híbrida, que combina vários estilos e padrões arquiteturais, 
 \label{Publico-Alvo}
 A Lean Inception, criada por \citeonline{lean}, foi utilizada como forma de alinhar os desenvolvedores e \textit{stakeholders} em relação ao aplicativo, antes de sua execução, e confirmar sua viabilidade e sua necessidade. O processo aborda a visão do produto; a compreensão de personas; suas jornadas de usuário, e 
 o desenvolvimento de funcionalidades de alto nível \cite{lean}. No estágio de definição da visão do produto, a equipe e os \textit{stakeholders} do projeto responderam questões relativas ao público alvo da aplicação; o objetivo, e as principais características, como pode ser visto nas 
-Figuras \ref{fig11} e \ref{fig12}. Ambas as imagens são autoexplicativas. Entretanto, é pertinente mencionar, com base na Figura \ref{fig11}, sobre o foco do produto em povos indígenas e todos que possuem interesse sobre linguas indígenas; bem como em aspectos qualitativos, tais como: praticidade, acessibilidade, atualidade 
+Figuras \ref{fig11} e \ref{fig12}. Ambas as imagens são autoexplicativas. Entretanto, é pertinente mencionar, com base na Figura \ref{fig1f1}, sobre o foco do produto em povos indígenas e todos que possuem interesse sobre linguas indígenas; bem como em aspectos qualitativos, tais como: praticidade, acessibilidade, atualidade 
 e disponibilidade. Na Figura \ref{fig12}, estrutura-se a definição do produto considerando: "É'', com destaque em é interativo, prático, mobile, gratuíto, dentre outros; "NÃO É'', mencionando que não é jogo, rede social, chat, site, blog ou fórum, tampouco complexo; "FAZ'', com menção a fazer mapeamento de línguas, 
 pesquisa por palavras, dentre outros; "NÃO FAZ'', destancando que não faz restrição ao acesso à informação, nem expõe dados pessoais, dentre outros.
 
@@ -230,7 +230,9 @@ em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/} (último acesso: 
 \begin{figure}[h!]
 	\centering
 	\caption{Telas da Aplicação - Mapa e Palavra Específica}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/app1.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.95\textwidth]{figuras/app1.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -241,7 +243,9 @@ em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/} (último acesso: 
 \begin{figure}[h!]
 	\centering
 	\caption{Telas da Aplicação - Línguas e Dicionário}
-	\resizebox{1\textwidth}{!}{\includegraphics{figuras/app2.eps}}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.95\textwidth]{figuras/app2.eps}
+	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
 		\item \textit{Fonte:} Autora.
@@ -400,6 +404,8 @@ objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As 
 	\label{fig22}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h!]
 	\centering
 	\caption{\textit{Onboarding} - Passos 3 e 4}
@@ -508,7 +514,7 @@ reconhece que nem sempre é possível envolver usuários novos a cada iteração
 
 Após o primeiro estudo, com cinco participantes, ter encontrado alguns problemas de usabilidade, o \textit{design} foi redesenhado\footnote{Protótipo com melhorias. Disponível em: \url{https://shorturl.at/ryEOR}(último acesso: Julho 2023)}. 
 A segunda rodada de testes com cinco usuários visa mapear os demais problemas de usabilidade que não foram encontrados na primeira rodada de testes, além de aferir se as melhorias realizadas surtiram os efeitos desejados. O segundo estudo poderá aprofundar a 
-usabilidade da estrutura fundamental do site, avaliando questões como arquitetura da informação; fluxo de tarefas, e correspondência com as necessidades do usuário \cite{usabilitytest}.
+usabilidade da estrutura fundamental do aplicativo, avaliando questões como arquitetura da informação; fluxo de tarefas, e correspondência com as necessidades do usuário \cite{usabilitytest}.
 
 \subsubsection{Resultado do Segundo Ciclo de Testes}
 \label{sec:Resultado do Segundo Ciclo de Testes}
@@ -595,6 +601,7 @@ Foi elaborado um \textit{Product Backlog}, contendo histórias de usuário, a pa
 os requisitos são categorizados como \textit{Must Have}, \textit{Should Have}, \textit{Could Have} e \textit{Won't Have} \cite{miranda2021}, na ordem dos mais necessários aos que não fazem parte do escopo. No caso, foram classificados em \textit{Must Have (Must)} e \textit{Should Have (Should)}, conferindo ênfase ao que de 
 fato faz parte do escopo de implementação desse projeto.
 
+\newpage
 
 \begin{table}[h!]
 	\centering
