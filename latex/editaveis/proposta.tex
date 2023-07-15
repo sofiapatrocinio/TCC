@@ -5,7 +5,8 @@ apresentado o domínio em que o estudo está inserido. Adicionalmente, com intui
 que detalha como os testes de usabilidade serão  feitos, também é coberta no capítulo. O \hyperref[sec:Primeiro Ciclo]{Primeiro Ciclo de Teste} esclarece sobre "como'' e "o que'' foi testado, além dos resultados. Com base nos insumos obtidos no primeiro ciclo de teste, 
 a seção de \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} elucida sobre a incorporação das melhorias elicitadas junto ao público alvo no aplicativo em estudo, o que demandou refinamentos no protótipo de alta fidelidade, em especial no fluxo de \hyperref[sec:Onboarding]{\textit{Onboarding}}, 
 e na disposição de informações em geral. O \hyperref[sec:Segundo Ciclo]{Segundo Ciclo de Teste} também é abordado, procurando mostrar os resultados obtidos com a análise da versão do aplicativo evoluída, ou seja, que teve as melhorias do primeiro ciclo incorporadas. 
-Ademais, encontra-se o \hyperref[sec:Backlog]{\textit{Backlog} de Melhorias} (priorizado), no qual constam as principais funcionalidades que serão implementadas de fato no aplicativo, com base no protótipo de alta fidelidade validado em dois ciclos de teste. 
+Com base nesses resultados, a \hyperref[sec:Matriz SWOT]{Matriz SWOT} apresenta as forças, fraquezas, ameaças e oportunidades identificadas durante a análise da versão evoluída do aplicativo. Ademais, encontra-se o \hyperref[sec:Backlog]{\textit{Backlog} de Melhorias} 
+(priorizado), no qual constam as principais funcionalidades que serão implementadas de fato no aplicativo, com base no protótipo de alta fidelidade validado em dois ciclos de teste. 
 Por fim, tem-se o \hyperref[sec:Resumo Proposta]{Resumo do Capítulo}.
 
 \section{Contextualização}
@@ -223,6 +224,11 @@ como base para o desenvolvimento do \textit{design} de interface da aplicação,
 A versão 1.4.0 da aplicação possui diversas funcionalidades voltadas para o mapeamento e a divulgação das línguas indígenas brasileiras. Entre essas funcionalidades, destaca-se o mapeamento das línguas, que permite aos usuários 
 explorar através do mapa e descobrir informações sobre línguas indígenas brasileiras. Isso inclui detalhes sobre o tronco e a família linguística à qual a língua pertence, seu dicionário e imagens relativas à lista de palavras.
 
+
+A representação das telas do aplicativo pode ser vista nas Figuras \ref{fig18} e \ref{fig19}. Na Figura \ref{fig18}, são apresentadas as telas do mapa e palavra específica. O mapa permite visualizar a localização geográfica das 
+línguas indígenas, enquanto a tela de palavra específica exibe detalhes sobre palavras específicas de cada língua. Já na Figura \ref{fig19}, são apresentadas as telas de línguas e dicionário. A tela de línguas permite explorar 
+as diferentes línguas indígenas disponíveis no aplicativo, enquanto o dicionário oferece acesso a palavras e seus respectivos significados. 
+
 Além disso, a aplicação também oferece recursos de tradução para o português indígena e o português formal. Os usuários podem fazer buscas por palavras e visualizar informações como significado e imagens relativas. Um levantamento 
 mais pleno sobre essas funcionalidades pode ser obtido consultando o repositório do aplicativo Multilind. Nesse repositório, a equipe procurou destacar sobre os principais propósitos do aplicativo. \footnote{Repositório Multilind, 2023. Disponível
 em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/} (último acesso: Julho 2023)}
@@ -231,7 +237,7 @@ em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/} (último acesso: 
 	\centering
 	\caption{Telas da Aplicação - Mapa e Palavra Específica}
 	\begin{adjustbox}{center}
-		\includegraphics[width=0.95\textwidth]{figuras/app1.eps}
+		\includegraphics[width=1\textwidth]{figuras/app1.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -240,11 +246,13 @@ em: \url{https://fga-eps-mds.github.io/2021.1-Multilind-Docs/} (último acesso: 
 	\label{fig18}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h!]
 	\centering
 	\caption{Telas da Aplicação - Línguas e Dicionário}
 	\begin{adjustbox}{center}
-		\includegraphics[width=0.95\textwidth]{figuras/app2.eps}
+		\includegraphics[width=0.9\textwidth]{figuras/app2.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -352,7 +360,7 @@ as quatro dimensões), e Qualidade Pragmática Percebida, com média na dimensã
 	\centering
 	\caption{Média Geral \textit{Attrakdiff} - Primeiro Ciclo de Testes}
 	\begin{adjustbox}{center}
-		\includegraphics[width=0.8\textwidth]{figuras/media-geral.eps}
+		\includegraphics[width=1\textwidth]{figuras/media-geral.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -361,11 +369,13 @@ as quatro dimensões), e Qualidade Pragmática Percebida, com média na dimensã
 	\label{fig20}
 \end{figure}
 
+\newpage
+
 \begin{figure}[h!]
 	\centering
 	\caption{Média \textit{Attrakdiff} por dimensões - Primeiro Ciclo de Testes}
 	\begin{adjustbox}{center}
-		\includegraphics[width=0.8\textwidth]{figuras/media-separada.eps}
+		\includegraphics[width=1\textwidth]{figuras/media-separada.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -382,20 +392,17 @@ o que orientou o processo de melhoria de usabilidade e experiência de usuário.
 
 \subsection{\textit{Onboarding}}
 \label{sec:Onboarding}
-De acordo com \citeonline{cooper2007}, o objetivo do \textit{design} depende do contexto - quem são os usuários; o que estão fazendo, e seus objetivos. Além disso, os autores mencionam que não é possível 
-criar um bom \textit{design} seguindo regras desconectadas dos objetivos e das necessidades dos usuários do seu produto. 
-
-Com base nisso, e baseado na falta de introdução de contexto, apontada por alguns usuários como ponto de 
-melhoria, foi introduzido um processo de familiarização. Tal processo, conhecido como \textit{onboarding}, pode ser entendido como a combinação de métodos e elementos que auxiliam um novo usuário 
-a se familiarizar com um produto digital, seja ele um baseado na web ou aplicativo móvel. Essa ambientação inicial pode incluir tutoriais interativos; orientações passo a passo; dicas contextuais, e outras 
-abordagens que visam orientar os usuários durante a primeira interação com o produto. Seu objetivo é permitir que os usuários compreendam como utilizar as funcionalidades do produto, e alcançar seus 
-objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As Figuras \ref{fig22} e \ref{23} ilustra cinco telas que compõem o Onboarding proposto como melhoria para o caso do aplicativo Multilind.
+Seguindo a abordagem de \citeonline{cooper2007}, o \textit{design} depende do contexto - quem são os usuários; o que estão fazendo, e seus objetivos. Além disso, os autores mencionam que não é possível 
+criar um bom \textit{design} seguindo regras desconectadas dos objetivos e das necessidades dos usuários do seu produto. Com base nisso, foi introduzido um processo de familiarização chamado \textit{onboarding}, que 
+auxilia os novos usuários a se familiarizarem com o aplicativo. Esse processo pode incluir tutoriais interativos, orientações passo a passo e dicas contextuais para orientar os usuários durante a primeira interação com 
+o produto. O objetivo é permitir que os usuários compreendam as funcionalidades do aplicativo e alcancem seus objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As Figuras \ref{fig22} e \ref{fig23} mostram as 
+telas do \textit{onboarding} proposto como melhoria para o aplicativo Multilind.
 
 \begin{figure}[h!]
 	\centering
 	\caption{\textit{Onboarding} - Passos 1 e 2}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1\textwidth]{figuras/onboarding.eps}
+		\includegraphics[width=0.9\textwidth]{figuras/onboarding.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -404,13 +411,11 @@ objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As 
 	\label{fig22}
 \end{figure}
 
-\newpage
-
 \begin{figure}[h!]
 	\centering
 	\caption{\textit{Onboarding} - Passos 3 e 4}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1\textwidth]{figuras/onboarding1.eps}
+		\includegraphics[width=0.8\textwidth]{figuras/onboarding1.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -455,8 +460,6 @@ Entre as melhorias implementadas no aplicativo, tem-se a reorganização e a dis
 visualmente destacadas quando selecionadas, com o uso de cores distintas para indicar ao usuário em qual seção ele está navegando, conforme apresentado na Figura \ref{fig25}. Essa mudança proporciona maior visibilidade ao status atual do sistema, tornando mais 
 claro para os usuários onde eles estão e qual ação estão realizando.
 
-\newpage
-
 \begin{figure}[h!]
 	\centering
 	\caption{Telas da Aplicação - Abas}
@@ -473,11 +476,18 @@ claro para os usuários onde eles estão e qual ação estão realizando.
 Adicionalmente, visando tornar o aplicativo mais atrativo, foram adicionadas novas cores seguindo as paleta de cores da aplicação. Conforme mostra a Figura \ref{fig26}, também foram incorporados novos componentes com o objetivo de preservar a uniformidade na estrutura do aplicativo.
 Essas tonalidades foram aplicadas de forma consistente no aplicativo, contribuindo para uma experiência visual mais atraente. A abordagem de "Estética e Design Minimalista'' foi adotada, evitando sobrecarregar os usuários com informações supérfluas, focando apenas no essencial.
 
+Outra melhoria importante foi a adição da opção de contribuir com o aplicativo na tela de "Sobre", conforme ilustrado na Figura \ref{fig27}. Essa inclusão permite que os usuários tenham conhecimento sobre como podem participar ativamente do desenvolvimento do aplicativo, 
+fornecendo \textit{feedback}, relatando erros e contribuindo com sugestões. Tal melhoria permite maior "Liberdade e Controle do Usuário'' na aplicação, permitindo que eles participem ativamente no desenvolvimento e aprimoramento 
+das informações presentes.
+
+Por fim, também foi definido de forma mais clara e explícita o que é o português indígena, como pode ser visto na Figura \ref{fig27}, fornecendo uma definição compreensível aos usuários. Essa informação provê uma forma de "Ajuda e Documentação'' aos usuários, promovendo uma melhor 
+compreensão e orientação durante o uso do aplicativo.
+
 \begin{figure}[h!]
 	\centering
 	\caption{Componentes da Aplicação}
 	\begin{adjustbox}{center}
-		\includegraphics[width=1\textwidth]{figuras/componentes.eps}
+		\includegraphics[width=0.85\textwidth]{figuras/componentes.eps}
 	\end{adjustbox}
 	\begin{tablenotes}[flushleft]
 		\centering
@@ -485,13 +495,6 @@ Essas tonalidades foram aplicadas de forma consistente no aplicativo, contribuin
 	\end{tablenotes}
 	\label{fig26}
 \end{figure}
-
-Outra melhoria importante foi a adição da opção de contribuir com o aplicativo na tela de "Sobre", conforme ilustrado na Figura \ref{fig27}. Essa inclusão permite que os usuários tenham conhecimento sobre como podem participar ativamente do desenvolvimento do aplicativo, 
-fornecendo \textit{feedback}, relatando erros e contribuindo com sugestões. Tal melhoria permite maior "Liberdade e Controle do Usuário'' na aplicação, permitindo que eles participem ativamente no desenvolvimento e aprimoramento 
-das informações presentes.
-
-Por fim, também foi definido de forma mais clara e explícita o que é o português indígena, como pode ser visto na Figura \ref{fig27}, fornecendo uma definição compreensível aos usuários. Essa informação provê uma forma de "Ajuda e Documentação'' aos usuários, promovendo uma melhor 
-compreensão e orientação durante o uso do aplicativo.
 
 \begin{figure}[h!]
 	\centering
@@ -564,7 +567,7 @@ dessa versão evoluída do protótipo. Além disso, as Figuras \ref{fig28} e \re
 
 \begin{figure}[h!]
 	\centering
-	\caption{Média \textit{Attrakdiff} por dimensões- Segundo Ciclo de Testes}
+	\caption{Média \textit{Attrakdiff} por dimensões - Segundo Ciclo de Testes}
 	\begin{adjustbox}{center}
 		\includegraphics[width=0.8\textwidth]{figuras/media-separada1.eps}
 	\end{adjustbox}
@@ -595,13 +598,37 @@ Mesmo diante dos resultados positivos, novas possíveis melhorias também foram 
 	e precisa.
 \end{itemize}
 
+\section{Matriz SWOT}
+\label{sec:Matriz SWOT}
+
+Como mencionada no \hyperref[chap:Referencial]{Capítulo 2}, a matriz SWOT oferece uma visão abrangente do aplicativo. Permitindo identificar os pontos fortes que devem ser mantidos e fortalecidos, as fraquezas que precisam ser corrigidas, as oportunidades que devem ser exploradas 
+e as ameaças que devem ser enfrentadas. Essa análise é valiosa para orientar as decisões estratégicas, direcionar esforços e recursos para áreas prioritárias e identificar possíveis caminhos de desenvolvimento e aprimoramento.
+
+No caso do aplicativo Multilind, a matriz SWOT (Figura \ref{fig30}) permitiu documentar os aspectos positivos que foram percebidos pelos usuários: as melhorias implementadas que foram bem-sucedidas (forças); as oportunidades de melhorias no aplicativo, como a introdução de funcionalidades de 
+pronúncia de palavras e a ampliação da participação dos falantes das línguas indígenas (oportunidades); as áreas que ainda precisam de aprimoramento, como a necessidade de maior participação coletiva e a falta da funcionalidade de pronúncia de palavras (fraquezas), e as dificuldades 
+relacionadas à tradução para o português indígena (ameaças).
+
+\begin{figure}[h!]
+	\centering
+	\caption{Matriz SWOT Multilind}
+	\begin{adjustbox}{center}
+		\includegraphics[width=1.2\textwidth]{figuras/swot.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
+	\label{fig30}
+\end{figure}
+
+
+
 \section{Backlog de Melhorias}
 \label{sec:Backlog de Melhorias}
-Foi elaborado um \textit{Product Backlog}, contendo histórias de usuário, a partir da concepção do protótipo e das melhorias pontuadas, para orientar o desenvolvimento deste projeto na segunda etapa do TCC. Além disso, a técnica MoSCoW foi utilizada para realizar a priorização. Seguindo essa classificação, 
-os requisitos são categorizados como \textit{Must Have}, \textit{Should Have}, \textit{Could Have} e \textit{Won't Have} \cite{miranda2021}, na ordem dos mais necessários aos que não fazem parte do escopo. No caso, foram classificados em \textit{Must Have (Must)} e \textit{Should Have (Should)}, conferindo ênfase ao que de 
-fato faz parte do escopo de implementação desse projeto.
-
-\newpage
+O \textit{Product Backlog}, contendo as histórias de usuário para orientar o desenvolvimento do projeto na segunda etapa do TCC, pode ser visualizado na Tabela \ref{tab08}. Essas histórias foram elaboradas a 
+partir da concepção do protótipo e das melhorias identificadas durante a pesquisa.. Além disso, a técnica MoSCoW foi utilizada para realizar a priorização. Seguindo essa classificação, os requisitos são 
+categorizados como \textit{Must Have}, \textit{Should Have}, \textit{Could Have} e \textit{Won't Have} \cite{miranda2021}, na ordem dos mais necessários aos que não fazem parte do escopo. No caso, foram 
+classificados em \textit{Must Have (Must)} e \textit{Should Have (Should)}, conferindo ênfase ao que de fato faz parte do escopo de implementação desse projeto.
 
 \begin{table}[h!]
 	\centering
