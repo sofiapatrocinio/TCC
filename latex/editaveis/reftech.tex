@@ -44,11 +44,11 @@ automática sempre que há alteração no documento, facilitando a visualizaçã
 
 \section{Apoio à Prática}
 \label{sec:Apoio à Prática}
-Seguem as principais ferramentas de apoio às atividades de Prototipação, Desenvolvimento, Gerenciamento de Versões, 
-e Análise de Resultados.
+Seguem as principais ferramentas de apoio às atividades de \hyperref[sec:Prototipacao]{Prototipação}, \hyperref[sec:Desenvolvimento]{Desenvolvimento}, 
+\hyperref[sec:Gerenciamento de Versoes]{Gerenciamento de Versões},e \hyperref[sec:Análise de Resultados]{Análise de Resultados}.
 
 \subsection{Prototipação}
-\label{sec:Prototipação}
+\label{sec:Prototipacao}
 Será necessário prototipar novas telas, orientadas às melhorias no aplicativo, e visando planejamento e validações 
 junto ao público alvo, antes mesmo do desenvolvimento dessas melhorias no aplicativo em si. Nesse contexto, deve-se 
 usar o Figma.
@@ -91,7 +91,7 @@ dos diferentes serviços da aplicação.
 React Native é um \textit{framework} baseado no React que permite o desenvolvimento de aplicativos móveis usando JavaScript. Uma das 
 principais vantagens do React Native em relação a outros \textit{frameworks} é a capacidade de converter o código desenvolvido para a 
 linguagem nativa do sistema operacional, resultando em um desempenho mais fluido e eficiente. Com o React Native, é possível 
-criar aplicativos tanto para Android quanto para iOS, aproveitando o mesmo código JavaScript \cite{reactnative}.
+criar aplicativos tanto para Android quanto para \textit{iOS}, aproveitando o mesmo código JavaScript \cite{reactnative}.
 
 Foi utilizado o React Native durante o desenvolvimento \textit{front-end} desta aplicação em conjunto com o Expo, que facilita 
 o processo de desenvolvimento de aplicativos React Native, e elimina a necessidade de configurações complexas, fornecendo ferramentas 
@@ -108,7 +108,7 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
               \item Expo SDK - conjunto de bibliotecas, APIs e recursos para o desenvolvimento de aplicativos móveis que permite acesso aos 
               recursos de câmera, geolocalização, notificações \textit{push}, armazenamento local, dentre outros;
 
-              \item Expo Go - aplicativo disponível para iOS e Android que permite a visualização da aplicação em tempo real durante seu 
+              \item Expo Go - aplicativo disponível para \textit{iOS} e Android que permite a visualização da aplicação em tempo real durante seu 
               desenvolvimento, e
 
               \item Expo CLI - ferramenta de linha de comando que facilita criação e configuração de projetos Expo, além de ferramentas para 
@@ -135,7 +135,7 @@ Na aplicação Multilind, está sendo útil para criar APIs robustas e fáceis d
 no formato e código de status adequados. Além disso, o uso de \textit{middlewares} para autenticação e validação de parâmetros das requisições também está presente.
 
 \subsection{Gerenciamento de Versões}
-\label{sec:Gerenciamento de Versões}
+\label{sec:Gerenciamento de Versoes}
 Ao longo do processo de melhorias, o versionamento torna-se necessário, visando obter um processo rastreável e de fácil apresentação sobre todas as evoluções 
 proporcionadas. Além disso, há necessidade de manter o novo aplicativo hospedado em um repositório. Nesse contexto, faz-se uso do Git e GitHub.
 
@@ -146,7 +146,7 @@ possível manter um histórico de todas as alterações feitas em um repositóri
 comparar mudanças, e trabalhar em paralelo em diferentes ramos (\textit{branches}) \cite{git}.
 
 Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
-versão. Permite hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de \textit{software} \cite{github}.
+versão. Permite hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de software \cite{github}.
 
 Cada edição deste documento e do código-fonte da aplicação Multilind está sendo versionada por meio do Git e armazenada pelo GitHub. 
 
@@ -169,7 +169,7 @@ e experiência de usuário de uma determinada aplicação \cite{maze}.
 O Google Forms \cite{googleforms} é uma ferramenta \textit{online} fornecida pelo Google, que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
 utilizado para coletar dados dos \textit{stakeholders} a respeito da experiência de usuário na aplicação existente, sem a incorporação de melhorias.
 
-De forma mais metodológica, será utilizado para realizar o questionário AttrakDiff e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionados 
+De forma mais metodológica, será utilizado para realizar o Questionário \textit{AttrakDiff} e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionados 
 os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação às usabilidade e funcionalidade do produto.
 
 \section{Apoio Complementar}
@@ -219,7 +219,8 @@ A tabela \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao l
     \centering
     \caption{Principais ferramentas do Referencial Tecnológico}
     \label{tab03}
-    \resizebox{\columnwidth}{!}{\begin{tabular}{l|l|l|l}
+    \begin{adjustbox}{center}
+    \resizebox{1.2\textwidth}{!}{\begin{tabular}{l|l|l|l}
         \hline
         \textbf{Nome}      & \textbf{Descrição}                                            & \textbf{Versão}                                                     & \textbf{\textit{Link}}                           \\ \hline
         LaTeX              & Ferramenta para escrita do documento                          & LaTeX2e                                                             & \href{https://www.latex-project.org/}{https://www.latex-project.org/} \\ \hline
@@ -234,4 +235,5 @@ A tabela \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao l
         Google Forms       & Ferramenta para criação de formulários                        & -                                                                   & \href{https://www.google.com/intl/pt-BR/forms/about/}{https://www.google.com/intl/pt-BR/forms/about/}            \\ \hline
         LucidChart         & Plataforma de criação de diagramas                            & -                                                                   & \href{https://lucidchart.com/pages/pt}{https://lucidchart.com/pages/pt}            \\ \hline
     \end{tabular}}
+    \end{adjustbox}
 \end{table}
