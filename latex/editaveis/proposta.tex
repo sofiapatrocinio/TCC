@@ -30,7 +30,7 @@ foram submetidos a avaliações junto ao público alvo, permitindo, desde o come
 
 Uma vez cumprida com essa etapa inicial de validação dos protótipos, a segunda etapa do trabalho consistirá no desenvolvimento efetivo do aplicativo Multilind evoluído, orientando-se pelas melhorias identificadas. Com base nas lições aprendidas durante a fase de prototipação, 
 funcionalidades serão implementadas, além da realização de testes mais aprofundados, a fim de garantir que a interface final do aplicativo atenda aos critérios de usabilidade e proporcione uma maior satisfação, engajamento e facilidade de uso. No intuito de conferir uma visão 
-mais concreta sobre o objeto de estudo desse trabalho, segue o \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação}. Essa aplicação, na verdade, é um aplicativo e, como já revelado, chama-se Multilind.
+mais concreta sobre o objeto de estudo deste trabalho, segue o \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação}. Essa aplicação, na verdade, é um aplicativo e, como já revelado, chama-se Multilind.
 	
 \section{Detalhamento da Aplicação}
 \label{sec:Detalhamento da Aplicacao}
@@ -41,7 +41,7 @@ tratados na sequência. O compromisso da autora é não violar o entorno do apli
 \label{Arquitetura}
 O projeto do aplicativo Multilind contém três repositórios principais: o respositório de \textit{Frontend}, que armazena a camada que lida com as interfaces do usuário, desenvolvido em React Native; o repositório \textit{Content Server}, que armazena os conteúdos do sistema 
 utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por armazenar e administrar os arquivos de mídia do aplicativo. Os diagramas de  pacotes, correspondentes a cada repositório, podem ser conferidos nas Figuras \ref{fig08}, \ref{fig09} e \ref{fig10}. Na Figura \ref{fig08}, sobre 
-o Frontend, há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes de maior nível de abstração, ou seja, os pacotes de atuam na camada de interface com o usuário. Por isso, há destaque aos pacotes das bibliotecas, representados de forma generalista, 
+o Frontend, há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes de maior nível de abstração, ou seja, os pacotes que atuam na camada de interface com o usuário. Por isso, há destaque aos pacotes das bibliotecas, representados de forma generalista, 
 como \textit{Library1} a \textit{Library N}, por não haver necessidade de revelar cada biblioteca em si; aos pacotes que representam as telas, seus contextos e serviços, e aos pacotes que compreendem os componentes, Components, sendo esses estruturados em obediência ao conceito de Atomic Design \cite{atomic}. 
 Atomic Design, em linhas bem gerais, é uma abordagem que permite estruturar os elementos de \textit{design} usando uma analogia com átomos, moléculas, organismos e \textit{templates}, conforme descrito:
 
@@ -106,8 +106,8 @@ uma arquitetura híbrida, que combina vários estilos e padrões arquiteturais, 
 A Lean Inception, criada por \citeonline{lean}, foi utilizada como forma de alinhar os desenvolvedores e \textit{stakeholders} em relação ao aplicativo, antes de sua execução, e confirmar sua viabilidade e sua necessidade. O processo aborda a visão do produto; a compreensão de personas; suas jornadas de usuário, e 
 o desenvolvimento de funcionalidades de alto nível \cite{lean}. No estágio de definição da visão do produto, a equipe e os \textit{stakeholders} do projeto responderam questões relativas ao público alvo da aplicação; o objetivo, e as principais características, como pode ser visto nas 
 Figuras \ref{fig11} e \ref{fig12}. Ambas as imagens são autoexplicativas. Entretanto, é pertinente mencionar, com base na Figura \ref{fig1f1}, sobre o foco do produto em povos indígenas e todos que possuem interesse sobre linguas indígenas; bem como em aspectos qualitativos, tais como: praticidade, acessibilidade, atualidade 
-e disponibilidade. Na Figura \ref{fig12}, estrutura-se a definição do produto considerando: "É'', com destaque em é interativo, prático, mobile, gratuíto, dentre outros; "NÃO É'', mencionando que não é jogo, rede social, chat, site, blog ou fórum, tampouco complexo; "FAZ'', com menção a fazer mapeamento de línguas, 
-pesquisa por palavras, dentre outros; "NÃO FAZ'', destancando que não faz restrição ao acesso à informação, nem expõe dados pessoais, dentre outros.
+e disponibilidade. Na Figura \ref{fig12}, estrutura-se a definição do produto considerando: "É'', com destaque em é interativo, prático, mobile, gratuito, dentre outros; "NÃO É'', mencionando que não é jogo, rede social, chat, site, blog ou fórum, tampouco complexo; "FAZ'', com menção a fazer mapeamento de línguas, 
+pesquisa por palavras, dentre outros; "NÃO FAZ'', destacando que não faz restrição ao acesso à informação, nem expõe dados pessoais, dentre outros.
 
 \begin{figure}[h!]
 	\centering
@@ -140,7 +140,7 @@ como sobre suas necessidades e expectativas.
 
 Ainda durante a Lean Inception, na fase de descrição de personas, foram criadas três personas que representam diferentes tipos de usuários do aplicativo. Essas personas foram essenciais para realizar as jornadas das personas, e levantar as 
 funcionalidades necessárias para atender às necessidades e expectativas dos envolvidos. As Figuras \ref{fig13}, \ref{fig14} e \ref{fig15} mostram os três principais perfis levantados.  Na Figura \ref{fig13}, tem-se a persona Helena, de 24 anos, pós 
-graduanda em psicologia, com interesses como Cultura Indígena; comportamentes como gostar de viajar o Brasil, e necessidades, como localizar povos indígenas por regiões. Na figura \ref{fig14}, encontra-se a persona Kauã, de 40 anos, indígena do povo 
+graduanda em psicologia, com interesses como Cultura Indígena; comportamentes como gostar de viajar pelo Brasil, e necessidades, como localizar povos indígenas por regiões. Na figura \ref{fig14}, encontra-se a persona Kauã, de 40 anos, indígena do povo 
 Guarani, professor, que tem interesse em mostrar novas línguas indígenas a seus alunos. Por último, na Figura \ref{fig15} tem-se a persona Flávia, 45 anos, linguista, professora e pesquisadora; possui bastante conhecimento acerca de línguas indígenas e 
 tem interesse em contribuir com o projeto.
 
@@ -308,12 +308,12 @@ Após finalizar o primeiro ciclo de testes, utilizando a versão mais recente da
 \begin{itemize}
 	\item Falta de orientação no primeiro uso: foi observado pelos testadores a falta de instruções claras e orientações sobre como navegar e utilizar as funcionalidades no primeiro acesso ao aplicativo;
 	\item Maior clareza na opção de visualizar línguas por família linguística: alguns testadores relataram dificuldades em localizar a opção para visualizar as línguas agrupadas por família linguística;
-	\item Ausência de cores: usuários relataram sentir que a aplicação carecia de uma paleta de cores mais vibrantes para torná-la visivelmente atraente, e
+	\item Ausência de cores: usuários relataram sentir que a aplicação carecia de uma paleta de cores mais vibrantes para torná-la visualmente atraente, e
 	\item Carência de informações a respeito de como contribuir: houve interesse manifestado por alguns testadores em contribuir com a base de dados do aplicativo. Entretanto, sentiram falta de informações a respeito 
 	de como contribuir no aplicativo.
 \end{itemize}
 
-A Tabela \ref{tab06} apresenta o tempo gasto por cada testador durante o teste de usabilidade separado por funcionalidade. Observa-se, com base nos dados expostos, que a F04 - Visualizar línguas por família linguística, 
+A Tabela \ref{tab06} apresenta o tempo gasto por testador durante o teste de usabilidade separado por funcionalidade. Observa-se, com base nos dados expostos, que a F04 - Visualizar línguas por família linguística, 
 demandou mais tempo, independentemente de quem estava testando. Por outro lado, as funcionalidades F01 - Visualizar línguas através do mapa, e F02 - Ver detalhes de uma língua ao clicar em um ponto no mapa, tiveram tempos 
 de resposta mais baixos, o que indica que essas funcionalidades foram realizadas de forma mais eficiente pelos testadores.
 
@@ -343,7 +343,7 @@ de resposta mais baixos, o que indica que essas funcionalidades foram realizadas
 
 Dada a maior abrangência de informações conferidas pelo Questionário \textit{Attrakdiff}, optou-se por representar esses dados em uma tabela disponível no Google Sheets, que pode ser acessada via o link: 
 \url{https://docs.google.com/spreadsheets/d/1zVGAgqTqRUIRba0kFmWySBV_MLnNHqAVeRMLFGzIHLE/edit?usp=sharing} último acesso: Julho 2023. Analisando os dados obtidos, percebe-se que os pares de palavra-chave 
-mais bem conceituados foram: "Incontrolável - Gerenciável''; "Sem imaginação - Criativo'', e "De baixa qualidade - De alta qualidade''. Tais pares de palavras pertencem as dimensões Qualidade Pragmática Percebida;
+mais bem conceituados foram: "Incontrolável - Gerenciável''; "Sem imaginação - Criativo'', e "De baixa qualidade - De alta qualidade''. Tais pares de palavras pertencem às dimensões Qualidade Pragmática Percebida;
 Qualidade da Experiência Hedônica Estímulo, e Qualidade Hedônica-Identidade, respectivamente. A explicação acerca das dimensões pode ser conferida na seção \hyperref[sec:Medicao2]{2.3.1}. 
 
 Já os pares de palavra-chave que revelaram menor satisfação foram: "Cauteloso - Ousado'' e "Confuso - Bem Estruturado''. Isso indica que os participantes perceberam o sistema como mais cauteloso do que ousado, e 
@@ -425,7 +425,7 @@ telas do \textit{onboarding} proposto como melhoria para o aplicativo Multilind.
 \end{figure}
 
 A implementação de \textit{onboarding} colabora com algumas heurísticas, como "Visibilidade do status do sistema'', pois em cada passo apresentado é possível visualizar indicador de progresso, ou seja, 
-o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real'', utilizando termos e elementos que os usuáŕios 
+o usuário possui clareza de onde está e quantos passos restantes possui. É possível destacar, ainda, a "Correspondência entre o sistema e o mundo real'', utilizando termos e elementos com os quais os usuários 
 possuem familiaridade, facilitando o processo de integração. Em relação ao "Controle e liberdade do usuário'', opções para avançar, voltar e pular o processo são fornecidas. Além disso, "Consistência e 
 padrões'' foram seguidos, utilizando componentes reutilizáveis e garantindo a consistência. Por fim, a "Prevenção de erros'', por incluir dicas e exemplos visuais para orientar os usuários e  minimizar 
 a probabilidade de cometerem erros.
@@ -456,7 +456,7 @@ reutilizáveis e garantindo a coerência em todo o sistema.
 \subsection{Disposição de Informações}
 \label{sec:Disposicao de Informacoes}
 
-Entre as melhorias implementadas no aplicativo, tem-se a reorganização e a disposição das informações. A utilização de abas em diferentes telas, como as de línguas, palavras específicas e dicionário. Essas abas foram 
+Entre as melhorias implementadas no aplicativo, tem-se a reorganização e a disposição das informações. A utilização de abas em diferentes telas, como as de línguas, palavras específicas e dicionário foram 
 visualmente destacadas quando selecionadas, com o uso de cores distintas para indicar ao usuário em qual seção ele está navegando, conforme apresentado na Figura \ref{fig25}. Essa mudança proporciona maior visibilidade ao status atual do sistema, tornando mais 
 claro para os usuários onde eles estão e qual ação estão realizando.
 
