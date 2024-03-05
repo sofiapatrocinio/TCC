@@ -102,7 +102,7 @@ do aplicativo. Os principais pontos levantados foram:
 \end{itemize}
 
 \subsection{Teste de Usabilidade}
-\label{sec:Teste de Usabilidade}
+\label{sec:Primeiro Teste de Usabilidade}
 A Tabela \ref{tab06} apresenta o tempo gasto por participante durante o teste de usabilidade separado por funcionalidade. Observa-se, com base nos dados expostos, que a F04 - Visualizar línguas por família linguística, 
 demandou mais tempo, independentemente de quem estava testando. Por outro lado, as funcionalidades F01 - Visualizar línguas através do mapa, e F02 - Ver detalhes de uma língua ao clicar em um ponto no mapa, tiveram tempos 
 de resposta mais baixos, o que indica que essas funcionalidades foram realizadas de forma mais eficiente pelos participantes.
@@ -175,3 +175,145 @@ as quatro dimensões), e Qualidade Pragmática Percebida, com média na dimensã
 	\end{tablenotes}
 	\label{fig21}
 \end{figure}
+
+\section{Segundo Ciclo de Testes}
+\label{sec:Segundo Ciclo}
+O processo de \textit{design} segue uma abordagem iterativa, ou seja, é uma atividade contínua envolvendo \textit{feedback} constante dos usuários e melhorias incrementais ao longo do tempo. \citeonline{usabilitytest} 
+reconhece que nem sempre é possível envolver usuários novos a cada iteração. Portanto, o autor afirma ser possível, com os mesmos usuários, descobrir problemas persistentes e validar melhorias implementadas. 
+
+Após alguns problemas de usabilidade terem sido encontrados no primeiro ciclo de testes, o \textit{design} foi redesenhado\footnote{Protótipo com melhorias. Disponível em: \url{https://shorturl.at/ryEOR}(último acesso: Julho 2023)}. 
+A segunda rodada de testes com cinco usuários visa mapear os demais problemas de usabilidade que não foram encontrados na primeira rodada de testes, além de aferir se as melhorias realizadas surtiram os efeitos desejados. O segundo estudo poderá aprofundar a 
+usabilidade da estrutura fundamental do aplicativo, avaliando questões como arquitetura da informação; fluxo de tarefas, e correspondência com as necessidades do usuário \cite{usabilitytest}.
+
+\subsection{Teste de Usabilidade}
+\label{sec:Segundo Teste de Usabilidade}
+A Tabela \ref{tab07} apresenta o tempo gasto, considerando cada participante, durante o teste de usabilidade separado por funcionalidade. Considerando os dados, percebem-se melhorias significativas para o caso, por exemplo, da Funcionalidade 04 - Visualizar línguas 
+por família linguística, que teve uma redução média de 42,54 segundos. Em seguida, a funcionalidade F01 - Visualizar línguas através do mapa, demonstrou uma redução média de 16,29 segundos. Todas as demais funcionalidades apresentaram considerável redução de 
+tempo. 
+
+\begin{table}[h!]
+	\centering
+	\caption{Tempo gasto por participante - Segundo ciclo de testes}
+	\label{tab07}
+	\begin{adjustbox}{center}
+	\begin{tabular}{l|l|l|l|l|l}
+	\hline
+	Fucionalidade & Participante 1 & Participante 2 & Participante 3 & Participante 4 & Participante 5 \\ 	\hline
+	F01                   & 8.8s     & 12s     & 5,1s      & 9.4s       & 20.1s      \\
+	F02                   & 8.4s        & 11.8s      & 8.8s      & 13.9s    & 14.2s     \\
+	F03                   & 20.7s        & 4.5s      & 32.9s      & 100s     & 44.4s     \\
+	F04                   & 16.1s        & 21.1s     & 89.9s     & 48.1s     & 13.8s     \\
+	F05                   & 14.8s      & 18.8s      & 10.8s     & 33s     & 62.7s     \\
+	F06                   & 18.4s     & 11.1s      & 14.6s     & 14.4s     & 18.2s     \\
+	F07                   & 18.9s     & 20.8s      & 25s     & 21s    & 52.9s       \\ 	\hline
+	\end{tabular}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Maze. Disponível em: \url{https://app.maze.co/report/Novo-Multilind/hsf4hljyldyqs/intro}.
+	  \end{tablenotes}
+\end{table}
+
+\subsection{Teste de Experiência de Usuário}
+\label{sec:Segundo Teste de Experiência de Usuário}
+No segundo ciclo de avaliação da experiência do usuário, após a conclusão dos testes de usabilidade, os participantes também foram convidados a responder ao Questionário AttrakDiff para analisar a experiência, qualidade e facilidade de uso da aplicação.
+
+A tabela de resultados, presente no Google Sheets, pode ser acessada via o link: 
+\url{https://docs.google.com/spreadsheets/d/1H1Rh7tegYa_Ql--i-Xj0oNvzAhHVz_6Xt1jmX3sJEk4/edit?usp=sharing} último acesso: Julho 2023, apresenta as avaliações obtidas por meio do Questionário \textit{Attrakdiff} aplicado aos participantes do aplicativo, para o caso 
+dessa versão evoluída do protótipo. Além disso, as Figuras \ref{fig28} e \ref{fig29} ilustram a média de respostas geral e a média de respostas separadas pelas quatro dimensões principais, respectivamente.
+
+\newpage
+
+\begin{figure}[h!]
+	\centering
+	\caption{Média Geral \textit{Attrakdiff} - Segundo Ciclo de Testes}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-geral1.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
+	\label{fig28}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\caption{Média \textit{Attrakdiff} por dimensões - Segundo Ciclo de Testes}
+	\begin{adjustbox}{center}
+		\includegraphics[width=0.8\textwidth]{figuras/media-separada1.eps}
+	\end{adjustbox}
+	\begin{tablenotes}[flushleft]
+		\centering
+		\item \textit{Fonte:} Autora.
+	\end{tablenotes}
+	\label{fig29}
+\end{figure}
+
+Com base nos resultados do segundo ciclo de testes, foi elaborado um gráfico para apresentar uma visão geral da pontuação alcançada em cada par de palavras avaliadas pelo Questionário AttrakDiff. Analisando os dados obtidos, observa-se que alguns pares de palavras-chave 
+se destacaram positivamente. Por exemplo, "Imprevisível - Previsível" e "Incontrolável - Gerenciável" receberam pontuações altas, indicando uma boa percepção dos usuários em relação à previsibilidade e ao controle oferecidos pela aplicação.
+
+No entanto, houve alguns pares de palavras que revelaram menor satisfação por parte dos participantes, como "Confuso - Bem Estruturado" e "Cauteloso - Ousado". Esses resultados sugerem a necessidade de fornecer mais orientações e aprimorar a organização da aplicação 
+para garantir uma experiência mais clara e intuitiva para os usuários.
+
+Ao analisar a média das respostas por dimensão, destaca-se que a qualidade pragmática percebida obteve uma pontuação significativa de 6.6, indicando uma percepção positiva dos usuários em relação à eficiência e facilidade de uso da aplicação para atender às suas necessidades 
+e objetivos. A qualidade de identificação hedônica também apresentou uma melhoria considerável, alcançando uma média de 6.36. Já a qualidade de estimulação hedônica teve uma leve melhoria, atingindo uma média de 5.44. Por fim, a atratividade geral da aplicação registrou um aumento, 
+alcançando uma média de 6.55, o que indica uma melhoria na percepção dos usuários sobre a qualidade visual e o apelo geral da aplicação.
+
+Mesmo diante dos resultados positivos, novas possíveis melhorias também foram pontuadas durante o segundo ciclo de testes, com destaque para:
+
+\begin{itemize}
+	\item Português Indígena: Alguns usuários expressaram preocupação em relação à tradução para o português indígena, visto que não se trata de uma língua única, mas sim uma variação do português brasileiro que depende de alguns fatores, como contato linguístico com outros 
+	povos, região do Brasil, identidade cultural e grau de preservação da língua nativa;
+	\item Participação Coletiva: Com objetivo de maior participação de falantes das línguas, a opção de reportar em caso de erro de tradução ou inconsistência foi sugerida. Tal funcionalidade visa aumentar a confiabilidade dos dados presentes no aplicativo, além de incentivar a 
+	participação dos povos indígenas na documentação das línguas, e
+	\item Pronúncia de Palavras: A língua oral é a principal forma de comunicação e expressão cultural para muitos povos indígenas. Por isso, introduzir uma funcionalidade de pronúncia pode ser uma ótima maneira de ajudar os usuários a compreender palavras de maneira mais clara 
+	e precisa.
+\end{itemize}
+
+\section{Impressão dos Resultados}
+\label{sec:Impressão dos Resultados}
+Nesta seção, uma análise detalhada dos resultados obtidos nos ciclos de testes conduzidos para avaliar a usabilidade e a experiência do usuário é conferida. Os dados coletados foram examinados, levando em consideração os \textit{feedbacks} dos participantes, as métricas de 
+tempo para realizar tarefas, o sucesso direto ou indireto de tarefas na interação com o aplicativo, a quantidade de cliques errados e as médias do \textit{AttrakDiff}.
+
+\subsection{Percepção Geral dos Usuários}
+\label{sec:Percepção Geral dos Usuários}
+No primeiro ciclo de testes, conduzido com um grupo inicial de usuários, foram identificados diversos pontos que necessitavam de aperfeiçoamento para melhorar a usabilidade e experiência de usuário. Entre os principais \textit{feedbacks} estavam a falta de orientação no primeiro uso, 
+dificuldades na localização de funcionalidades, ausência de cores vibrantes e falta de informações sobre como contribuir com a base de dados do aplicativo.
+
+No segundo ciclo de testes, conduzido com o mesmo grupo de usuários após as melhorias implementadas, os participantes relataram uma melhor compreensão da aplicação devido ao passo a passo inicial e à validação das mudanças nos fluxos do aplicativo. Especificamente, a visualização da 
+família linguística, a mudança no dicionário para exibir as palavras na língua indígena e a disposição das imagens de uma palavra específica, contribuindo para uma experiência mais satisfatória no uso do aplicativo.
+
+\subsection{Análise de Usabilidade}
+\label{sec:Análise de Usabilidade}
+
+\subsubsection{Primeiro Ciclo de Testes}
+\label{sec:Primeiro Ciclo de Testes}
+
+No primeiro ciclo de testes, houve uma grande variação nas taxas de sucesso direto, com algumas tarefas atingindo 100\% de sucesso, enquanto outras apresentaram uma taxa de 0\%. Essa disparidade evidencia uma inconsistência na usabilidade das diferentes funcionalidades do aplicativo.
+
+Entre as tarefas avaliadas, a F01 se destacou com uma taxa de sucesso direto de 100\%. Esta tarefa envolve a visualização de línguas através do mapa e não foi alterada entre os ciclos de testes devido ao seu alto sucesso direto. Isso sugere que os participantes conseguiram realizar essa 
+tarefa sem encontrar dificuldades significativas, contribuindo para a usabilidade da aplicação.
+
+Por outro lado, as taxas de cliques errados durante o primeiro ciclo de testes foram motivo de preocupação, variando entre 15.2\% e 69.8\%. Esses resultados apontam para uma execução menos eficaz das tarefas, indicando possíveis problemas de usabilidade ou falta de clareza nas instruções 
+fornecidas aos usuários.
+
+Em relação à duração média para concluir as tarefas, destaca-se a tarefa F04, que envolve visualizar línguas por família linguística, apresentando uma duração média bastante elevada de 198.4 segundos (ou aproximadamente 3.3 minutos). Isso sugere dificuldades substanciais na execução 
+dessa tarefa por parte dos participantes. Da mesma forma, a tarefa F07, que consiste em visualizar imagens relacionadas a palavras em uma língua específica, teve uma duração média de 65.3 segundos.
+
+Além disso, é importante notar que ambas as tarefas, F04 e F07, apresentaram uma taxa de sucesso direto de 0\%. Esses resultados indicam não apenas a complexidade das tarefas, mas também dificuldades significativas por parte dos participantes em concluí-las sem cometer erros. 
+
+\subsubsection{Segundo Ciclo de Testes}
+\label{sec:Segundo Ciclo de Testes}
+No segundo ciclo de testes, houve melhorias em algumas métricas de usabilidade. As taxas de sucesso direto foram mais consistentes, com todas as tarefas apresentando taxas de sucesso direto acima de 20\%, indicando uma melhoria na usabilidade das funcionalidades do aplicativo. Além disso, 
+as taxas de misclick foram geralmente mais baixas em comparação com o primeiro ciclo, sugerindo uma melhoria na clareza das opções disponíveis. A duração média para concluir as tarefas também diminuiu em algumas funcionalidades, o que pode indicar uma melhoria na eficiência da navegação 
+e na facilidade de uso do aplicativo.
+
+Os usuários relataram melhor entendimento da aplicação devido ao passo a passo inicial, além da validação da mudança dos fluxos no aplicativo, que se demonstraram mais intuitivos. Os dados revelam melhoria nas quatro dimensões principais do \textit{AttrakDiff}, 
+que avalia a experiência do usuário. A Qualidade Pragmática Percebida, que mede o grau de sucesso e esforço que os usuários têm ao utilizar o aplicativo para atingir seus objetivos, teve uma melhora significativa, anteriormente de 5,48 para 6,6. Em relação à 
+Qualidade Hedônica-Identidade, pode-se notar uma melhoria considerável, atingindo 6,36. Essa dimensão representa o grau de identificação da aplicação com o usuário. Já a Qualidade Hedônica-Estímulo, indica a quantidade de apoio que o produto oferece ao usuário 
+para desenvolver, estimular e aumentar a motivação. Uma pequena melhora pode ser notada, de 5,2 para 5,44. Por fim, é importante destacar que a atratividade da aplicação, que representa uma classificação geral, apresentou uma melhora de 0,4 pontos, alcançando a 
+pontuação de 6,55.
+
+O aumento mais significativo em relação às estatísticas foi na Qualidade Pragmática Percebida. Esta refere-se à percepção do usuário em relação às funcionalidade, eficiência e facilidade de uso. Portanto, indica a facilidade dos usuários em atender suas necessidades e 
+seus objetivos.
