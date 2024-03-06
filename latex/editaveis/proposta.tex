@@ -4,8 +4,8 @@ Neste capítulo, é retomado o contexto em que o trabalho pretende contribuir, a
 apresentado o domínio em que o estudo está inserido. Adicionalmente, com intuito de apresentar adequadamente a aplicação, a seção \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} (Seção \hyperref[sec:Detalhamento da Aplicacao]{5.2}) é exposta. 
 Com base nos insumos obtidos no primeiro ciclo de teste, a seção \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} (Seção \hyperref[sec:Melhorias Propostas]{5.3}) elucida sobre a incorporação das melhorias elicitadas junto ao público 
 alvo no aplicativo em estudo, o que demandou refinamentos no protótipo de alta fidelidade, em especial no fluxo de \hyperref[sec:Onboarding]{\textit{Onboarding}}, e na disposição de informações em geral. Com base nesses resultados, a \hyperref[sec:Matriz SWOT]{Matriz SWOT} (Seção \hyperref[sec:Matriz SWOT]{5.4}) apresenta as forças, fraquezas, 
-ameaças e oportunidades identificadas durante a análise da versão evoluída do aplicativo. Ademais, encontra-se a \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias priorizado} (Seção \hyperref[sec:Backlog de Melhorias]{5.5}), no qual constam as principais funcionalidades que serão implementadas 
-de fato no aplicativo, com base no protótipo de alta fidelidade validado em dois ciclos de teste. Por fim, tem-se o \hyperref[sec:Resumo Proposta]{Resumo do Capítulo} (Seção \hyperref[sec:Resumo Proposta]{5.9}).
+ameaças e oportunidades identificadas durante a análise da versão evoluída do aplicativo. Ademais, encontra-se a \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias priorizado} (Seção \hyperref[sec:Backlog de Melhorias]{5.5}), no qual constam as histórias de usuário que orientaram o \hyperref[sec:Desenvolvimento do Aplicativo]{Desenvolvimento do Aplicativo} 
+(Seção \hyperref[sec:Desenvolvimento do Aplicativo]{5.7}), bem como as \hyperref[sec:Funcionalidades Implementadas]{Funcionalidades Implementadas} (Seção \hyperref[sec:Funcionalidades Implementadas]{5.7}). Por fim, tem-se o \hyperref[sec:Resumo Proposta]{Resumo do Capítulo} (Seção \hyperref[sec:Resumo Proposta]{5.8}).
 
 \section{Contextualização}
 \label{sec:Contextualizacao}
@@ -467,12 +467,43 @@ No gerenciamento do \textit{backlog} do produto, foi utilizada a ferramenta Trel
 	\label{fig33}
 \end{figure}
 
-Os códigos da aplicação estão disponíveis no GitHub, onde foram organizados em dois repositórios principais: Mobile-App: \url{https://github.com/Multilind/Mobile-App} e Content-App: \url{https://github.com/Multilind/Content-Server}. 
+Os códigos da aplicação estão disponíveis no GitHub, onde foram organizados em dois repositórios principais: Mobile-App: \url{https://github.com/Multilind/Mobile-App} e Content-Server: \url{https://github.com/Multilind/Content-Server}. 
 Inicialmente, esses repositórios estavam localizados na organização da disciplina de EPS/MDS\footnote{Repositório Multilind, 2023. Disponível em: \url{https://github.com/fga-eps-mds/2021.1-Multilind-Mobile-App} (último acesso: Março 2024)}, 
-porém, para uma melhor gestão e centralização, foram movidos para a organização Multilind. Isso proporcionou uma estrutura mais clara e coesa para o desenvolvimento e colaboração contínua na aplicação Multilind. Os interessados 
+porém, para uma melhor gestão e centralização, foram movidos para a organização Multilind. Isso proporcionou uma estrutura mais clara para o desenvolvimento e colaboração contínua na aplicação Multilind. Os interessados 
 podem acessar e contribuir para esses repositórios, bem como acessar o código-fonte para referência.
+
+\section{Funcionalidades Implementadas}
+\label{sec:Funcionalidades Implementadas}
+Durante o processo de desenvolvimento do projeto, todas as funcionalidades consideradas como \textit{Must Have} foram implementadas conforme planejado. No entanto, algumas histórias de usuário não puderam ser completamente desenvolvidas e 
+implementadas devido às prioridades definidas pelo autor e ao tempo disponível para o desenvolvimento. O foco principal foi direcionado para a melhoria da usabilidade e da experiência do usuário, em vez de introduzir novas funcionalidades.
+
+Duas histórias de usuário (US08 e US10), mapeadas como importantes para fornecer informações adicionais sobre uma língua ao usuário, não foram implementadas devido à dependência de dados e revisões externas que não possuem uma base de dados 
+sólida no momento. Sua implementação requer dados e revisões externas ainda não disponíveis.
+
+Para fornecer uma visão clara do status de implementação, a Tabela \ref{tab09} apresenta o status de cada uma das histórias levantadas, destacando os pontos concluídos e as áreas que requerem mais trabalho.
+
+\begin{table}[h!]
+	\centering
+	\caption{\textit{Status} das Histórias de Usuário}
+	\label{tab09}
+	\begin{tabularx}{\textwidth}{p{1cm}|p{12cm}|p{1cm}}
+	\hline
+	ID   & \textit{Status}                                                                                                                                                                                                   & Priorização \\ \hline
+	US01 & Implementada                                                            & \textit{Must}        \\
+	US02 & Implementada                                                                                                               & \textit{Must}        \\
+	US03 & Implementada                                        & \textit{Must}        \\
+	US04 & Implementada                                                                         & \textit{Must}        \\
+	US05 & Implementada																									 & \textit{Must}        \\
+	US06 & Implementada                                                                      & \textit{Must}        \\
+	US07 & Implementada                                                          & \textit{Should}      \\
+	US08 & Não Implementada 			 & \textit{Should}      \\
+	US09 & Implementada                                  & \textit{Should}      \\
+	US10 & Não Implementada                                                               & \textit{Should}      \\ \hline
+	\end{tabularx}
+\end{table}
 
 \section{Resumo do Capítulo}
 \label{sec:Resumo Proposta}
-No capítulo em questão, o contexto no qual o trabalho se propõe a contribuir é revisado, e a proposta do Trabalho de Conclusão de Curso é apresentada. A seção de \hyperref[sec:Contextualização]{Contextualização} fornece informações sobre o domínio no qual o estudo está inserido. Além disso, 
-a seção de \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é apresentada para garantir uma adequada compreensão da aplicação Multilind. Além disso, a seção de \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias} apresenta uma lista priorizada das funcionalidades que serão implementadas na próxima etapa desse TCC. 
+No capítulo em questão, o contexto no qual o trabalho contribui é revisado. A seção de \hyperref[sec:Contextualização]{Contextualização} fornece informações sobre o domínio no qual o estudo está inserido. Além disso, 
+a seção de \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é apresentada para garantir uma adequada compreensão da aplicação Multilind. A seção de \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias} apresenta uma lista priorizada das funcionalidades 
+que guiaram o \hyperref[sec:Desenvolvimento do Aplicativo]{Desenvolvimento do Aplicativo}. E por fim têm-se as \hyperref[sec:Funcionalidades Implementadas]{Funcionalidades Implementadas}, que descreve as funcionalidades implementadas durante o desenvolvimento do aplicativo.
