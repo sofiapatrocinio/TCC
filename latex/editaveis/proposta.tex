@@ -1,6 +1,6 @@
 \chapter[Aplicativo Multilind]{Aplicativo Multilind}
 \label{chap:Aplicativo Multilind}
-Neste capítulo, é retomado o contexto em que o trabalho pretende contribuir, apresentando a proposta do Trabalho de Conclusão de Curso. Inicialmente, na seção \hyperref[sec:Contextualizacao]{Contextualização} (Seção \hyperref[sec:Contextualizacao]{5.1}), é 
+Neste capítulo, é retomado o contexto em que o trabalho procurou contribuir, apresentando a proposta do Trabalho de Conclusão de Curso, bem como indo além, detalhando o Aplicativo Multilind e acordando possíveis melhorias para ele. Inicialmente, na seção \hyperref[sec:Contextualizacao]{Contextualização} (Seção \hyperref[sec:Contextualizacao]{5.1}), é 
 apresentado o domínio em que o estudo está inserido. Adicionalmente, com intuito de apresentar adequadamente a aplicação, a seção \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} (Seção \hyperref[sec:Detalhamento da Aplicacao]{5.2}) é exposta. 
 Com base nos insumos obtidos no primeiro ciclo de teste, a seção \hyperref[sec:Melhorias Propostas]{Melhorias Propostas} (Seção \hyperref[sec:Melhorias Propostas]{5.3}) elucida sobre a incorporação das melhorias elicitadas junto ao público 
 alvo no aplicativo em estudo, o que demandou refinamentos no protótipo de alta fidelidade, em especial no fluxo de \hyperref[sec:Onboarding]{\textit{Onboarding}}, e na disposição de informações em geral. Com base nesses resultados, a \hyperref[sec:Matriz SWOT]{Matriz SWOT} (Seção \hyperref[sec:Matriz SWOT]{5.4}) apresenta as forças, fraquezas, 
@@ -9,7 +9,7 @@ ameaças e oportunidades identificadas durante a análise da versão evoluída d
 
 \section{Contextualização}
 \label{sec:Contextualizacao}
-O presente trabalho tem como objetivo principal investigar as melhorias na usabilidade e na experiência do usuário de um aplicativo móvel chamado Multilind, desenvolvido para o mapeamento das línguas indígenas do Brasil. 
+O presente trabalho teve como objetivo principal investigar as melhorias na usabilidade e na experiência do usuário de um aplicativo móvel chamado Multilind, desenvolvido para o mapeamento das línguas indígenas do Brasil. 
 De acordo com \citeonline{bevan1995}, usabilidade é o termo técnico usado para descrever a qualidade de uso de uma interface. Em outras palavras, refere-se à facilidade com que os usuários podem interagir e realizar 
 tarefas em um sistema, aplicativo ou site. Uma interface com boa usabilidade é aquela que proporciona uma experiência fluida, intuitiva e eficiente para os usuários. Complementarmente, a experiência de usuário preocupa-se 
 com as percepções e respostas do usuário antes, durante e após o uso da aplicação \cite{iso9241210}.
@@ -19,28 +19,28 @@ e membros do GT do Brasil. O aplicativo foi criado durante disciplinas de Métod
 das línguas indígenas, fornecendo informações sobre cada língua, como família linguística, área de ocorrência, palavras e suas traduções.
 
 Considerando que é uma aplicação já existente, para implementar tais melhorias, foram consideradas as heurísticas de Nielsen, que são diretrizes elaboradas para garantir que as interfaces do sistema atendam aos princípios fundamentais de usabilidade. Além disso, em um 
-primeiro momento, para maior familiaridade da autora às demandas, propõe-se o uso de provas de conceitos, orientadas a ciclos de teste de usabilidade. 
+primeiro momento, para maior familiaridade da autora às demandas, ocorreu o uso de provas de conceitos, orientadas a ciclos de teste de usabilidade. 
 
-Adiante, com o avançar do trabalho na segunda etapa do TCC, pretende-se seguir de forma mais rigorosa as etapas de 
-pesquisa-ação, estabelecidas para condução da análise de resultados do trabalho com um todo. O foco das provas de conceito é o atendimento adequado das necessidades e expectativas, tanto dos usuários do aplicativo Multilind, quanto da equipe envolvida. A ideia é tratar 
+Adiante, com o avançar do trabalho na segunda etapa do TCC, seguiu-se de forma mais rigorosa as etapas de 
+pesquisa-ação, estabelecidas para condução da análise de resultados do trabalho com um todo. O foco das provas de conceito foi o atendimento adequado das necessidades e expectativas, tanto dos usuários do aplicativo Multilind, quanto da equipe envolvida. A ideia foi tratar 
 demandas mais prioritárias, e não a completude das demandas. Essa decisão foi tomada considerando prazos e desenvolvimento solo da autora.
 
 Na primeira etapa do TCC, foram desenvolvidos protótipos que permitiram a visualização e a avaliação preliminar das melhorias propostas em termos de usabilidade e experiência do usuário. Os protótipos 
 foram submetidos a avaliações junto ao público alvo, permitindo, desde o começo do trabalho, ajustes e refinamentos com base no \textit{feedback} obtido. 
 
-Uma vez cumprida com essa etapa inicial de validação dos protótipos, a segunda etapa do trabalho consistirá no desenvolvimento efetivo do aplicativo Multilind evoluído, orientando-se pelas melhorias identificadas. 
+Uma vez cumprida com essa etapa inicial de validação dos protótipos, a segunda etapa do trabalho consistiu no desenvolvimento efetivo do aplicativo Multilind evoluído, orientando-se pelas melhorias identificadas. 
 
-Com base nas lições aprendidas durante a fase de prototipação, funcionalidades serão implementadas, além da realização de testes mais aprofundados, a fim de garantir que a interface final do aplicativo atenda aos critérios de usabilidade e proporcione uma maior satisfação, engajamento e facilidade de uso. No intuito de conferir uma visão 
+Com base nas lições aprendidas durante a fase de prototipação, funcionalidades foram implementadas, além da realização de testes mais aprofundados, a fim de garantir que a interface final do aplicativo atendesse aos critérios de usabilidade e proporcionasse uma maior satisfação, engajamento e facilidade de uso. No intuito de conferir uma visão 
 mais concreta sobre o objeto de estudo deste trabalho, segue o \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação}.
 	
 \section{Detalhamento da Aplicação}
 \label{sec:Detalhamento da Aplicacao}
-Ressalta-se a relevância de explorar em detalhes o aplicativo Multilind, em sua versão v.1.4.0. Como a aplicação já se encontra desenvolvida, em sua primeira versão, há necessidade de conhecer e revelar sobre Arquitetura, Público-Alvo, Guia de Estilo e Funcionalidades. Esses aspectos são 
-tratados na sequência. O compromisso da autora é não violar o entorno do aplicativo Multilind, sejam as expectativas dos usuários que já consomem o aplicativo, e reconhecem no mesmo funcionalidades bem ajustadas; sejam as noções técnicas, com uso de tecnologias já estabelecidas.
+Ressalta-se a relevância de explorar em detalhes o aplicativo Multilind, em sua versão v.1.4.0. Como a aplicação já se encontrava desenvolvida, em sua primeira versão, ocorreu a necessidade de conhecer e revelar sobre Arquitetura, Público-Alvo, Guia de Estilo e Funcionalidades. Esses aspectos são 
+tratados na sequência. O compromisso da autora foi não violar o entorno do aplicativo Multilind, sejam as expectativas dos usuários que já consumiam o aplicativo, e reconheciam no mesmo funcionalidades bem ajustadas; sejam as noções técnicas, com uso de tecnologias já estabelecidas.
 
 \subsection{Arquitetura}
 \label{Arquitetura}
-O projeto do aplicativo Multilind contém três repositórios principais: o respositório de \textit{Frontend}, que armazena a camada que lida com as interfaces do usuário, desenvolvido em React Native; o repositório \textit{Content Server}, que armazena os conteúdos do sistema 
+Em sua versão original, o projeto do aplicativo Multilind contém três repositórios principais: o respositório de \textit{Frontend}, que armazena a camada que lida com as interfaces do usuário, desenvolvido em React Native; o repositório \textit{Content Server}, que armazena os conteúdos do sistema 
 utilizando PostgreSQL, e o repositório \textit{Files Server}, responsável por armazenar e administrar os arquivos de mídia do aplicativo. Os diagramas de  pacotes, correspondentes a cada repositório, podem ser conferidos nas Figuras \ref{fig08}, \ref{fig09} e \ref{fig10}. 
 
 Na Figura \ref{fig08}, sobre o Frontend, há estruturação dos pacotes orientando-se pelo estilo arquitetural N-Camadas, com destaque aos pacotes de maior nível de abstração, ou seja, os pacotes que atuam na camada de interface com o usuário. Por isso, há destaque aos pacotes das bibliotecas, representados de forma generalista, 
@@ -52,7 +52,7 @@ Atomic Design, em linhas bem gerais, é uma abordagem que permite estruturar os 
 	\item Átomos - componentes arquiteturais de menor nível de granularidade. Ex. Elementos Básicos: fontes, imagens, formas, ícones e cores;
 	\item Moléculas - componentes arquiteturais de segundo menor nível de granularidade. Ex. Forma (átomo) e Texto (átomo) juntos para formar um Botão (molécula);
 	\item Organismos - componentes arquiteturais de terceiro menor nível de granularidade. Ex. Estruturas como menu, \textit{header}, e \textit{footers};
-	\item \textit{Templates} - componentes arquiteturais de quarto menor nível de granularidade (penúltimo). Ex. Agrupando organismos, têm-se \textit{templates}, que são utilizados em protótipos e \textit{wireframes}, 
+	\item \textit{Templates} - componentes arquiteturais de quarto menor nível de granularidade (penúltimo). Ex. Agrupando organismos, têm-se \textit{templates}, que são utilizados em protótipos e \textit{wireframes}, e
 	\item Páginas - componentes arquiteturais de maior nível de granularidade. Ex. Instâncias específicas de \textit{template}.
 \end{itemize}
 
@@ -147,7 +147,7 @@ como sobre suas necessidades e expectativas.
 Ainda durante a Lean Inception, na fase de descrição de personas, foram criadas três personas que representam diferentes tipos de usuários do aplicativo. Essas personas foram essenciais para realizar as jornadas das personas, e levantar as 
 funcionalidades necessárias para atender às necessidades e expectativas dos envolvidos. As Figuras \ref{fig13}, \ref{fig14} e \ref{fig15} mostram os três principais perfis levantados.  Na Figura \ref{fig13}, tem-se a persona Helena, de 24 anos, pós 
 graduanda em psicologia, com interesses como Cultura Indígena; comportamentes como gostar de viajar pelo Brasil, e necessidades, como localizar povos indígenas por regiões. Na figura \ref{fig14}, encontra-se a persona Kauã, de 40 anos, indígena do povo 
-Guarani, professor, que tem interesse em mostrar novas línguas indígenas a seus alunos. Por último, na Figura \ref{fig15} tem-se a persona Flávia, 45 anos, linguista, professora e pesquisadora; possui bastante conhecimento acerca de línguas indígenas e 
+Guarani, professor, que tem interesse em mostrar novas línguas indígenas a seus alunos. Por último, na Figura \ref{fig15}, tem-se a persona Flávia, 45 anos, linguista, professora e pesquisadora; possui bastante conhecimento acerca de línguas indígenas e 
 tem interesse em contribuir com o projeto.
 
 \begin{figure}[h!]
@@ -278,7 +278,7 @@ o que orientou o processo de melhoria de usabilidade e experiência de usuário.
 Seguindo a abordagem de \citeonline{cooper2007}, o \textit{design} depende do contexto - quem são os usuários; o que estão fazendo, e seus objetivos. Além disso, os autores mencionam que não é possível 
 criar um bom \textit{design} seguindo regras desconectadas dos objetivos e das necessidades dos usuários do seu produto. Com base nisso, foi introduzido um processo de familiarização chamado \textit{onboarding}, que 
 auxilia os novos usuários a se familiarizarem com o aplicativo. Esse processo pode incluir tutoriais interativos, orientações passo a passo e dicas contextuais para orientar os usuários durante a primeira interação com 
-o produto. O objetivo é permitir que os usuários compreendam as funcionalidades do aplicativo e alcancem seus objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As Figuras \ref{fig22} e \ref{fig23} mostram as 
+o produto. O objetivo foi permitir que os usuários compreendam as funcionalidades do aplicativo e alcancem seus objetivos de forma eficaz, reduzindo a curva de aprendizado \cite{renz2014}. As Figuras \ref{fig22} e \ref{fig23} mostram as 
 telas do \textit{onboarding} proposto como melhoria para o aplicativo Multilind.
 
 \begin{figure}[h!]
@@ -396,10 +396,10 @@ compreensão e orientação durante o uso do aplicativo.
 \label{sec:Matriz SWOT}
 
 Como mencionada no \hyperref[chap:Referencial]{Capítulo 2}, a matriz SWOT oferece uma visão abrangente do aplicativo. Permitindo identificar os pontos fortes que devem ser mantidos e fortalecidos, as fraquezas que precisam ser corrigidas, as oportunidades que devem ser exploradas 
-e as ameaças que devem ser enfrentadas. Essa análise é valiosa para orientar as decisões estratégicas, direcionar esforços e recursos para áreas prioritárias e identificar possíveis caminhos de desenvolvimento e aprimoramento.
+e as ameaças que devem ser enfrentadas. Essa análise foi valiosa para orientar as decisões estratégicas, direcionar esforços e recursos para áreas prioritárias e identificar possíveis caminhos de desenvolvimento e aprimoramento.
 
 No caso do aplicativo Multilind, a matriz SWOT (Figura \ref{fig30}) permitiu documentar os aspectos positivos que foram percebidos pelos usuários: as melhorias implementadas que foram bem-sucedidas (forças); as oportunidades de melhorias no aplicativo, como a introdução de funcionalidades de 
-pronúncia de palavras e a ampliação da participação dos falantes das línguas indígenas (oportunidades); as áreas que ainda precisam de aprimoramento, como a necessidade de maior participação coletiva e a falta da funcionalidade de pronúncia de palavras (fraquezas), e as dificuldades 
+pronúncia de palavras e a ampliação da participação dos falantes das línguas indígenas (oportunidades); as áreas que ainda precisavam de aprimoramento, como a necessidade de maior participação coletiva e a falta da funcionalidade de pronúncia de palavras (fraquezas), e as dificuldades 
 relacionadas à tradução para o português indígena (ameaças).
 
 \begin{figure}[h!]
@@ -420,7 +420,7 @@ relacionadas à tradução para o português indígena (ameaças).
 \section{Backlog de Melhorias}
 \label{sec:Backlog de Melhorias}
 O \textit{Product Backlog}, contendo as histórias de usuário para orientar o desenvolvimento do projeto na segunda etapa do TCC, pode ser visualizado na Tabela \ref{tab08}. Essas histórias foram elaboradas a 
-partir da concepção do protótipo e das melhorias identificadas durante a pesquisa.. Além disso, a técnica MoSCoW foi utilizada para realizar a priorização. Seguindo essa classificação, os requisitos são 
+partir da concepção do protótipo e das melhorias identificadas durante a pesquisa. Além disso, a técnica MoSCoW foi utilizada para realizar a priorização. Seguindo essa classificação, os requisitos foram 
 categorizados como \textit{Must Have}, \textit{Should Have}, \textit{Could Have} e \textit{Won't Have} \cite{miranda2021}, na ordem dos mais necessários aos que não fazem parte do escopo. No caso, foram 
 classificados em \textit{Must Have (Must)} e \textit{Should Have (Should)}, conferindo ênfase ao que de fato faz parte do escopo de implementação desse projeto.
 
@@ -446,8 +446,8 @@ classificados em \textit{Must Have (Must)} e \textit{Should Have (Should)}, conf
 
 \section{Desenvolvimento do Aplicativo}
 \label{sec:Desenvolvimento do Aplicativo}
-Após a elaboração do \textit{Product Backlog}, contendo as histórias de usuário para guiar o desenvolvimento do projeto na segunda etapa do TCC, foi estruturado um quadro Kanban. Esse quadro incluiu as histórias de usuário, 
-bem como tarefas adicionais, como a atualização de pacotes. Devido à falta de manutenção no aplicativo desde 2021 e ao surgimento de novas versões, muitos pacotes estavam desatualizados e deprecados. Isso impactou diretamente 
+Após a elaboração do \textit{Product Backlog}, contendo as histórias de usuário para guiar o desenvolvimento do projeto na segunda etapa do TCC, foi estruturado um quadro Kanban (Figura \ref{fig33}). Esse quadro incluiu as histórias de usuário, 
+bem como tarefas adicionais, como a atualização de pacotes. Devido à falta de manutenção no aplicativo desde 2021 e ao surgimento de novas versões, muitos pacotes estavam desatualizados, ou até mesmo \textit{deprecated}. Isso impactou diretamente 
 o funcionamento do app, tornando essencial a atualização desses pacotes para garantir a estabilidade e a compatibilidade do sistema.
 
 No gerenciamento do \textit{backlog} do produto, foi utilizada a ferramenta Trello para organizar as tarefas. O Kanban foi organizado de forma que cada coluna representa uma etapa do desenvolvimento, como "\textit{Backlog}", 
@@ -475,7 +475,7 @@ podem acessar e contribuir para esses repositórios, bem como acessar o código-
 \section{Funcionalidades Implementadas}
 \label{sec:Funcionalidades Implementadas}
 Durante o processo de desenvolvimento do projeto, todas as funcionalidades consideradas como \textit{Must Have} foram implementadas conforme planejado. No entanto, algumas histórias de usuário não puderam ser completamente desenvolvidas e 
-implementadas devido às prioridades definidas pelo autor e ao tempo disponível para o desenvolvimento. O foco principal foi direcionado para a melhoria da usabilidade e da experiência do usuário, em vez de introduzir novas funcionalidades.
+implementadas devido às prioridades definidas pela autora e ao tempo disponível para o desenvolvimento. O foco principal foi direcionado para a melhoria da usabilidade e da experiência do usuário, em vez de introduzir novas funcionalidades.
 
 Duas histórias de usuário (US08 e US10), mapeadas como importantes para fornecer informações adicionais sobre uma língua ao usuário, não foram implementadas devido à dependência de dados e revisões externas que não possuem uma base de dados 
 sólida no momento. Sua implementação requer dados e revisões externas ainda não disponíveis.
@@ -505,5 +505,6 @@ Para fornecer uma visão clara do status de implementação, a Tabela \ref{tab09
 \section{Resumo do Capítulo}
 \label{sec:Resumo Proposta}
 No capítulo em questão, o contexto no qual o trabalho contribui é revisado. A seção de \hyperref[sec:Contextualização]{Contextualização} fornece informações sobre o domínio no qual o estudo está inserido. Além disso, 
-a seção de \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é apresentada para garantir uma adequada compreensão da aplicação Multilind. A seção de \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias} apresenta uma lista priorizada das funcionalidades 
-que guiaram o \hyperref[sec:Desenvolvimento do Aplicativo]{Desenvolvimento do Aplicativo}. E por fim têm-se as \hyperref[sec:Funcionalidades Implementadas]{Funcionalidades Implementadas}, que descreve as funcionalidades implementadas durante o desenvolvimento do aplicativo.
+a seção de \hyperref[sec:Detalhamento da Aplicacao]{Detalhamento da Aplicação} é apresentada para garantir uma adequada compreensão do aplicativo Multilind. A seção de \hyperref[sec:Backlog de Melhorias]{\textit{Backlog} de Melhorias} apresenta uma lista priorizada das funcionalidades 
+que guiaram o \hyperref[sec:Desenvolvimento do Aplicativo]{Desenvolvimento do Aplicativo}. Por fim têm-se as \hyperref[sec:Funcionalidades Implementadas]{Funcionalidades Implementadas}, que descrevem as funcionalidades implementadas durante o desenvolvimento do aplicativo, bem como 
+comentários sobre pendências que demandam trabalhos futuros.
