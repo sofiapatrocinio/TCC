@@ -17,7 +17,7 @@ recursos de formatação e organização de texto. É baseada no sistema de comp
 TeX, desenvolvido por Donald Knuth na década de 1970.
 
 Esta monografia utiliza o LaTeX para a composição textual. Além disso, a referência bibliográfica 
-é realizada de acordo com o padrão BibTeX, que facilita a formatação e a organização das citações e 
+consta realizada de acordo com o padrão BibTeX, que facilita a formatação e a organização das citações e 
 referências bibliográficas em documentos escritos em LaTeX.
 
 A fim de garantir uma experiência consistente e facilitar o processo de compilação do documento LaTeX, foi 
@@ -32,8 +32,8 @@ uma imagem, incluindo todas as dependências necessárias, garantindo que o proj
 compilado de maneira consistente, independentemente do sistema operacional ou das configurações do computador   
 utilizado \cite{docker}.
 
-O Docker está sendo utilizado no contexto do LaTeX para garantir uma experiência consistente; facilitar o 
-processo de compilação de documentos, e também no desenvolvimento \textit{backend} da aplicação. O intuito é evitar problemas 
+O Docker foi utilizado no contexto do LaTeX para garantir uma experiência consistente; facilitar o 
+processo de compilação de documentos, e também no desenvolvimento \textit{backend} da aplicação. O intuito foi evitar problemas 
 de compatibilidade.
 
 \subsection{LaTeX Workshop}
@@ -49,9 +49,9 @@ Seguem as principais ferramentas de apoio às atividades de \hyperref[sec:Protot
 
 \subsection{Prototipação}
 \label{sec:Prototipacao}
-Será necessário prototipar novas telas, orientadas às melhorias no aplicativo, e visando planejamento e validações 
-junto ao público alvo, antes mesmo do desenvolvimento dessas melhorias no aplicativo em si, o Figma 
-será utilizado.
+Foi necessário prototipar novas telas, orientadas às melhorias no aplicativo, e visando planejamento e validações 
+junto ao público alvo, antes mesmo do desenvolvimento dessas melhorias no aplicativo em si. Nesse contexto, o Figma 
+foi utilizado.
 
 \subsubsection{Figma}
 \label{sec:Figma}
@@ -60,7 +60,7 @@ colaborativa em tempo real com outras pessoas. Essa ferramenta permite o compart
 do usuário ao utilizar a aplicação de fato \cite{figma}.
 
 Toda a prototipação do aplicativo Multilind foi desenvolvida de forma colaborativa no Figma pelos membros da equipe de desenvolvimento, conforme pode ser visto 
-na Figura \ref{fig03}. Nesse sentido, serão incorporadas melhorias nos protótipos, visando novas validações junto ao público alvo.  
+na Figura \ref{fig03}. Nesse sentido, foram incorporadas melhorias nos protótipos, visando novas validações junto ao público alvo.  
 
 \begin{figure}[h!]
 	\centering
@@ -75,15 +75,15 @@ na Figura \ref{fig03}. Nesse sentido, serão incorporadas melhorias nos protóti
 
 \subsection{Desenvolvimento}
 \label{sec:Desenvolvimento}
-O desenvolvimento das melhorias no aplicativo será orientado ao arcabouço tecnológico já utilizado na primeira versão do Multilind. Nesse sentido, seguem as 
-principais tecnologias identificadas. Havendo a necessidade de alterações nessas escolhas, as mesmas serão devidamente justificadas.
+O desenvolvimento das melhorias no aplicativo orientou-se pelo arcabouço tecnológico já utilizado na primeira versão do Multilind. Nesse sentido, seguem as 
+principais tecnologias identificadas.
 
 \subsubsection{Visual Studio Code}
 \label{sec:Visual Studio Code}
 Visual Studio Code é um editor gratuito de código aberto. Trata-se de um ambiente de desenvolvimento 
 integrado (IDE) que oferece suporte a diversas linguagens de programação e tecnologias \cite{vscode}.
 
-No contexto da monografia, é utilizado para escrita do próprio documento LaTeX, bem como para o desenvolvimento do código-fonte 
+No contexto da monografia, o Visual Studio Code foi utilizado para escrita do próprio documento LaTeX, bem como para o desenvolvimento do código-fonte 
 dos diferentes serviços da aplicação.
 
 \subsubsection{React Native}
@@ -121,23 +121,23 @@ possibilitam ter uma abordagem simplificada para criação e teste de aplicativo
 Node.js é um ambiente de execução JavaScript de código aberto que permite executar JavaScript do lado do servidor. Possui como características 
 flexibilidade, escalabilidade e facilidade de lidar com solicitações simultâneas de forma assíncrona \cite{nodejs}.
 
-No contexto do projeto, está sendo utilizado para fazer o tratamento dos bancos de dados, e para criar 
+No contexto do projeto, foi utilizado para fazer o tratamento dos bancos de dados, e para criar 
 APIs (Interfaces de Programação de Aplicativos) que são consumidas pelo aplicativo \textit{front-end}.
 
-Em conjunto ao Node.js, o Express.js está sendo utilizado para simplificar o processo de desenvolvimento e tratamento de solicitações e respostas HTTP.
+Em conjunto ao Node.js, o Express.js foi utilizado para simplificar o processo de desenvolvimento e tratamento de solicitações e respostas HTTP.
 
 \subsubsection{Express.js}
 \label{sec:Express.js}
 Express.js é uma biblioteca para Node.js que simplifica o desenvolvimento de aplicativos web e APIs. Fornece uma estrutura leve e flexível para 
 lidar com roteamento, gerenciamento de solicitações e respostas HTTP, \textit{middlewares}, dentre outros \cite{expressjs}.
 
-Na aplicação Multilind, está sendo útil para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados, e respostas 
-no formato e código de \textit{status} adequados. Além disso, o uso de \textit{middlewares} para autenticação e validação de parâmetros das requisições também está presente.
+Na aplicação Multilind, foi útil para criar APIs robustas e fáceis de utilizar através da definição de dados a serem enviados, e respostas 
+no formato e código de \textit{status} adequados. Além disso, o uso de \textit{middlewares} para autenticação e validação de parâmetros das requisições também fez-se presente.
 
 \subsection{Gerenciamento de Versões}
 \label{sec:Gerenciamento de Versoes}
 Ao longo do processo de melhorias, o versionamento torna-se necessário, visando obter um processo rastreável e de fácil apresentação sobre todas as evoluções 
-proporcionadas. Além disso, há necessidade de manter o novo aplicativo hospedado em um repositório. Nesse contexto, faz-se uso do Git e GitHub.
+proporcionadas. Além disso, há necessidade de manter o novo aplicativo hospedado em um repositório. Nesse contexto, fez-se uso do Git e GitHub.
 
 \subsubsection{Git e GiHub}
 \label{sec:Git e GiHub}
@@ -148,7 +148,7 @@ comparar mudanças, e trabalhar em paralelo em diferentes ramos (\textit{branche
 Já o GitHub é uma plataforma de hospedagem de código-fonte baseada na web, que utiliza o Git como seu sistema de controle de 
 versão. Permite hospedagem, compartilhamento e colaboração entre desenvolvedores de um projeto de software \cite{github}.
 
-Cada edição deste documento e do código-fonte da aplicação Multilind está sendo versionada por meio do Git e armazenada pelo GitHub. 
+Cada edição deste documento e do código-fonte da aplicação Multilind foi versionada por meio do Git e armazenada pelo GitHub. 
 
 \subsection{Análise de Resultados}
 \label{sec:Análise de Resultados}
@@ -160,8 +160,8 @@ tais como: Maze e Google Forms.
 Maze é uma ferramenta de teste de usabilidade que permite testar site, aplicativo ou protótipo com usuários reais. Por meio dela, é possível coletar \textit{feedback} sobre 
 os \textit{designs} e garantir melhorias.
 
-Além disso, o Maze oferece integração com o Figma, permitindo que o protótipo desenhado no Figma seja testado e validado no Maze. Dessa forma, permite que os usuários 
-testem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação de usabilidade 
+Além disso, o Maze oferece integração com o Figma, permitindo que o protótipo desenhado no Figma fosse testado e validado no Maze. Dessa forma, permitiu que os usuários 
+testassem as funcionalidades a nível de protótipo. O Maze coleta os dados dos testes realizados pelos usuários e os disponibiliza, tornando possível a validação de usabilidade 
 e experiência de usuário de uma determinada aplicação \cite{maze}.
 
 \subsubsection{Google Forms}
@@ -169,18 +169,18 @@ e experiência de usuário de uma determinada aplicação \cite{maze}.
 O Google Forms \cite{googleforms} é uma ferramenta \textit{online} fornecida pelo Google, que permite criar formulários personalizados para coletar informações de forma rápida e fácil. Neste estudo, foi 
 utilizado para coletar dados dos \textit{stakeholders} a respeito da experiência de usuário na aplicação existente, sem a incorporação de melhorias.
 
-De forma mais metodológica, será utilizado para realizar o Questionário \textit{AttrakDiff} e coletar respostas do público-alvo. Para realizar a coleta dessas informações, serão adicionados 
+De forma mais metodológica, foi ainda utilizado para realizar o Questionário \textit{AttrakDiff} e coletar respostas do público-alvo. Para realizar a coleta dessas informações, foram adicionados 
 os antônimos em cada item do questionário com uma escala de Likert para indicar grau de concordância em relação às usabilidade e funcionalidade do produto.
 
 \section{Apoio Complementar}
 \label{sec:Apoio Complementar}
-Seguem outros recursos que estão sendo consumidos para plena viabilização do trabalho.
+Seguem outros recursos que foram consumidos para plena viabilização do trabalho.
 
 \subsection{Ferramenta de Comunicação}
 \label{sec:Ferramenta de Comunicação}
 
 \begin{description}
-    \item Visando conferir facilidades na comunicação entre autora e orientadora, estão sendo utilizadas as seguintes ferramentas:
+    \item Visando conferir facilidades na comunicação entre autora e orientadora, foram utilizadas as seguintes ferramentas:
           \begin{itemize}
               \item Telegram\footnote{\url{https://web.telegram.org/}(último acesso: Março 2024)} - para mensagens rápidas;
 
@@ -192,8 +192,8 @@ Seguem outros recursos que estão sendo consumidos para plena viabilização do 
 
 \subsection{Ferramenta de Modelagem}
 \label{sec:Ferramenta de Modelagem}
-Como há necessidade de modelar determinados aspectos, visando uma adequada apresentação de artefatos na monografia, faz-se uso da LucidChart, com base em notações como: UML e BPMN. Um exemplo de 
-uso dessa ferramenta pode ser conferido na seção \hyperref[sec:Fluxo de Atividades]{4.2}, nas especificações dos processos inerentes às atividades a serem realizadas ao longo deste trabalho.
+Como há necessidade de modelar determinados aspectos, visando uma adequada apresentação de artefatos na monografia, fez-se uso da LucidChart, com base em notações como: UML e BPMN. Um exemplo de 
+uso dessa ferramenta pode ser conferido na seção \hyperref[sec:Fluxo de Atividades]{4.2}, nas especificações dos processos inerentes às atividades realizadas ao longo deste trabalho.
 
 \subsubsection{LucidChart}
 \label{sec:LucidChart}
@@ -202,8 +202,8 @@ e BPMN (\textit{Business Process Model and Notation}).
 
 \subsection{Gerenciamento do Fluxo de Trabalho}
 \label{sec:Gerenciamento do Fluxo de Trabalho}
-A autora conduz um processo de desenvolvimento solo, ou seja, sendo a única atuante no trabalho em termos, por exemplo, de programação. Assim, cabe o uso de uma ferramenta simples, intuitiva, e que 
-permita o acompanhamento das atividades de forma clara e adequada. Nesse caso, tem-se o uso do Trello.
+A autora conduziu um processo de desenvolvimento solo, ou seja, sendo a única atuante no trabalho em termos, por exemplo, de programação. Assim, coube o uso de uma ferramenta simples, intuitiva, e que 
+permitisse o acompanhamento das atividades de forma clara e adequada. Nesse caso, tem-se o uso do Trello.
 
 \subsubsection{Trello}
 \label{sec:Trello}
@@ -213,7 +213,7 @@ dos projetos de forma visual e colaborativa.
 \section{Resumo do Capítulo}
 \label{sec:Resumo do Capítulo 2}
 Ao longo deste capítulo, foram apresentadas as diversas ferramentas e tecnologias empregadas para apoiar a elaboração deste trabalho, desde a pesquisa e escrita até o desenvolvimento. 
-A tabela \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
+A Tabela \ref{tab03} apresenta um resumo dos principais aspectos discutidos ao longo deste capítulo.
 
 \begin{table}[h]
     \centering
